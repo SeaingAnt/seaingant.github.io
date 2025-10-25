@@ -1,0 +1,85 @@
+---
+layout: modern-fullwidth
+title: "Antonio Marino - Contact"
+section: "contact"
+header_name: "Antonio Marino"
+---
+
+<div class="content-section">
+  <h1>Contact</h1>
+  
+  <p>I'm always interested in discussing research opportunities, collaborations, and exciting projects in multi-agent systems and reinforcement learning.</p>
+  
+  <div class="two-column">
+    <div class="column">
+      <h2>Get in Touch</h2>
+      <p>Feel free to reach out if you'd like to:</p>
+      <ul>
+        <li>Collaborate on research projects</li>
+        <li>Discuss multi-agent systems and RL</li>
+        <li>Explore open-source contributions</li>
+        <li>Share ideas and feedback</li>
+        <li>Invite me to speak at conferences</li>
+      </ul>
+      
+      <div class="contact-info">
+        <div class="contact-item">
+          <h3>� Email</h3>
+          <p><a href="mailto:antonio@example.com">antonio@example.com</a></p>
+        </div>
+        
+        <div class="contact-item">
+          <h3>🐦 Twitter</h3>
+          <p><a href="https://twitter.com/antonio_marino">@antonio_marino</a></p>
+        </div>
+        
+        <div class="contact-item">
+          <h3>💼 LinkedIn</h3>
+          <p><a href="https://linkedin.com/in/antonio-marino">antonio-marino</a></p>
+        </div>
+        
+        <div class="contact-item">
+          <h3>👨‍💻 GitHub</h3>
+          <p><a href="https://github.com/antonio-marino">antonio-marino</a></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <h2>Current Location</h2>
+      <p>📍 Cambridge, United Kingdom</p>
+      
+      <h2>Research Interests</h2>
+      <p>I'm particularly interested in projects involving:</p>
+      <ul>
+        <li>Multi-agent reinforcement learning</li>
+        <li>Heterogeneous robot systems</li>
+        <li>Large language model agents</li>
+        <li>Graph neural networks for coordination</li>
+        <li>Simulation environments for RL</li>
+      </ul>
+      
+      <h2>Speaking & Conferences</h2>
+      <p>I regularly speak at conferences and workshops. Recent venues include:</p>
+      <ul>
+        <li>ICML 2024 (Montreal, Canada)</li>
+        <li>IROS 2023 (Detroit, USA)</li>
+        <li>NeurIPS 2023 Workshops (New Orleans, USA)</li>
+        <li>AAMAS 2023 (London, UK)</li>
+      </ul>
+      
+      <div class="availability">
+        <h3>⏰ Response Time</h3>
+        <p>I typically respond to emails within 24-48 hours. For urgent matters, feel free to reach out on Twitter.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="cta-section">
+    <h2>Let's Connect!</h2>
+    <p>Whether you're a fellow researcher, student, or industry professional, I'd love to hear from you. Drop me a line and let's discuss how we can push the boundaries of multi-agent systems together.</p>
+    <a href="mailto:antonio@example.com" class="contact-button">
+      📧 Send me an email
+    </a>
+  </div>
+</div>

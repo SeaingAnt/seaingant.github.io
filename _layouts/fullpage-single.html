@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/fullpage-style.css' | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <nav class="tab-navigation">
+      <div class="tab-container">
+        <a href="/home.html" class="tab-item {% if page.section == 'home' %}active{% endif %}">Welcome</a>
+        <a href="/about.html" class="tab-item {% if page.section == 'about' %}active{% endif %}">About Me</a>
+        <a href="/projects.html" class="tab-item {% if page.section == 'projects' %}active{% endif %}">My Projects</a>
+        <a href="/experience.html" class="tab-item {% if page.section == 'experience' %}active{% endif %}">Experience</a>
+        <a href="/contact.html" class="tab-item {% if page.section == 'contact' %}active{% endif %}">Contact</a>
+      </div>
+    </nav>
+
+    <div class="fullpage-section" data-bg="{{ page.background | default: '#2c3e50' }}">
+      <div class="section-content">
+        <div class="sidebar">
+          {% if page.sidebar_content %}
+            {{ page.sidebar_content }}
+          {% else %}
+            {{ content }}
+          {% endif %}
+        </div>
+        
+        <div class="main-content">
+          <div class="{{ page.content_class | default: 'hero-text' }}">
+            {% if page.main_content %}
+              {{ page.main_content }}
+            {% else %}
+              {{ content }}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>

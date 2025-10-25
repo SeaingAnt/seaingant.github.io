@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/base-style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/dark-theme.css' | relative_url }}" id="theme-style">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <header class="header-nav">
+      <h1>{{ page.header_name | default: "Antonio Marino" }}</h1>
+      <nav class="header-nav-links">
+        <a href="/home.html" {% if page.section == 'home' %}class="active"{% endif %}>Home</a>
+        <a href="/about.html" {% if page.section == 'about' %}class="active"{% endif %}>About</a>
+        <a href="/projects.html" {% if page.section == 'projects' %}class="active"{% endif %}>Projects</a>
+        <a href="/experience.html" {% if page.section == 'experience' %}class="active"{% endif %}>Experience</a>
+        <a href="/contact.html" {% if page.section == 'contact' %}class="active"{% endif %}>Contact</a>
+        <button id="theme-switcher"></button>
+      </nav>
+    </header>
+
+    <div class="main-container">
+      <aside class="profile-sidebar">
+        {% if site.logo %}
+          <img src="{{ site.logo | relative_url }}" alt="Profile Photo" class="profile-photo" />
+        {% endif %}
+        <h2 class="profile-name">{{ site.title | default: "Antonio Marino" }}</h2>
+        <p class="profile-title">{{ page.profile_title | default: "Researcher" }}</p>
+        <p class="profile-university">{{ page.profile_university | default: "University" }}</p>
+        
+        <div class="social-icons">
+          <a href="mailto:{{ page.email | default: 'antonio@example.com' }}" class="social-icon" title="Email">📧</a>
+          <a href="{{ page.github | default: '#' }}" class="social-icon" title="GitHub">💻</a>
+          <a href="{{ page.linkedin | default: '#' }}" class="social-icon" title="LinkedIn">💼</a>
+          <a href="{{ page.youtube | default: '#' }}" class="social-icon" title="YouTube">📺</a>
+          <a href="{{ page.cv | default: '#' }}" class="social-icon" title="CV">📄</a>
+        </div>
+      </aside>
+
+      <main class="main-content raised-content">
+        {{ content }}
+      </main>
+    </div>
+
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/theme-switcher.js" | relative_url }}"></script>
+  </body>
+</html>

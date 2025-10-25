@@ -1,0 +1,56 @@
+tags:
+  - id: "all"
+    name: "All"
+    description: "Show all publications"
+    
+  - id: "reinforcement-learning"
+    name: "Reinforcement Learning"
+    description: "Publications related to reinforcement learning"
+    color: "#3498db"
+    
+  - id: "multi-agent"
+    name: "Multi-Agent Systems"
+    description: "Publications on multi-agent systems and coordination"
+    color: "#e74c3c"
+    
+  - id: "graph-neural-networks"
+    name: "Graph Neural Networks"
+    description: "Publications using graph neural networks"
+    color: "#9b59b6"
+    
+  - id: "robotics"
+    name: "Robotics"
+    description: "Publications related to robotics applications"
+    color: "#f39c12"
+    
+  - id: "simulation"
+    name: "Simulation"
+    description: "Publications on simulation tools and environments"
+    color: "#27ae60"
+    
+  - id: "optimization"
+    name: "Optimization"
+    description: "Publications on optimization algorithms"
+    color: "#e67e22"
+    
+  - id: "large-language-models"
+    name: "Large Language Models"
+    description: "Publications on LLM applications"
+    color: "#1abc9c"
+
+venue_types:
+  conference:
+    color: "#27ae60"
+    icon: "🏆"
+  workshop:
+    color: "#3498db"
+    icon: "👥"
+  journal:
+    color: "#9b59b6"
+    icon: "📄"
+  thesis:
+    color: "#f39c12"
+    icon: "🎓"
+  preprint:
+    color: "#95a5a6"
+    icon: "📝"

@@ -1,0 +1,123 @@
+publications:
+  - id: "marino2024heterogeneous"
+    title: "Heterogeneous Multi-Agent Reinforcement Learning with Graph Neural Networks"
+    authors: ["Antonio Marino", "Amanda Prorok", "et al."]
+    venue: "ICML 2024"
+    year: 2024
+    venue_type: "conference"
+    abstract: "We propose a novel approach to multi-agent reinforcement learning that leverages graph neural networks to handle heterogeneous agent capabilities. Our method enables effective coordination among diverse agents with different observation and action spaces, leading to improved performance in complex multi-robot scenarios."
+    tags: ["reinforcement-learning", "multi-agent", "graph-neural-networks"]
+    links:
+      paper: "#"
+      code: "#"
+      slides: "#"
+      bibtex: |
+        @inproceedings{marino2024heterogeneous,
+          title={Heterogeneous Multi-Agent Reinforcement Learning with Graph Neural Networks},
+          author={Marino, Antonio and Prorok, Amanda},
+          booktitle={International Conference on Machine Learning},
+          year={2024}
+        }
+    featured: true
+
+  - id: "marino2023vmas"
+    title: "VMAS: A Vectorized Multi-Agent Simulator for Collective Robotics"
+    authors: ["Antonio Marino", "Matteo Bettini", "Amanda Prorok"]
+    venue: "IROS 2023"
+    year: 2023
+    venue_type: "conference"
+    abstract: "We present VMAS, a high-performance vectorized simulator for multi-agent reinforcement learning research. VMAS enables parallel execution of thousands of environment instances, significantly accelerating training and evaluation of multi-agent algorithms in robotic scenarios."
+    tags: ["multi-agent", "simulation", "reinforcement-learning"]
+    links:
+      paper: "#"
+      code: "https://github.com/proroklab/VectorizedMultiAgentSimulator"
+      demo: "#"
+      bibtex: |
+        @inproceedings{marino2023vmas,
+          title={VMAS: A Vectorized Multi-Agent Simulator for Collective Robotics},
+          author={Marino, Antonio and Bettini, Matteo and Prorok, Amanda},
+          booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems},
+          year={2023}
+        }
+    featured: true
+
+  - id: "marino2023benchmarl"
+    title: "BenchMARL: A Benchmarking Suite for Multi-Agent Reinforcement Learning"
+    authors: ["Antonio Marino", "Matteo Bettini", "Vincent Moens"]
+    venue: "NeurIPS 2023 Workshop"
+    year: 2023
+    venue_type: "workshop"
+    abstract: "BenchMARL provides a comprehensive benchmarking framework for multi-agent reinforcement learning algorithms. It standardizes evaluation protocols and provides fair comparisons across different MARL approaches, facilitating reproducible research in the field."
+    tags: ["reinforcement-learning", "multi-agent"]
+    links:
+      paper: "#"
+      code: "https://github.com/pytorch/rl"
+      documentation: "#"
+      bibtex: |
+        @inproceedings{marino2023benchmarl,
+          title={BenchMARL: A Benchmarking Suite for Multi-Agent Reinforcement Learning},
+          author={Marino, Antonio and Bettini, Matteo and Moens, Vincent},
+          booktitle={NeurIPS Workshop on Multi-Agent Learning},
+          year={2023}
+        }
+    featured: false
+
+  - id: "marino2023pathplanning"
+    title: "Multi-Agent Path Planning with Dynamic Obstacle Avoidance"
+    authors: ["Antonio Marino", "Amanda Prorok"]
+    venue: "AAMAS 2023"
+    year: 2023
+    venue_type: "conference"
+    abstract: "We develop a novel approach for multi-agent path planning that dynamically adapts to changing environments and obstacle configurations. Our method combines optimization techniques with real-time replanning capabilities for robust robotic navigation."
+    tags: ["optimization", "multi-agent", "robotics"]
+    links:
+      paper: "#"
+      code: "#"
+      video: "#"
+      bibtex: |
+        @inproceedings{marino2023pathplanning,
+          title={Multi-Agent Path Planning with Dynamic Obstacle Avoidance},
+          author={Marino, Antonio and Prorok, Amanda},
+          booktitle={International Conference on Autonomous Agents and Multiagent Systems},
+          year={2023}
+        }
+    featured: false
+
+  - id: "marino2021transport"
+    title: "Transport Network Design for Multi-Agent Routing"
+    authors: ["Antonio Marino"]
+    venue: "Master's Thesis"
+    year: 2021
+    venue_type: "thesis"
+    abstract: "This thesis investigates optimization algorithms for transport network design in multi-agent routing scenarios. We develop methods to optimize network topology and routing strategies simultaneously, improving overall system efficiency and reducing congestion."
+    tags: ["optimization", "multi-agent"]
+    links:
+      thesis: "#"
+      slides: "#"
+      bibtex: |
+        @mastersthesis{marino2021transport,
+          title={Transport Network Design for Multi-Agent Routing},
+          author={Marino, Antonio},
+          school={University of Cambridge},
+          year={2021}
+        }
+    featured: false
+
+  - id: "marino2024llm"
+    title: "Training LLM Agents for Long-Horizon Tasks using Reinforcement Learning"
+    authors: ["Antonio Marino", "Meta AI Team"]
+    venue: "In Preparation"
+    year: 2024
+    venue_type: "preprint"
+    abstract: "Current work at Meta focusing on training large language model agents for complex, long-horizon tasks using reinforcement learning techniques. Developing novel approaches for agent coordination and task decomposition."
+    tags: ["reinforcement-learning", "large-language-models", "multi-agent"]
+    links:
+      paper: "#"
+      bibtex: |
+        @article{marino2024llm,
+          title={Training LLM Agents for Long-Horizon Tasks using Reinforcement Learning},
+          author={Marino, Antonio},
+          journal={arXiv preprint},
+          year={2024}
+        }
+    featured: true
