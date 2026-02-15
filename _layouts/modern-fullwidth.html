@@ -13,10 +13,8 @@
     <h1>{{ page.header_name | default: site.title }}</h1>
     <div class="header-nav-links">
       <a href="/home.html" {% if page.section == 'home' %}class="active"{% endif %}>Home</a>
-      <a href="/about.html" {% if page.section == 'about' %}class="active"{% endif %}>About</a>
       <a href="/projects.html" {% if page.section == 'projects' %}class="active"{% endif %}>Projects</a>
-      <a href="/experience.html" {% if page.section == 'experience' %}class="active"{% endif %}>Experience</a>
-      <a href="/contact.html" {% if page.section == 'contact' %}class="active"{% endif %}>Contact</a>
+      <a href="/publications.html" {% if page.section == 'publications' %}class="active"{% endif %}>Publications</a>
       <button id="theme-switcher"></button>
     </div>
   </nav>

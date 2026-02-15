@@ -8,7 +8,7 @@
 {% seo %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="{{ '/assets/css/base-style.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/dark-theme.css' | relative_url }}" id="theme-style">
+    <link rel="stylesheet" href="{{ '/assets/css/light-theme.css' | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -18,12 +18,14 @@
     <header class="header-nav">
       <h1>{{ page.header_name | default: "Antonio Marino" }}</h1>
       <nav class="header-nav-links">
-        <a href="/home.html" {% if page.section == 'home' %}class="active"{% endif %}>Home</a>
-        <a href="/projects.html" {% if page.section == 'projects' %}class="active"{% endif %}>Projects</a>
-        <a href="/publications.html" {% if page.section == 'publications' %}class="active"{% endif %}>Publications</a>
+        <a href="/home-light.html" {% if page.section == 'home' %}class="active"{% endif %}>Home</a>
+        <a href="/projects-light.html" {% if page.section == 'projects' %}class="active"{% endif %}>Projects</a>
+        <a href="/publications-light.html" {% if page.section == 'publications' %}class="active"{% endif %}>Publications</a>
         <button id="theme-switcher"></button>
       </nav>
     </header>
+
+    {% assign parts = content | split: "<!-- split -->" %}
 
     <div class="main-container">
       <aside class="profile-sidebar">
@@ -43,11 +45,20 @@
       </aside>
 
       <main class="main-content raised-content">
-        {{ content }}
+        {{ parts[0] }}
       </main>
     </div>
 
+    {% if parts[1] %}
+    <div class="fullwidth-container">
+      <div class="fullwidth-content">
+        {{ parts[1] }}
+      </div>
+    </div>
+    {% endif %}
+
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/theme-switcher.js" | relative_url }}"></script>
+    <script src="{{ '/assets/js/publications.js' | relative_url }}"></script>
   </body>
 </html>

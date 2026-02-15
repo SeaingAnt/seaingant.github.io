@@ -1,44 +1,53 @@
 :root {
-  --background-gradient: linear-gradient(135deg, #293133 0%, #293133 100%);
-  --text-primary: #ffffff;
-  --text-secondary: #bdc3c7;
-  --accent-color: #3498db;
-  --accent-color-hover: #2980b9;
-  --header-background: #29313362;
-  --header-shadow: rgba(0, 0, 0, 0.2);
-  --header-text: #ffffff;
-  --nav-link: #ecf0f1;
-  --switcher-hover-text: #2c3e50;
-  --sidebar-background: #293133;
-  --sidebar-shadow: rgba(0, 0, 0, 0.);
-  --sidebar-border: rgba(255, 255, 255, 0.);
-  --photo-shadow: rgba(0, 0, 0, 0.2);
-  --social-icon-text: #ffffff;
-  --social-icon-shadow: rgba(52, 152, 219, 0.4);
-  --content-background: #2f393b;
-  --content-shadow: rgba(0, 0, 0, 0.4);
-  --content-border: rgba(255, 255, 255, 0.1);
-  --tag-btn-background: rgba(255, 255, 255, 0.1);
-  --tag-btn-text: #bdc3c7;
-  --tag-btn-border: rgba(255, 255, 255, 0.2);
+  /* BACKGROUND: Deep Gunmetal Grey (Not pure black) */
+  --background-gradient: #181a1d;
+  --sidebar-background: #181a1d;
+  --content-background: #181a1d;
+  --header-background: rgba(24, 26, 29, 0.9);
+
+  /* TEXT PRIMARY: Electric Cerulean */
+  --text-primary: #30849e; 
+  --header-text: #4cc9f0;
+
+  /* TEXT SECONDARY: Pure White */
+  --text-secondary: #ffffff;
+  --nav-link: #ffffff;
+
+  /* ACCENT */
+  --accent-color: #30849e;
+  --accent-color-hover: #3aa6d0;
+
+  /* BORDERS: Invisible (Alpha 0) */
+  --sidebar-border: rgba(0, 0, 0, 0);
+  --content-border: rgba(0, 0, 0, 0);
+  --header-shadow: rgba(44, 44, 44, 0.1);
+  --content-shadow: rgba(0, 0, 0, 0);
+  --sidebar-shadow: rgba(0, 0, 0, 0);
+
+  /* ICONS */
+  --social-icon-text: #181a1d; /* Dark icon inside bright button */
+  --social-icon-shadow: rgba(76, 201, 240, 0.4);
+  --photo-shadow: rgba(0, 0, 0, 0);
+
+  /* BUTTONS & TAGS */
+  --tag-btn-background: rgba(76, 201, 240, 0.1);
+  --tag-btn-text: #4cc9f0;
+  --tag-btn-border: rgba(0, 0, 0, 0);
   --tag-btn-active-text: #ffffff;
-  --tag-btn-shadow: rgba(52, 152, 219, 0.3);
-  --pub-card-background: rgba(255, 255, 255, 0.05);
-  --pub-card-border: rgba(255, 255, 255, 0.1);
-  --pub-card-shadow: rgba(0, 0, 0, 0.2);
-  --pub-card-shadow-hover: rgba(0, 0, 0, 0.3);
-  --pub-card-border-hover: rgba(52, 152, 219, 0.3);
-  --pub-tag-background: rgba(52, 152, 219, 0.1);
-  --pub-tag-border: rgba(52, 152, 219, 0.3);
-  --pub-link-background: rgba(255, 255, 255, 0.1);
-  --pub-link-border: rgba(255, 255, 255, 0.2);
-  --pub-link-hover-text: #ffffff;
-  --pub-link-shadow: rgba(0, 0, 0, 0.2);
-  --bibtex-btn-background: #7f8c8d;
-  --bibtex-btn-text: #ffffff;
-  --bibtex-btn-hover-background: #95a5a6;
-  --bibtex-container-background: rgba(0, 0, 0, 0.2);
-  --bibtex-container-border: rgba(255, 255, 255, 0.1);
-  --bibtex-code-background: rgba(0, 0, 0, 0.3);
-  --bibtex-code-border: rgba(255, 255, 255, 0.1);
+  --tag-btn-shadow: rgba(0, 0, 0, 0);
+
+  /* CARDS */
+  --pub-card-background: #181a1d;
+  --pub-card-border: rgba(0, 0, 0, 0);
+  --pub-card-shadow: rgba(0, 0, 0, 0);
+  --pub-card-shadow-hover: rgba(76, 201, 240, 0.2);
+  --pub-card-border-hover: rgba(0, 0, 0, 0);
+
+  /* BIBTEX */
+  --bibtex-btn-background: #30849e;
+  --bibtex-btn-text: #181a1d; /* Dark text on bright button */
+  --bibtex-container-background: #202327; /* Slightly lighter grey for code block */
+  --bibtex-container-border: rgba(0, 0, 0, 0);
+  --bibtex-code-background: #25282d;
+  --bibtex-code-border: rgba(0, 0, 0, 0);
 }

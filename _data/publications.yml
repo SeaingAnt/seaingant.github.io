@@ -1,123 +1,208 @@
 publications:
-  - id: "marino2024heterogeneous"
-    title: "Heterogeneous Multi-Agent Reinforcement Learning with Graph Neural Networks"
-    authors: ["Antonio Marino", "Amanda Prorok", "et al."]
-    venue: "ICML 2024"
+  - id: "marino2024input"
+    title: "Input State Stability of Gated Graph Neural Networks"
+    authors: ["Antonio Marino", "Claudio Pacchierotti", "Paolo Robuffo Giordano"]
+    venue: "IEEE Transactions on Control of Network Systems"
+    year: 2024
+    venue_type: "journal"
+    abstract: "In this article, we aim to find the conditions for the input-to-state stability (ISS) and incremental ISS of gated graph neural networks (GGNNs). We show that this recurrent version of graph neural networks can be expressed as a dynamical distributed system and, as a consequence, can be analyzed using model-based techniques to assess its stability and robustness properties. Then, the stability criteria found can be exploited as constraints during the training process to enforce the internal stability of the neural network. Two distributed control examples, i.e., flocking and multirobot motion control, show that using these conditions increases the performance and robustness of the GGNNs."
+    tags: ["distributed-control", "multi-agent", "graph-neural-networks"]
+    links:
+      paper: "https://ieeexplore.ieee.org/document/10458338"
+      bibtex: |
+        @article{marino2024input,
+            title={\href{https://ieeexplore.ieee.org/document/10458338}{Input State Stability of Gated Graph Neural Networks}},
+            author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
+            journal={IEEE Transactions on Control of Network Systems},
+            year={2024},
+            volume={11},
+            number={4},
+            pages={2052-2063},
+          }
+    featured: true
+
+  - id: "marinomulti"
+    title: "Multi-UAVs End-to-End Distributed Trajectory Generation Over Point Cloud Data"
+    authors: ["Antonio Marino", "Claudio Pacchierotti", "Paolo Robuffo Giordano"]
+    venue: "IEEE Robotics and Automation Letters"
+    year: 2024
+    venue_type: "journal"
+    abstract: "This letter introduces an end-to-end trajectory planning algorithm tailored for multi-UAV systems that generates collision-free trajectories in environments populated with both static and dynamic obstacles, leveraging point cloud data. Our approach consists of a 2-branch neural network fed with sensing and localization data, able to communicate intermediate learned features among the agents. One network branch crafts an initial collision-free trajectory estimate, while the other devises a neural collision constraint for subsequent optimization, ensuring trajectory continuity and adherence to physical actuation limits. Extensive simulations in challenging cluttered environments, involving up to 25 robots and 25% obstacle density, show a collision avoidance success rate in the range of 100−85%. Finally, we introduce a saliency map computation method acting on the point cloud data, offering qualitative insights into our methodology."
+    tags: ["multi-agent", "drones", "distributed-control", "graph-neural-networks", "motion-planning"]
+    links:
+      paper: "https://ieeexplore.ieee.org/document/10592306"
+      video: "https://www.youtube.com/watch?v=LSk8gjyuSKA&ab_channel=Rainbow_Inria_Irisa"
+      bibtex: |
+        @article{marinomulti,
+          author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
+          journal={IEEE Robotics and Automation Letters}, 
+          title={\href{https://ieeexplore.ieee.org/document/10592306}{Multi-UAVs End-to-End Distributed Trajectory Generation Over Point Cloud Data}}, 
+          year={2024},
+          volume={9},
+          number={9},
+        note ={\textbf{\href{https://www.youtube.com/watch?v=LSk8gjyuSKA&ab_channel=Rainbow_Inria_Irisa}{video}}},
+          pages={7629-7636}, keywords={Trajectory;Drones;Safety;Planning;Sensors;Optimization;Heuristic algorithms;Distributed control;graph neural network;trajectory generation},
+        }
+    featured: true
+
+  - id: "marinocluster"
+    title: "Decentralized Reinforcement Learning for Multi-Agent Multi-Resource Allocation via Dynamic Cluster Agreements"
+    authors: ["Antonio Marino","Esteban Restrepo", "Claudio Pacchierotti", "Paolo Robuffo Giordano"]
+    venue: "IEEE Robotics and Automation Letters"
+    year: 2025
+    venue_type: "journal"
+    abstract: "This letter addresses the challenge of allocating heterogeneous resources among multiple agents in a decentralized manner. Our proposed method, Liquid-Graph-Time Clustering-IPPO, builds upon Independent Proximal Policy Optimization (IPPO) by integrating dynamic cluster consensus, a mechanism that allows agents to form and adapt local sub-teams based on resource demands. This decentralized coordination strategy reduces reliance on global information and enhances scalability. We evaluate LGTC-IPPO against standard multi-agent reinforcement learning baselines and a centralized expert solution across a range of team sizes and resource distributions. Experimental results demonstrate that LGTC-IPPO achieves more stable rewards, better coordination, and robust performance even as the number of agents or resource types increases. Additionally, we illustrate how dynamic clustering enables agents to reallocate resources efficiently also for scenarios with discharging resources."
+    tags: ["multi-agent", "reinforcement-learning", "distributed-control", "graph-neural-networks"]
+    links:
+      paper: "https://ieeexplore.ieee.org/abstract/document/11044426"
+      video: "https://www.youtube.com/watch?v=lc-TGA1kMiE"
+      bibtex: |
+        @article{marinocluster,
+          author={Marino, Antonio and Restrepo, Esteban and Pacchierotti, Claudio and Giordano, Paolo Robuffo},
+          journal={IEEE Robotics and Automation Letters}, 
+          title={\href{https://hal.science/hal-04972227}{Decentralized Reinforcement Learning for Multi-Agent Multi-Resource Allocation via Dynamic Cluster Agreements}}, 
+          year={2025},
+          volume={10},
+          number={8},
+          pages={\\ pp. 8123-8130},
+          keywords={Resource management;Training;Dynamic scheduling;Reinforcement learning;Scalability;Robot kinematics;Optimization;Decision making;Data mining;Artificial intelligence;Distributed Control;Graph Neural Network;Resource Assignment},
+          note ={\textbf{\href{https://www.youtube.com/watch?v=lc-TGA1kMiE}{video}}},
+        }
+    featured: true
+  
+  - id: "paganiActive"
+    title: "Distributed Multi-Robot Active-Sensing of a Diffusive Source"
+    authors: ["Francesca Pagano", "Nicola De Carli", "Esteban Restrepo", "Antonio Marino", "Claudio Pacchierotti", "Paolo Robuffo Giordano"]
+    venue: "IEEE Robotics and Automation Letters"
+    year: 2025
+    venue_type: "journal"
+    abstract: "This letter considers the problem of coordinating a group of mobile robots for distributedly estimating the parameters of a diffusion model that generates a time-varying spatial field. We assume that each robot can measure the local concentration of a substance continuously released in the environment and base the proposed distributed estimation strategy on an Extended Information Consensus Filter (E-ICF) with a forgetting factor. We then develop a decentralized online motion strategy aimed at minimizing a Gramian-based information metric that improves the E-ICF convergence. Additional constraints, among which collision avoidance, are integrated as Control Barrier Functions (CBFs) in a Quadratic Program (QP). Finally, we present statistical comparisons against three baselines which show the improved performance of the proposed method in a range of simulated scenarios, and we also report the results of experiments carried out with quadcopters to demonstrate the actual implementability of the approach and its effectiveness in generating online, collision-free, and informative motions."
+    tags: ["multi-agent", "distributed-control", "robotics"]
+    links:
+      paper: "https://ieeexplore.ieee.org/document/11150751"
+      video: "https://youtu.be/6zDVlYBqFcE"
+      bibtex: |
+        @article{paganiActive,
+          author={Pagano, Francesca and De Carli, Nicola and Restrepo, Esteban and Marino, Antonio and Giordano, Paolo Robuffo},
+          journal={IEEE Robotics and Automation Letters}, 
+          title={Distributed Multi-Robot Active-Sensing of a Diffusive Source}, 
+          year={2025},
+          volume={10},
+          number={10},
+          pages={10807-10814},
+          keywords={Robots;Robot sensing systems;Estimation;Sensors;Mathematical models;Measurement;Information filters;Observability;Covariance matrices;Convergence;Multi-robot systems;distributed robot systems;active-sensing;gramian},
+          doi={10.1109/LRA.2025.3606376},
+          note ={\textbf{\href{https://youtu.be/6zDVlYBqFcE}{video}}},}
+    featured: true
+  
+  - id: "marino2024average"
+    title: "A Gated Graph Neural Network Approach to Fast-Convergent Dynamic Average Estimation"
+    authors: ["Antonio Marino", "Claudio Pacchierotti", "Paolo Robuffo Giordano"]
+    venue: "ACM Transactions on Intelligent Systems and Technology"
+    year: 2025
+    venue_type: "journal"
+    abstract: "Dynamic average estimation is a critical problem in multi-agent systems, enabling agents to collaboratively estimate time-varying signals using only local information exchange. Traditional model-based approaches often face challenges related to convergence speed and sensitivity to network topology changes. This article introduces a novel learning-based solution leveraging Gated Graph Neural Networks (GGNNs) for fast-convergent dynamic average estimation in a fully distributed manner. Taking advantage of the inherent structure of GGNNs, the proposed method models the estimation process as a distributed autoregressor, ensuring rapid convergence while maintaining stability. We incorporate a regularization term during training to enforce convergence guarantees and introduce an encoding–decoding mechanism to reduce communication overhead without sacrificing accuracy compared to standard GGNNs. Extensive numerical experiments demonstrate that our approach significantly outperforms conventional model-based estimators in terms of both convergence speed and precision, making it a promising alternative for multi-agent applications that require dynamic average estimation." 
+    tags: ["multi-agent", "distributed-control", "graph-neural-networks"]
+    links:
+      paper: "https://dl.acm.org/doi/abs/10.1145/3725857"
+      bibtex: |
+        @article{marino2024average,
+          title={\href{https://dl.acm.org/doi/abs/10.1145/3725857}{A Gated Graph Neural Network Approach to Fast-Convergent Dynamic Average Estimation}},
+          author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
+          journal = {ACM Trans. Intell. Syst. Technol.},
+          month = may,
+          articleno = {68},
+          numpages = {18},
+          year = {2025},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          year={2025},
+          volume = {16},
+          number = {3},
+          issn = {2157-6904},
+        }
+    featured: true
+
+  - id: "bongiovanni2022gestural"
+    title: "Gestural and touchscreen interaction for human-robot collaboration: A comparative study"
+    authors: ["Antonio Marino", "Antonino Bongiovanni", "Alessio De Luca", "Luna Gava", "Lucrezia Grassi", "Marta Lagomarsino", "Marco Lapolla", "Patrick Roncagliolo", "Simone Macciò", "Alessandro Carfì", "Fulvio Mastrogiovanni"]
+    venue: "IAS 2022"
+    year: 2022
+    venue_type: "conference"
+    abstract: "Close human-robot interaction (HRI), especially in industrial scenarios, has been vastly investigated for the advantages of combining human and robot skills. For an effective HRI, the validity of currently available human-machine communication media or tools should be questioned, and new communication modalities should be explored. This article proposes a modular architecture allowing human operators to interact with robots through different modalities. In particular, we implemented the architecture to handle gestural and touchscreen input, respectively, using a smartwatch and a tablet. Finally, we performed a comparative user experience study between these two modalities."
+    tags: ["robotics"]
+    links:
+      paper: "https://link.springer.com/chapter/10.1007/978-3-031-22216-0_9"
+      bibtex: |
+        @inproceedings{bongiovanni2022gestural,
+        title={\href{https://link.springer.com/chapter/10.1007/978-3-031-22216-0_9}{Gestural and touchscreen interaction for human-robot collaboration: A comparative study}},
+        author={ Marino, Antonio and Bongiovanni, Antonino and De Luca, Alessio and Gava, Luna and Grassi, Lucrezia and Lagomarsino, Marta and Lapolla, Marco and Roncagliolo, Patrick and Macci{\`o}, Simone and Carf{\`\i}, Alessandro and others},
+        booktitle={International Conference on Intelligent Autonomous Systems},
+        pages={122--138},
+        year={2022},
+        organization={Springer}
+        }
+    featured: true
+
+  - id: "marino2024liquid"
+    title: "Liquid-Graph Time-Constant Network for Multi-Agent Systems Control"
+    authors: ["Antonio Marino", "Claudio Pacchierotti", "Paolo Robuffo Giordano"]
+    venue: "CDC 2024"
     year: 2024
     venue_type: "conference"
-    abstract: "We propose a novel approach to multi-agent reinforcement learning that leverages graph neural networks to handle heterogeneous agent capabilities. Our method enables effective coordination among diverse agents with different observation and action spaces, leading to improved performance in complex multi-robot scenarios."
-    tags: ["reinforcement-learning", "multi-agent", "graph-neural-networks"]
+    abstract: "In this paper, we propose the Liquid-Graph Time-constant (LGTC) network, a continuous graph neural network (GNN) model for control of multi-agent systems based on the recent Liquid Time Constant (LTC) network. We analyse its stability leveraging contraction analysis and propose a closed-form model that preserves the model contraction rate and does not require solving an ODE at each iteration. Compared to discrete models like Graph Gated Neural Networks (GGNNs), the higher expressivity of the proposed model guarantees remarkable performance while reducing the large amount of communicated variables normally required by GNNs. We evaluate our model on a distributed multi-agent control case study (flocking) taking into account variable communication range and scalability under non-instantaneous communication."
+    tags: ["distributed-control", "multi-agent", "graph-neural-networks"]
     links:
-      paper: "#"
-      code: "#"
-      slides: "#"
+      paper: "https://ieeexplore.ieee.org/document/10886394"
       bibtex: |
-        @inproceedings{marino2024heterogeneous,
-          title={Heterogeneous Multi-Agent Reinforcement Learning with Graph Neural Networks},
-          author={Marino, Antonio and Prorok, Amanda},
-          booktitle={International Conference on Machine Learning},
+        @inproceedings{marino2024liquid,
+        title={\href{https://arxiv.org/abs/2404.13982}{Liquid-Graph Time-Constant Network for Multi-Agent Systems Control}},
+        author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
+        booktitle={2024 IEEE 63rd Conference on Decision and Control (CDC)}, 
+        year={2024},
+        volume={},
+        number={},
+        pages={793-800},
+        organization={IEEE}
+        }
+    featured: true
+
+  - id: "jin2024graph"
+    title: "Graph Neural Network-Based Real-Time 3D Tracking for Micro-Agent Control"
+    authors: ["Yxuin Jin", "Franco Pinan Basualdo", "Antonio Marino", "Yongfeng Mei", "Paolo Robuffo Giordano", "Claudio Pacchierotti", "Sarthak Misra"]
+    venue: "MARSS 2024"
+    year: 2024
+    venue_type: "conference"
+    abstract: "Micro-surgical robotic systems are gaining prominence in minimally invasive surgery within the medical field. However, accurately tracking the position of the moving agents at the micro-scale remains a significant challenge, particularly for multi-agent systems operating in cluttered and unknown environments. Traditional image analysis methods can falter when confronted with issues such as mutual and obstacle occlusion, especially in dynamic and unstructured scenarios. In order to address this issue, this study introduces a graph-based multi-agent 3D tracking algorithm for a micro-agent control system. This algorithm integrates image information with the control inputs used to navigate the micro agents. We combine the power of Convolutional Neural Networks and Graph Neural Networks to effectively extract features from image sources, and combine them with historical data and control inputs. The primary novelty of this algorithm is its ability to make predictions when the target is occluded in the 2D detection results. The proposed system achieved a tracking error of 0.15 mm, outperforming standard model-based tracking techniques."
+    tags: ["robotics", "multi-agent", "graph-neural-networks"]
+    links:
+      paper: "https://ieeexplore.ieee.org/document/10612750"
+      bibtex: |
+        @inproceedings{jin2024graph,
+          title={\href{https://inria.hal.science/hal-04587941/}{Graph Neural Network-Based Real-Time 3D Tracking for Micro-Agent Control}},
+          author={Jin, Yuxin and Basualdo, Franco Pi{\~n}an and Marino, Antonio and Mei, Yongfeng and Robuffo Giordano, Paolo and Pacchierotti, Claudio and Misra, Sarthak},
+          booktitle={International Conference on Manipulation, Automation and Robotics at Small Scales (MARSS)},
           year={2024}
         }
     featured: true
 
-  - id: "marino2023vmas"
-    title: "VMAS: A Vectorized Multi-Agent Simulator for Collective Robotics"
-    authors: ["Antonio Marino", "Matteo Bettini", "Amanda Prorok"]
-    venue: "IROS 2023"
-    year: 2023
+  - id: "marino2019pid"
+    title: "PID tuning with neural networks"
+    authors: ["Antonio Marino", "Filippo Neri"]
+    venue: "ACIIDS 2019"
+    year: 2019
     venue_type: "conference"
-    abstract: "We present VMAS, a high-performance vectorized simulator for multi-agent reinforcement learning research. VMAS enables parallel execution of thousands of environment instances, significantly accelerating training and evaluation of multi-agent algorithms in robotic scenarios."
-    tags: ["multi-agent", "simulation", "reinforcement-learning"]
+    abstract: "In this work we will report our initial investigation of how a neural network architecture could become an efficient tool to model Proportional-Integral-Derivative controller (PID controller). It is well known that neural networks are excellent function approximators, we will then be investigating if a recursive neural networks could be suitable to model and tune PID controllers thus could assist in determining the controller’s proportional, integral, and the derivative gains. A preliminary evaluation is reported." 
+    tags: ["robotics"]
     links:
-      paper: "#"
-      code: "https://github.com/proroklab/VectorizedMultiAgentSimulator"
-      demo: "#"
+      paper: "https://link.springer.com/chapter/10.1007/978-3-030-14799-0_41"
       bibtex: |
-        @inproceedings{marino2023vmas,
-          title={VMAS: A Vectorized Multi-Agent Simulator for Collective Robotics},
-          author={Marino, Antonio and Bettini, Matteo and Prorok, Amanda},
-          booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems},
-          year={2023}
-        }
-    featured: true
-
-  - id: "marino2023benchmarl"
-    title: "BenchMARL: A Benchmarking Suite for Multi-Agent Reinforcement Learning"
-    authors: ["Antonio Marino", "Matteo Bettini", "Vincent Moens"]
-    venue: "NeurIPS 2023 Workshop"
-    year: 2023
-    venue_type: "workshop"
-    abstract: "BenchMARL provides a comprehensive benchmarking framework for multi-agent reinforcement learning algorithms. It standardizes evaluation protocols and provides fair comparisons across different MARL approaches, facilitating reproducible research in the field."
-    tags: ["reinforcement-learning", "multi-agent"]
-    links:
-      paper: "#"
-      code: "https://github.com/pytorch/rl"
-      documentation: "#"
-      bibtex: |
-        @inproceedings{marino2023benchmarl,
-          title={BenchMARL: A Benchmarking Suite for Multi-Agent Reinforcement Learning},
-          author={Marino, Antonio and Bettini, Matteo and Moens, Vincent},
-          booktitle={NeurIPS Workshop on Multi-Agent Learning},
-          year={2023}
-        }
-    featured: false
-
-  - id: "marino2023pathplanning"
-    title: "Multi-Agent Path Planning with Dynamic Obstacle Avoidance"
-    authors: ["Antonio Marino", "Amanda Prorok"]
-    venue: "AAMAS 2023"
-    year: 2023
-    venue_type: "conference"
-    abstract: "We develop a novel approach for multi-agent path planning that dynamically adapts to changing environments and obstacle configurations. Our method combines optimization techniques with real-time replanning capabilities for robust robotic navigation."
-    tags: ["optimization", "multi-agent", "robotics"]
-    links:
-      paper: "#"
-      code: "#"
-      video: "#"
-      bibtex: |
-        @inproceedings{marino2023pathplanning,
-          title={Multi-Agent Path Planning with Dynamic Obstacle Avoidance},
-          author={Marino, Antonio and Prorok, Amanda},
-          booktitle={International Conference on Autonomous Agents and Multiagent Systems},
-          year={2023}
-        }
-    featured: false
-
-  - id: "marino2021transport"
-    title: "Transport Network Design for Multi-Agent Routing"
-    authors: ["Antonio Marino"]
-    venue: "Master's Thesis"
-    year: 2021
-    venue_type: "thesis"
-    abstract: "This thesis investigates optimization algorithms for transport network design in multi-agent routing scenarios. We develop methods to optimize network topology and routing strategies simultaneously, improving overall system efficiency and reducing congestion."
-    tags: ["optimization", "multi-agent"]
-    links:
-      thesis: "#"
-      slides: "#"
-      bibtex: |
-        @mastersthesis{marino2021transport,
-          title={Transport Network Design for Multi-Agent Routing},
-          author={Marino, Antonio},
-          school={University of Cambridge},
-          year={2021}
-        }
-    featured: false
-
-  - id: "marino2024llm"
-    title: "Training LLM Agents for Long-Horizon Tasks using Reinforcement Learning"
-    authors: ["Antonio Marino", "Meta AI Team"]
-    venue: "In Preparation"
-    year: 2024
-    venue_type: "preprint"
-    abstract: "Current work at Meta focusing on training large language model agents for complex, long-horizon tasks using reinforcement learning techniques. Developing novel approaches for agent coordination and task decomposition."
-    tags: ["reinforcement-learning", "large-language-models", "multi-agent"]
-    links:
-      paper: "#"
-      bibtex: |
-        @article{marino2024llm,
-          title={Training LLM Agents for Long-Horizon Tasks using Reinforcement Learning},
-          author={Marino, Antonio},
-          journal={arXiv preprint},
-          year={2024}
+        @inproceedings{marino2019pid,
+          title={\href{https://link.springer.com/chapter/10.1007/978-3-030-14799-0_41}{PID tuning with neural networks}},
+          author={Marino, Antonio and Neri, Filippo},
+          booktitle={Intelligent Information and Database Systems: 11th Asian Conference, ACIIDS 2019, Yogyakarta, Indonesia, April 8--11, 2019, Proceedings, Part I 11},
+          pages={476--487},
+          year={2019},
+          organization={Springer}
         }
     featured: true

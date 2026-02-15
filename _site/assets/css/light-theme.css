@@ -1,44 +1,53 @@
 :root {
-  --background-gradient: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
-  --text-primary: #1e4620;
-  --text-secondary: #4a7c59;
-  --accent-color: #4caf50;
-  --accent-color-hover: #388e3c;
-  --header-background: rgba(255, 255, 255, 0.582);
-  --header-shadow: rgba(0, 0, 0, 0.05);
-  --header-text: #1e4620;
-  --nav-link: #333333;
-  --switcher-hover-text: #ffffff;
-  --sidebar-background: rgb(255, 255, 255);
-  --sidebar-shadow: rgba(0, 0, 0, 0.);
-  --sidebar-border: rgba(0, 0, 0, 0.0);
-  --photo-shadow: rgba(0, 0, 0, 0.1);
+  /* BACKGROUND: Pure White */
+  --background-gradient: #ffffff;
+  --sidebar-background: #ffffff;
+  --content-background: #ffffff;
+  --header-background: rgba(255, 255, 255, 0.95);
+
+  /* TEXT PRIMARY: Deep Cerulean Blue */
+  --text-primary: #00698f; 
+  --header-text: #00698f;
+  
+  /* TEXT SECONDARY: Solid Black */
+  --text-secondary: #000000;
+  --nav-link: #000000;
+
+  /* ACCENT: Bright Cerulean */
+  --accent-color: #008cc9;
+  --accent-color-hover: #00698f;
+
+  /* BORDERS: Invisible (Alpha 0) */
+  --sidebar-border: rgba(0, 0, 0, 0);
+  --content-border: rgba(0, 0, 0, 0);
+  --header-shadow: rgba(0, 0, 0, 0);
+  --content-shadow: rgba(0, 0, 0, 0);
+  --sidebar-shadow: rgba(0, 0, 0, 0);
+
+  /* ICONS */
   --social-icon-text: #ffffff;
-  --social-icon-shadow: rgba(76, 175, 80, 0.3);
-  --content-background: rgba(255, 255, 255, 0.9);
-  --content-shadow: rgba(0, 0, 0, 0.1);
-  --content-border: rgba(0, 0, 0, 0.08);
-  --tag-btn-background: #e8f5e9;
-  --tag-btn-text: #388e3c;
-  --tag-btn-border: #a5d6a7;
+  --social-icon-shadow: rgba(0, 140, 201, 0.3); /* Cerulean shadow */
+  --photo-shadow: rgba(0, 0, 0, 0);
+
+  /* BUTTONS & TAGS */
+  --tag-btn-background: #e0f2f7; /* Very light Cerulean tint */
+  --tag-btn-text: #007ba7;
+  --tag-btn-border: rgba(0, 0, 0, 0); 
   --tag-btn-active-text: #ffffff;
-  --tag-btn-shadow: rgba(76, 175, 80, 0.2);
+  --tag-btn-shadow: rgba(0, 0, 0, 0);
+
+  /* CARDS */
   --pub-card-background: #ffffff;
-  --pub-card-border: #e0e0e0;
-  --pub-card-shadow: rgba(0, 0, 0, 0.05);
-  --pub-card-shadow-hover: rgba(0, 0, 0, 0.1);
-  --pub-card-border-hover: #4caf50;
-  --pub-tag-background: rgba(76, 175, 80, 0.1);
-  --pub-tag-border: rgba(76, 175, 80, 0.3);
-  --pub-link-background: #f1f8e9;
-  --pub-link-border: #c8e6c9;
-  --pub-link-hover-text: #ffffff;
-  --pub-link-shadow: rgba(0, 0, 0, 0.1);
-  --bibtex-btn-background: #a5d6a7;
-  --bibtex-btn-text: #1e4620;
-  --bibtex-btn-hover-background: #81c784;
-  --bibtex-container-background: #f1f8e9;
-  --bibtex-container-border: #c8e6c9;
-  --bibtex-code-background: #e8f5e9;
-  --bibtex-code-border: #a5d6a7;
+  --pub-card-border: rgba(0, 0, 0, 0);
+  --pub-card-shadow: rgba(0, 0, 0, 0);
+  --pub-card-shadow-hover: rgba(0, 140, 201, 0.15); /* Soft blue glow */
+  --pub-card-border-hover: rgba(0, 0, 0, 0); 
+
+  /* BIBTEX */
+  --bibtex-btn-background: #007ba7;
+  --bibtex-btn-text: #ffffff;
+  --bibtex-container-background: #e0f2f7;
+  --bibtex-container-border: rgba(0, 0, 0, 0);
+  --bibtex-code-background: #f0f9fc;
+  --bibtex-code-border: rgba(0, 0, 0, 0);
 }

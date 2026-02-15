@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Antonio Marino - Projects</title>
+  <title>Antonio Marino - Experience</title>
   <link rel="stylesheet" href="/assets/css/base-style.css">
   <link rel="stylesheet" href="/assets/css/light-theme.css" id="theme-style">
 </head>
@@ -13,10 +13,8 @@
     <h1>Antonio Marino</h1>
     <div class="header-nav-links">
       <a href="/home-light.html" >Home</a>
-      <a href="/about-light.html" >About</a>
-      <a href="/projects-light.html" class="active">Projects</a>
-      <a href="/experience-light.html" >Experience</a>
-      <a href="/contact-light.html" >Contact</a>
+      <a href="/projects-light.html" >Projects</a>
+      <a href="/publications-light.html" >Publications</a>
       <button id="theme-switcher"></button>
     </div>
   </nav>
@@ -25,473 +23,109 @@
   <div class="fullwidth-container">
     <div class="fullwidth-content">
       <div class="content-section">
-  <h1>Publications</h1>
-  
-  <!-- Publications Section -->
-  <section class="publications-section">
-    
-    <!-- Tag Filter -->
-    <div class="tag-filter-container">
-      <h3>Filter by Tags:</h3>
-      <div class="tag-buttons">
-        
-        <button class="tag-btn active" data-tag="all">
-          All
-        </button>
-        
-        <button class="tag-btn" data-tag="reinforcement-learning">
-          Reinforcement Learning
-        </button>
-        
-        <button class="tag-btn" data-tag="multi-agent">
-          Multi-Agent Systems
-        </button>
-        
-        <button class="tag-btn" data-tag="graph-neural-networks">
-          Graph Neural Networks
-        </button>
-        
-        <button class="tag-btn" data-tag="robotics">
-          Robotics
-        </button>
-        
-        <button class="tag-btn" data-tag="simulation">
-          Simulation
-        </button>
-        
-        <button class="tag-btn" data-tag="optimization">
-          Optimization
-        </button>
-        
-        <button class="tag-btn" data-tag="large-language-models">
-          Large Language Models
-        </button>
-        
-      </div>
-    </div>
-    
-    <!-- Publications List -->
-    <div class="publications-list">
-      
-      
-      <div class="publication-card" data-tags="reinforcement-learning,large-language-models,multi-agent">
-        <div class="publication-header" onclick="togglePublication('marino2024llm')">
-          <h3>Training LLM Agents for Long-Horizon Tasks using Reinforcement Learning</h3>
-          <div class="publication-meta">
-            <span class="venue venue-preprint">
-              
-              📝 In Preparation
-            </span>
-            <span class="year">2024</span>
-            <span class="expand-icon">+</span>
-          </div>
-        </div>
-        <div class="publication-tags">
-          
-          <span class="pub-tag">
-            
-            Reinforcement Learning
-          </span>
-          
-          <span class="pub-tag">
-            
-            Large Language Models
-          </span>
-          
-          <span class="pub-tag">
-            
-            Multi-Agent Systems
-          </span>
-          
-        </div>
-        <div class="publication-content" id="marino2024llm" style="display: none;">
-          <p><strong>Authors:</strong> Antonio Marino, Meta AI Team</p>
-          <p><strong>Abstract:</strong> Current work at Meta focusing on training large language model agents for complex, long-horizon tasks using reinforcement learning techniques. Developing novel approaches for agent coordination and task decomposition.</p>
-          
-          
-          <div class="publication-links">
-            
-              
-              <a href="#" class="pub-link">Paper</a>
-              
-            
-              
-            
-            
-            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2024llm')">BibTeX</button>
-            
-          </div>
-          
-          
-          
-          <div class="bibtex-container" id="bibtex-marino2024llm" style="display: none;">
-            <h4>BibTeX Citation:</h4>
-            <pre class="bibtex-code"><code>@article{marino2024llm,
-  title={Training LLM Agents for Long-Horizon Tasks using Reinforcement Learning},
-  author={Marino, Antonio},
-  journal={arXiv preprint},
-  year={2024}
-}
-</code></pre>
-            <button class="copy-bibtex" onclick="copyBibtex('marino2024llm')">Copy to Clipboard</button>
-          </div>
-          
-        </div>
-      </div>
-      
-      <div class="publication-card" data-tags="reinforcement-learning,multi-agent,graph-neural-networks">
-        <div class="publication-header" onclick="togglePublication('marino2024heterogeneous')">
-          <h3>Heterogeneous Multi-Agent Reinforcement Learning with Graph Neural Networks</h3>
-          <div class="publication-meta">
-            <span class="venue venue-conference">
-              
-              🏆 ICML 2024
-            </span>
-            <span class="year">2024</span>
-            <span class="expand-icon">+</span>
-          </div>
-        </div>
-        <div class="publication-tags">
-          
-          <span class="pub-tag">
-            
-            Reinforcement Learning
-          </span>
-          
-          <span class="pub-tag">
-            
-            Multi-Agent Systems
-          </span>
-          
-          <span class="pub-tag">
-            
-            Graph Neural Networks
-          </span>
-          
-        </div>
-        <div class="publication-content" id="marino2024heterogeneous" style="display: none;">
-          <p><strong>Authors:</strong> Antonio Marino, Amanda Prorok, et al.</p>
-          <p><strong>Abstract:</strong> We propose a novel approach to multi-agent reinforcement learning that leverages graph neural networks to handle heterogeneous agent capabilities. Our method enables effective coordination among diverse agents with different observation and action spaces, leading to improved performance in complex multi-robot scenarios.</p>
-          
-          
-          <div class="publication-links">
-            
-              
-              <a href="#" class="pub-link">Paper</a>
-              
-            
-              
-              <a href="#" class="pub-link">Code</a>
-              
-            
-              
-              <a href="#" class="pub-link">Slides</a>
-              
-            
-              
-            
-            
-            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2024heterogeneous')">BibTeX</button>
-            
-          </div>
-          
-          
-          
-          <div class="bibtex-container" id="bibtex-marino2024heterogeneous" style="display: none;">
-            <h4>BibTeX Citation:</h4>
-            <pre class="bibtex-code"><code>@inproceedings{marino2024heterogeneous,
-  title={Heterogeneous Multi-Agent Reinforcement Learning with Graph Neural Networks},
-  author={Marino, Antonio and Prorok, Amanda},
-  booktitle={International Conference on Machine Learning},
-  year={2024}
-}
-</code></pre>
-            <button class="copy-bibtex" onclick="copyBibtex('marino2024heterogeneous')">Copy to Clipboard</button>
-          </div>
-          
-        </div>
-      </div>
-      
-      <div class="publication-card" data-tags="optimization,multi-agent,robotics">
-        <div class="publication-header" onclick="togglePublication('marino2023pathplanning')">
-          <h3>Multi-Agent Path Planning with Dynamic Obstacle Avoidance</h3>
-          <div class="publication-meta">
-            <span class="venue venue-conference">
-              
-              🏆 AAMAS 2023
-            </span>
-            <span class="year">2023</span>
-            <span class="expand-icon">+</span>
-          </div>
-        </div>
-        <div class="publication-tags">
-          
-          <span class="pub-tag">
-            
-            Optimization
-          </span>
-          
-          <span class="pub-tag">
-            
-            Multi-Agent Systems
-          </span>
-          
-          <span class="pub-tag">
-            
-            Robotics
-          </span>
-          
-        </div>
-        <div class="publication-content" id="marino2023pathplanning" style="display: none;">
-          <p><strong>Authors:</strong> Antonio Marino, Amanda Prorok</p>
-          <p><strong>Abstract:</strong> We develop a novel approach for multi-agent path planning that dynamically adapts to changing environments and obstacle configurations. Our method combines optimization techniques with real-time replanning capabilities for robust robotic navigation.</p>
-          
-          
-          <div class="publication-links">
-            
-              
-              <a href="#" class="pub-link">Paper</a>
-              
-            
-              
-              <a href="#" class="pub-link">Code</a>
-              
-            
-              
-              <a href="#" class="pub-link">Video</a>
-              
-            
-              
-            
-            
-            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2023pathplanning')">BibTeX</button>
-            
-          </div>
-          
-          
-          
-          <div class="bibtex-container" id="bibtex-marino2023pathplanning" style="display: none;">
-            <h4>BibTeX Citation:</h4>
-            <pre class="bibtex-code"><code>@inproceedings{marino2023pathplanning,
-  title={Multi-Agent Path Planning with Dynamic Obstacle Avoidance},
-  author={Marino, Antonio and Prorok, Amanda},
-  booktitle={International Conference on Autonomous Agents and Multiagent Systems},
-  year={2023}
-}
-</code></pre>
-            <button class="copy-bibtex" onclick="copyBibtex('marino2023pathplanning')">Copy to Clipboard</button>
-          </div>
-          
-        </div>
-      </div>
-      
-      <div class="publication-card" data-tags="reinforcement-learning,multi-agent">
-        <div class="publication-header" onclick="togglePublication('marino2023benchmarl')">
-          <h3>BenchMARL: A Benchmarking Suite for Multi-Agent Reinforcement Learning</h3>
-          <div class="publication-meta">
-            <span class="venue venue-workshop">
-              
-              👥 NeurIPS 2023 Workshop
-            </span>
-            <span class="year">2023</span>
-            <span class="expand-icon">+</span>
-          </div>
-        </div>
-        <div class="publication-tags">
-          
-          <span class="pub-tag">
-            
-            Reinforcement Learning
-          </span>
-          
-          <span class="pub-tag">
-            
-            Multi-Agent Systems
-          </span>
-          
-        </div>
-        <div class="publication-content" id="marino2023benchmarl" style="display: none;">
-          <p><strong>Authors:</strong> Antonio Marino, Matteo Bettini, Vincent Moens</p>
-          <p><strong>Abstract:</strong> BenchMARL provides a comprehensive benchmarking framework for multi-agent reinforcement learning algorithms. It standardizes evaluation protocols and provides fair comparisons across different MARL approaches, facilitating reproducible research in the field.</p>
-          
-          
-          <div class="publication-links">
-            
-              
-              <a href="#" class="pub-link">Paper</a>
-              
-            
-              
-              <a href="https://github.com/pytorch/rl" class="pub-link">Code</a>
-              
-            
-              
-              <a href="#" class="pub-link">Documentation</a>
-              
-            
-              
-            
-            
-            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2023benchmarl')">BibTeX</button>
-            
-          </div>
-          
-          
-          
-          <div class="bibtex-container" id="bibtex-marino2023benchmarl" style="display: none;">
-            <h4>BibTeX Citation:</h4>
-            <pre class="bibtex-code"><code>@inproceedings{marino2023benchmarl,
-  title={BenchMARL: A Benchmarking Suite for Multi-Agent Reinforcement Learning},
-  author={Marino, Antonio and Bettini, Matteo and Moens, Vincent},
-  booktitle={NeurIPS Workshop on Multi-Agent Learning},
-  year={2023}
-}
-</code></pre>
-            <button class="copy-bibtex" onclick="copyBibtex('marino2023benchmarl')">Copy to Clipboard</button>
-          </div>
-          
-        </div>
-      </div>
-      
-      <div class="publication-card" data-tags="multi-agent,simulation,reinforcement-learning">
-        <div class="publication-header" onclick="togglePublication('marino2023vmas')">
-          <h3>VMAS: A Vectorized Multi-Agent Simulator for Collective Robotics</h3>
-          <div class="publication-meta">
-            <span class="venue venue-conference">
-              
-              🏆 IROS 2023
-            </span>
-            <span class="year">2023</span>
-            <span class="expand-icon">+</span>
-          </div>
-        </div>
-        <div class="publication-tags">
-          
-          <span class="pub-tag">
-            
-            Multi-Agent Systems
-          </span>
-          
-          <span class="pub-tag">
-            
-            Simulation
-          </span>
-          
-          <span class="pub-tag">
-            
-            Reinforcement Learning
-          </span>
-          
-        </div>
-        <div class="publication-content" id="marino2023vmas" style="display: none;">
-          <p><strong>Authors:</strong> Antonio Marino, Matteo Bettini, Amanda Prorok</p>
-          <p><strong>Abstract:</strong> We present VMAS, a high-performance vectorized simulator for multi-agent reinforcement learning research. VMAS enables parallel execution of thousands of environment instances, significantly accelerating training and evaluation of multi-agent algorithms in robotic scenarios.</p>
-          
-          
-          <div class="publication-links">
-            
-              
-              <a href="#" class="pub-link">Paper</a>
-              
-            
-              
-              <a href="https://github.com/proroklab/VectorizedMultiAgentSimulator" class="pub-link">Code</a>
-              
-            
-              
-              <a href="#" class="pub-link">Demo</a>
-              
-            
-              
-            
-            
-            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2023vmas')">BibTeX</button>
-            
-          </div>
-          
-          
-          
-          <div class="bibtex-container" id="bibtex-marino2023vmas" style="display: none;">
-            <h4>BibTeX Citation:</h4>
-            <pre class="bibtex-code"><code>@inproceedings{marino2023vmas,
-  title={VMAS: A Vectorized Multi-Agent Simulator for Collective Robotics},
-  author={Marino, Antonio and Bettini, Matteo and Prorok, Amanda},
-  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems},
-  year={2023}
-}
-</code></pre>
-            <button class="copy-bibtex" onclick="copyBibtex('marino2023vmas')">Copy to Clipboard</button>
-          </div>
-          
-        </div>
-      </div>
-      
-      <div class="publication-card" data-tags="optimization,multi-agent">
-        <div class="publication-header" onclick="togglePublication('marino2021transport')">
-          <h3>Transport Network Design for Multi-Agent Routing</h3>
-          <div class="publication-meta">
-            <span class="venue venue-thesis">
-              
-              🎓 Master's Thesis
-            </span>
-            <span class="year">2021</span>
-            <span class="expand-icon">+</span>
-          </div>
-        </div>
-        <div class="publication-tags">
-          
-          <span class="pub-tag">
-            
-            Optimization
-          </span>
-          
-          <span class="pub-tag">
-            
-            Multi-Agent Systems
-          </span>
-          
-        </div>
-        <div class="publication-content" id="marino2021transport" style="display: none;">
-          <p><strong>Authors:</strong> Antonio Marino</p>
-          <p><strong>Abstract:</strong> This thesis investigates optimization algorithms for transport network design in multi-agent routing scenarios. We develop methods to optimize network topology and routing strategies simultaneously, improving overall system efficiency and reducing congestion.</p>
-          
-          
-          <div class="publication-links">
-            
-              
-              <a href="#" class="pub-link">Thesis</a>
-              
-            
-              
-              <a href="#" class="pub-link">Slides</a>
-              
-            
-              
-            
-            
-            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2021transport')">BibTeX</button>
-            
-          </div>
-          
-          
-          
-          <div class="bibtex-container" id="bibtex-marino2021transport" style="display: none;">
-            <h4>BibTeX Citation:</h4>
-            <pre class="bibtex-code"><code>@mastersthesis{marino2021transport,
-  title={Transport Network Design for Multi-Agent Routing},
-  author={Marino, Antonio},
-  school={University of Cambridge},
-  year={2021}
-}
-</code></pre>
-            <button class="copy-bibtex" onclick="copyBibtex('marino2021transport')">Copy to Clipboard</button>
-          </div>
-          
-        </div>
-      </div>
-      
-    </div>
-  </section>
+<h1 style="text-align: center; margin-bottom: 3rem;">Key Research Contributions</h1>
+
+<div class="project-card">
+
+<h2>Dynamics of Learning in Multi-Agent Systems</h2>
+<div class="project-media-left">
+  <img src="/assets/img/GNN.gif" alt="Multi-UAV System" />
+</div>
+<p>
+  <strong>The Challenge:</strong> Standard neural models function as "black boxes" lacking the theoretical guarantees—such as safety and convergence—necessary for safe deployment on physical robotic systems. This complexity is exponentially higher in multi-agent systems, where global stability depends on time-varying, distributed interaction graphs.
+</p>
+
+<p>
+  <strong>The Solution:</strong> This work bridges the gap between rigorous control theory and deep learning by reinterpreting Graph Neural Networks (GNNs) not as static function approximators, but as distributed dynamical systems. By analyzing the recurrent structure of Gated GNNs through nonlinear control theory, the framework derives precise conditions for stability. These theoretical insights transform the training process: rather than blindly optimizing for accuracy, stability criteria are enforced as explicit constraints during learning. This results in a unified methodology for designing distributed controllers and estimators that are mathematically guaranteed to be stable, robust to topological changes, and efficient for bandwidth-constrained networks.
+</p>
+
+<ul>
+  <li><strong>Input-to-State Stability (ISS):</strong> A control theory condition applied to the recurrent structure of Gated GNNs. It ensures the system remains bounded and stable despite real-world disturbances and is used to enforce internal stability by design.</li>
+  <li><strong>Liquid-Graph Time-Constant (LGTC) Networks:</strong> A continuous-time Neural ODE formulation designed to handle irregular sampling and communication loads. Leveraging contraction analysis, it enhances expressivity and ensures structural stability without the high computational cost of solving ODEs at every step.</li>
+  <li><strong>Dynamic Average Estimation:</strong> A learning-based, distributed autoregressor that replaces slow-converging traditional models. It incorporates regularized stability constraints and a novel encoding-decoding mechanism to strictly bound communication overhead while achieving rapid convergence.</li>
+</ul>
+
+<div class="project-tags">
+  <span class="tag">Control Theory</span>
+  <span class="tag">GNNs</span>
+  <span class="tag">Neural ODEs</span>
+  <span class="tag">Stability Analysis</span>
+</div>
+
+</div>
+
+<hr class="project-divider" />
+
+<div class="project-card">
+
+<h2>End-to-End Distributed Control &amp; Estimation</h2>
+<div class="project-media-left">
+  <img src="/assets/img/drone50.gif" alt="Multi-UAV System" />
+</div>
+
+<p>
+  <strong>The Challenge:</strong> Traditional robotic architectures rely on rigid decomposition (perception, estimation, planning) that introduces latency and compounding errors. Conversely, standard end-to-end learning approaches often act as monolithic "black boxes," discarding the critical structural and topological information inherent in multi-agent interactions and sensor arrays.
+</p>
+
+<p>
+  <strong>The Solution:</strong> A structured learning paradigm that explicitly leverages Graph Neural Networks (GNNs) to retain physical and topological dependencies. By embedding this structure into end-to-end models, the approach compensates for sensing deficiencies—such as visual obstructions or sensor failures—and is validated across two radically different scales: autonomous aerial swarms and medical micro-robotics.
+</p>
+
+<ul>
+  <li><strong>Decentralized Multi-UAV Control:</strong> A dual-branch neural architecture for macroscopic swarms that processes raw point clouds and exchanges learned features. It learns "neural collision constraints" to guarantee safety in cluttered environments without global maps.</li>
+  <li><strong>Hybrid Micro-Robot Tracking:</strong> A temporal graph system for the microscopic scale that fuses visual data (via CNNs) with historical control inputs (via GNNs). This maintains sub-millimeter accuracy for magnetically driven robots even during complete visual occlusion.</li>
+  <li><strong>Graph-Enhanced Electrical Impedance Localization (GEIL):</strong> A method that reinterprets sensor electrodes as graph nodes to predict object locations directly from voltage measurements, successfully bypassing the computationally intensive inverse problem of traditional tomography to reduce latency.</li>
+</ul>
+
+<p>
+  This work demonstrates how combining domain knowledge with modern deep learning can create systems that are both performant and interpretable, bridging the gap between academic research and practical deployment.
+</p>
+
+<div class="project-tags">
+  <span class="tag">Aerial Robotics</span>
+  <span class="tag">Micro-Robotics</span>
+  <span class="tag">Distributed Perception</span>
+  <span class="tag">Collision Avoidance</span>
+</div>
+
+</div>
+
+<hr class="project-divider" />
+
+<div class="project-card">
+
+<h2>Dynamic Cluster Agreement in Multi-Robot Reinforcement Learning</h2>
+
+<p>
+  <strong>The Challenge:</strong> Multi-robot systems struggle to achieve robust coordination when facing tasks that require dynamic decision-making and fluid role allocation under uncertainty. These failures are most pronounced during spatial reorganization, role adaptation due to resource depletion (e.g., battery levels), and the semantic alignment required to balance conflicting priority weights.
+</p>
+
+<p>
+  <strong>The Solution:</strong> A novel Multi-Agent Reinforcement Learning (MARL) framework anchored in distributed dynamic clustering. By utilizing a neural dynamic cluster agreement mechanism over LGTC networks, this architecture treats clustering as a continuous flow rather than a discrete switch. This allows agents to organically form spatial and role-based groups, synchronizing preference weights to maintain Pareto-alignment despite environmental volatility.
+</p>
+
+<ul>
+  <li><strong>Dynamic Heterogeneous Resource Assignment:</strong> Leverages structural similarities in return functions to dynamically cluster control policies based on the spatial distribution of resources, optimizing task resolution.</li>
+  <li><strong>Team-Based Multi-Objective Optimization:</strong> Addresses scenarios where agents must form strategic coalitions—represented by clustered scalarization functions—to align heterogeneous priorities and effectively cover all shared objectives.</li>
+  <li><strong>Topology-Agnostic Consensus:</strong> A robust mechanism validated on physical quadrotor swarms that ensures stable clustering regardless of the communication graph's complexity or sparsity, bridging the simulation-to-reality gap.</li>
+</ul>
+
+<div class="project-media-left">
+  <img src="/assets/img/ParetoFR.png" alt="Multi-UAV System" />
+</div>
+<div class="project-media-right">
+  <img src="/assets/img/example-ad.png" alt="Multi-UAV System" />
+</div>
+
+<div class="project-tags">
+  <span class="tag">Reinforcement Learning</span>
+  <span class="tag">Multi-Objective Optimization</span>
+  <span class="tag">Swarm Intelligence</span>
+  <span class="tag">Dynamic Clustering</span>
+</div>
+
+</div>
+
 </div>
 
     </div>

@@ -101,28 +101,31 @@ body {
   gap: 2rem;
   max-width: 1400px;
   margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* Profile Sidebar */
 .profile-sidebar {
-  flex: 0 0 300px;
+  flex: 0 0 500px;
   background: var(--sidebar-background);
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 2rem;
+  padding-top: 100px;
+  padding-left: 150px;
+  padding-right: 20px;
   box-shadow: 0 8px 25px var(--sidebar-shadow);
   border: 1px solid var(--sidebar-border);
   height: fit-content;
   margin-top: 2rem;
   position: sticky;
-  top: 100px;
+  top: 150px;
 }
 
 .profile-photo {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   display: block;
   margin: 0 auto 1.5rem;
@@ -132,7 +135,7 @@ body {
 
 .profile-name {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.5rem;
@@ -140,7 +143,7 @@ body {
 
 .profile-title {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 2.1rem;
   color: var(--accent-color);
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -149,6 +152,7 @@ body {
 .profile-company,
 .profile-university {
   text-align: center;
+  font-size: 1.5rem;
   color: var(--text-secondary);
   margin-bottom: 0.5rem;
 }
@@ -186,7 +190,9 @@ body {
 
 /* Main Content */
 .main-content {
-  padding: 60px;
+  padding: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
   background: var(--content-background);
   backdrop-filter: blur(10px);
   overflow-y: auto;
@@ -213,7 +219,7 @@ body {
 }
 
 .intro {
-  font-size: 20px;
+  font-size: 40px;
   margin-bottom: 30px;
   color: var(--accent-color);
   font-weight: 500;
@@ -242,12 +248,11 @@ body {
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 2rem;
-  border-bottom: 3px solid var(--accent-color);
   padding-bottom: 1rem;
 }
 
 .content-section h2 {
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   font-weight: 600;
   color: var(--accent-color);
   margin: 2.5rem 0 1.5rem 0;
@@ -275,7 +280,14 @@ body {
 
 .content-section p,
 .content-section li {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.content-section p.intro {
+  font-size: 2.1rem;
   line-height: 1.7;
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
@@ -297,6 +309,86 @@ body {
   text-decoration: underline;
 }
 
+/* Project Card Styles */
+.project-card {
+  margin-bottom: 4rem;
+  padding: 0 0;
+}
+
+.project-card h2 {
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+/* Media Float Styles */
+.project-media-left {
+  float: left;
+  margin: 0 2rem 1rem 0;
+  max-width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-media-right {
+  float: right;
+  margin: 0 0 1rem 2rem;
+  max-width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-media-left img,
+.project-media-right img,
+.project-media-left video,
+.project-media-right video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Clear floats after media */
+.project-card::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Project Tags */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  clear: both;
+}
+
+.project-tags .tag {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Project Divider */
+.project-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+  margin: 3rem 0;
+}
+
 /* Fullwidth Container */
 .fullwidth-container {
   display: flex;
@@ -307,12 +399,12 @@ body {
 }
 
 .fullwidth-content {
-  max-width: 1000px;
+  max-width: 1400px;
   width: 100%;
   background: var(--content-background);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  padding: 60px;
+  padding: 40px;
   box-shadow: 0 15px 40px var(--content-shadow);
   border: 1px solid var(--content-border);
 }
@@ -614,4 +706,12 @@ body {
   .pub-link { font-size: 0.8rem; padding: 0.4rem 0.8rem; }
   .main-content, .fullwidth-content { padding: 30px 20px; }
   .content-section h1, .fullwidth-content .content-section h1 { font-size: 2rem; }
+  
+  /* Project Media - Stack on Mobile */
+  .project-media-left,
+  .project-media-right {
+    float: none;
+    max-width: 100%;
+    margin: 0 0 1.5rem 0;
+  }
 }

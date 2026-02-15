@@ -25,6 +25,8 @@
       </nav>
     </header>
 
+    {% assign parts = content | split: "<!-- split -->" %}
+
     <div class="main-container">
       <aside class="profile-sidebar">
         {% if site.logo %}
@@ -43,11 +45,20 @@
       </aside>
 
       <main class="main-content raised-content">
-        {{ content }}
+        {{ parts[0] }}
       </main>
     </div>
 
+    {% if parts[1] %}
+    <div class="fullwidth-container">
+      <div class="fullwidth-content">
+        {{ parts[1] }}
+      </div>
+    </div>
+    {% endif %}
+
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/theme-switcher.js" | relative_url }}"></script>
+    <script src="{{ '/assets/js/publications.js' | relative_url }}"></script>
   </body>
 </html>

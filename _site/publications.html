@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antonio Marino - Publications</title>
+  <link rel="stylesheet" href="/assets/css/base-style.css">
+  <link rel="stylesheet" href="/assets/css/dark-theme.css" id="theme-style">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <nav class="header-nav">
+    <h1>Antonio Marino</h1>
+    <div class="header-nav-links">
+      <a href="/home.html" >Home</a>
+      <a href="/projects.html" >Projects</a>
+      <a href="/publications.html" >Publications</a>
+      <button id="theme-switcher"></button>
+    </div>
+  </nav>
+
+  <!-- Full Width Main Container -->
+  <div class="fullwidth-container">
+    <div class="fullwidth-content">
+      <div class="content-section">
+  <h1>Publications</h1>
+  
+  <!-- Publications Section -->
+  <section class="publications-section">
+    
+    <!-- Tag Filter -->
+    <div class="tag-filter-container">
+      <h3>Filter by Tags:</h3>
+      <div class="tag-buttons">
+        
+        <button class="tag-btn active" data-tag="all">
+          All
+        </button>
+        
+        <button class="tag-btn" data-tag="reinforcement-learning">
+          Reinforcement Learning
+        </button>
+        
+        <button class="tag-btn" data-tag="multi-agent">
+          Multi-Agent Systems
+        </button>
+        
+        <button class="tag-btn" data-tag="graph-neural-networks">
+          Graph Neural Networks
+        </button>
+        
+        <button class="tag-btn" data-tag="robotics">
+          Robotics
+        </button>
+        
+        <button class="tag-btn" data-tag="drones">
+          Drones
+        </button>
+        
+        <button class="tag-btn" data-tag="optimization">
+          Optimization
+        </button>
+        
+        <button class="tag-btn" data-tag="distributed-control">
+          Distributed Control
+        </button>
+        
+        <button class="tag-btn" data-tag="motion-planning">
+          Motion Planning
+        </button>
+        
+      </div>
+    </div>
+    
+    <!-- Publications List -->
+    <div class="publications-list">
+      
+      
+      <div class="publication-card" data-tags="multi-agent,distributed-control,robotics">
+        <div class="publication-header" onclick="togglePublication('paganiActive')">
+          <h3>Distributed Multi-Robot Active-Sensing of a Diffusive Source</h3>
+          <div class="publication-meta">
+            <span class="venue venue-journal">
+              
+              📄 IEEE Robotics and Automation Letters
+            </span>
+            <span class="year">2025</span>
+            <span class="expand-icon">+</span>
+          </div>
+        </div>
+        <div class="publication-tags">
+          
+          <span class="pub-tag">
+            
+            Multi-Agent Systems
+          </span>
+          
+          <span class="pub-tag">
+            
+            Distributed Control
+          </span>
+          
+          <span class="pub-tag">
+            
+            Robotics
+          </span>
+          
+        </div>
+        <div class="publication-content" id="paganiActive" style="display: none;">
+          <p><strong>Authors:</strong> Francesca Pagano, Nicola De Carli, Esteban Restrepo, Antonio Marino, Claudio Pacchierotti, Paolo Robuffo Giordano</p>
+          <p><strong>Abstract:</strong> This letter considers the problem of coordinating a group of mobile robots for distributedly estimating the parameters of a diffusion model that generates a time-varying spatial field. We assume that each robot can measure the local concentration of a substance continuously released in the environment and base the proposed distributed estimation strategy on an Extended Information Consensus Filter (E-ICF) with a forgetting factor. We then develop a decentralized online motion strategy aimed at minimizing a Gramian-based information metric that improves the E-ICF convergence. Additional constraints, among which collision avoidance, are integrated as Control Barrier Functions (CBFs) in a Quadratic Program (QP). Finally, we present statistical comparisons against three baselines which show the improved performance of the proposed method in a range of simulated scenarios, and we also report the results of experiments carried out with quadcopters to demonstrate the actual implementability of the approach and its effectiveness in generating online, collision-free, and informative motions.</p>
+          
+          
+          <div class="publication-links">
+            
+              
+              <a href="https://ieeexplore.ieee.org/document/11150751" class="pub-link">Paper</a>
+              
+            
+              
+              <a href="https://youtu.be/6zDVlYBqFcE" class="pub-link">Video</a>
+              
+            
+              
+            
+            
+            <button class="pub-link bibtex-btn" onclick="showBibtex('paganiActive')">BibTeX</button>
+            
+          </div>
+          
+          
+          
+          <div class="bibtex-container" id="bibtex-paganiActive" style="display: none;">
+            <h4>BibTeX Citation:</h4>
+            <pre class="bibtex-code"><code>@article{paganiActive,
+  author={Pagano, Francesca and De Carli, Nicola and Restrepo, Esteban and Marino, Antonio and Giordano, Paolo Robuffo},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Distributed Multi-Robot Active-Sensing of a Diffusive Source}, 
+  year={2025},
+  volume={10},
+  number={10},
+  pages={10807-10814},
+  keywords={Robots;Robot sensing systems;Estimation;Sensors;Mathematical models;Measurement;Information filters;Observability;Covariance matrices;Convergence;Multi-robot systems;distributed robot systems;active-sensing;gramian},
+  doi={10.1109/LRA.2025.3606376},
+  note ={\textbf{\href{https://youtu.be/6zDVlYBqFcE}{video}}},}
+</code></pre>
+            <button class="copy-bibtex" onclick="copyBibtex('paganiActive')">Copy to Clipboard</button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-tags="multi-agent,distributed-control,graph-neural-networks">
+        <div class="publication-header" onclick="togglePublication('marino2024average')">
+          <h3>A Gated Graph Neural Network Approach to Fast-Convergent Dynamic Average Estimation</h3>
+          <div class="publication-meta">
+            <span class="venue venue-journal">
+              
+              📄 ACM Transactions on Intelligent Systems and Technology
+            </span>
+            <span class="year">2025</span>
+            <span class="expand-icon">+</span>
+          </div>
+        </div>
+        <div class="publication-tags">
+          
+          <span class="pub-tag">
+            
+            Multi-Agent Systems
+          </span>
+          
+          <span class="pub-tag">
+            
+            Distributed Control
+          </span>
+          
+          <span class="pub-tag">
+            
+            Graph Neural Networks
+          </span>
+          
+        </div>
+        <div class="publication-content" id="marino2024average" style="display: none;">
+          <p><strong>Authors:</strong> Antonio Marino, Claudio Pacchierotti, Paolo Robuffo Giordano</p>
+          <p><strong>Abstract:</strong> Dynamic average estimation is a critical problem in multi-agent systems, enabling agents to collaboratively estimate time-varying signals using only local information exchange. Traditional model-based approaches often face challenges related to convergence speed and sensitivity to network topology changes. This article introduces a novel learning-based solution leveraging Gated Graph Neural Networks (GGNNs) for fast-convergent dynamic average estimation in a fully distributed manner. Taking advantage of the inherent structure of GGNNs, the proposed method models the estimation process as a distributed autoregressor, ensuring rapid convergence while maintaining stability. We incorporate a regularization term during training to enforce convergence guarantees and introduce an encoding–decoding mechanism to reduce communication overhead without sacrificing accuracy compared to standard GGNNs. Extensive numerical experiments demonstrate that our approach significantly outperforms conventional model-based estimators in terms of both convergence speed and precision, making it a promising alternative for multi-agent applications that require dynamic average estimation.</p>
+          
+          
+          <div class="publication-links">
+            
+              
+              <a href="https://dl.acm.org/doi/abs/10.1145/3725857" class="pub-link">Paper</a>
+              
+            
+              
+            
+            
+            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2024average')">BibTeX</button>
+            
+          </div>
+          
+          
+          
+          <div class="bibtex-container" id="bibtex-marino2024average" style="display: none;">
+            <h4>BibTeX Citation:</h4>
+            <pre class="bibtex-code"><code>@article{marino2024average,
+  title={\href{https://dl.acm.org/doi/abs/10.1145/3725857}{A Gated Graph Neural Network Approach to Fast-Convergent Dynamic Average Estimation}},
+  author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
+  journal = {ACM Trans. Intell. Syst. Technol.},
+  month = may,
+  articleno = {68},
+  numpages = {18},
+  year = {2025},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  year={2025},
+  volume = {16},
+  number = {3},
+  issn = {2157-6904},
+}
+</code></pre>
+            <button class="copy-bibtex" onclick="copyBibtex('marino2024average')">Copy to Clipboard</button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-tags="multi-agent,reinforcement-learning,distributed-control,graph-neural-networks">
+        <div class="publication-header" onclick="togglePublication('marinocluster')">
+          <h3>Decentralized Reinforcement Learning for Multi-Agent Multi-Resource Allocation via Dynamic Cluster Agreements</h3>
+          <div class="publication-meta">
+            <span class="venue venue-journal">
+              
+              📄 IEEE Robotics and Automation Letters
+            </span>
+            <span class="year">2025</span>
+            <span class="expand-icon">+</span>
+          </div>
+        </div>
+        <div class="publication-tags">
+          
+          <span class="pub-tag">
+            
+            Multi-Agent Systems
+          </span>
+          
+          <span class="pub-tag">
+            
+            Reinforcement Learning
+          </span>
+          
+          <span class="pub-tag">
+            
+            Distributed Control
+          </span>
+          
+          <span class="pub-tag">
+            
+            Graph Neural Networks
+          </span>
+          
+        </div>
+        <div class="publication-content" id="marinocluster" style="display: none;">
+          <p><strong>Authors:</strong> Antonio Marino, Esteban Restrepo, Claudio Pacchierotti, Paolo Robuffo Giordano</p>
+          <p><strong>Abstract:</strong> This letter addresses the challenge of allocating heterogeneous resources among multiple agents in a decentralized manner. Our proposed method, Liquid-Graph-Time Clustering-IPPO, builds upon Independent Proximal Policy Optimization (IPPO) by integrating dynamic cluster consensus, a mechanism that allows agents to form and adapt local sub-teams based on resource demands. This decentralized coordination strategy reduces reliance on global information and enhances scalability. We evaluate LGTC-IPPO against standard multi-agent reinforcement learning baselines and a centralized expert solution across a range of team sizes and resource distributions. Experimental results demonstrate that LGTC-IPPO achieves more stable rewards, better coordination, and robust performance even as the number of agents or resource types increases. Additionally, we illustrate how dynamic clustering enables agents to reallocate resources efficiently also for scenarios with discharging resources.</p>
+          
+          
+          <div class="publication-links">
+            
+              
+              <a href="https://ieeexplore.ieee.org/abstract/document/11044426" class="pub-link">Paper</a>
+              
+            
+              
+              <a href="https://www.youtube.com/watch?v=lc-TGA1kMiE" class="pub-link">Video</a>
+              
+            
+              
+            
+            
+            <button class="pub-link bibtex-btn" onclick="showBibtex('marinocluster')">BibTeX</button>
+            
+          </div>
+          
+          
+          
+          <div class="bibtex-container" id="bibtex-marinocluster" style="display: none;">
+            <h4>BibTeX Citation:</h4>
+            <pre class="bibtex-code"><code>@article{marinocluster,
+  author={Marino, Antonio and Restrepo, Esteban and Pacchierotti, Claudio and Giordano, Paolo Robuffo},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={\href{https://hal.science/hal-04972227}{Decentralized Reinforcement Learning for Multi-Agent Multi-Resource Allocation via Dynamic Cluster Agreements}}, 
+  year={2025},
+  volume={10},
+  number={8},
+  pages={\\ pp. 8123-8130},
+  keywords={Resource management;Training;Dynamic scheduling;Reinforcement learning;Scalability;Robot kinematics;Optimization;Decision making;Data mining;Artificial intelligence;Distributed Control;Graph Neural Network;Resource Assignment},
+  note ={\textbf{\href{https://www.youtube.com/watch?v=lc-TGA1kMiE}{video}}},
+}
+</code></pre>
+            <button class="copy-bibtex" onclick="copyBibtex('marinocluster')">Copy to Clipboard</button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-tags="multi-agent,drones,distributed-control,graph-neural-networks,motion-planning">
+        <div class="publication-header" onclick="togglePublication('marinomulti')">
+          <h3>Multi-UAVs End-to-End Distributed Trajectory Generation Over Point Cloud Data</h3>
+          <div class="publication-meta">
+            <span class="venue venue-journal">
+              
+              📄 IEEE Robotics and Automation Letters
+            </span>
+            <span class="year">2024</span>
+            <span class="expand-icon">+</span>
+          </div>
+        </div>
+        <div class="publication-tags">
+          
+          <span class="pub-tag">
+            
+            Multi-Agent Systems
+          </span>
+          
+          <span class="pub-tag">
+            
+            Drones
+          </span>
+          
+          <span class="pub-tag">
+            
+            Distributed Control
+          </span>
+          
+          <span class="pub-tag">
+            
+            Graph Neural Networks
+          </span>
+          
+          <span class="pub-tag">
+            
+            Motion Planning
+          </span>
+          
+        </div>
+        <div class="publication-content" id="marinomulti" style="display: none;">
+          <p><strong>Authors:</strong> Antonio Marino, Claudio Pacchierotti, Paolo Robuffo Giordano</p>
+          <p><strong>Abstract:</strong> This letter introduces an end-to-end trajectory planning algorithm tailored for multi-UAV systems that generates collision-free trajectories in environments populated with both static and dynamic obstacles, leveraging point cloud data. Our approach consists of a 2-branch neural network fed with sensing and localization data, able to communicate intermediate learned features among the agents. One network branch crafts an initial collision-free trajectory estimate, while the other devises a neural collision constraint for subsequent optimization, ensuring trajectory continuity and adherence to physical actuation limits. Extensive simulations in challenging cluttered environments, involving up to 25 robots and 25% obstacle density, show a collision avoidance success rate in the range of 100−85%. Finally, we introduce a saliency map computation method acting on the point cloud data, offering qualitative insights into our methodology.</p>
+          
+          
+          <div class="publication-links">
+            
+              
+              <a href="https://ieeexplore.ieee.org/document/10592306" class="pub-link">Paper</a>
+              
+            
+              
+              <a href="https://www.youtube.com/watch?v=LSk8gjyuSKA&amp;ab_channel=Rainbow_Inria_Irisa" class="pub-link">Video</a>
+              
+            
+              
+            
+            
+            <button class="pub-link bibtex-btn" onclick="showBibtex('marinomulti')">BibTeX</button>
+            
+          </div>
+          
+          
+          
+          <div class="bibtex-container" id="bibtex-marinomulti" style="display: none;">
+            <h4>BibTeX Citation:</h4>
+            <pre class="bibtex-code"><code>@article{marinomulti,
+  author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={\href{https://ieeexplore.ieee.org/document/10592306}{Multi-UAVs End-to-End Distributed Trajectory Generation Over Point Cloud Data}}, 
+  year={2024},
+  volume={9},
+  number={9},
+note ={\textbf{\href{https://www.youtube.com/watch?v=LSk8gjyuSKA&amp;ab_channel=Rainbow_Inria_Irisa}{video}}},
+  pages={7629-7636}, keywords={Trajectory;Drones;Safety;Planning;Sensors;Optimization;Heuristic algorithms;Distributed control;graph neural network;trajectory generation},
+}
+</code></pre>
+            <button class="copy-bibtex" onclick="copyBibtex('marinomulti')">Copy to Clipboard</button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-tags="robotics,multi-agent,graph-neural-networks">
+        <div class="publication-header" onclick="togglePublication('jin2024graph')">
+          <h3>Graph Neural Network-Based Real-Time 3D Tracking for Micro-Agent Control</h3>
+          <div class="publication-meta">
+            <span class="venue venue-conference">
+              
+              🏆 MARSS 2024
+            </span>
+            <span class="year">2024</span>
+            <span class="expand-icon">+</span>
+          </div>
+        </div>
+        <div class="publication-tags">
+          
+          <span class="pub-tag">
+            
+            Robotics
+          </span>
+          
+          <span class="pub-tag">
+            
+            Multi-Agent Systems
+          </span>
+          
+          <span class="pub-tag">
+            
+            Graph Neural Networks
+          </span>
+          
+        </div>
+        <div class="publication-content" id="jin2024graph" style="display: none;">
+          <p><strong>Authors:</strong> Yxuin Jin, Franco Pinan Basualdo, Antonio Marino, Yongfeng Mei, Paolo Robuffo Giordano, Claudio Pacchierotti, Sarthak Misra</p>
+          <p><strong>Abstract:</strong> Micro-surgical robotic systems are gaining prominence in minimally invasive surgery within the medical field. However, accurately tracking the position of the moving agents at the micro-scale remains a significant challenge, particularly for multi-agent systems operating in cluttered and unknown environments. Traditional image analysis methods can falter when confronted with issues such as mutual and obstacle occlusion, especially in dynamic and unstructured scenarios. In order to address this issue, this study introduces a graph-based multi-agent 3D tracking algorithm for a micro-agent control system. This algorithm integrates image information with the control inputs used to navigate the micro agents. We combine the power of Convolutional Neural Networks and Graph Neural Networks to effectively extract features from image sources, and combine them with historical data and control inputs. The primary novelty of this algorithm is its ability to make predictions when the target is occluded in the 2D detection results. The proposed system achieved a tracking error of 0.15 mm, outperforming standard model-based tracking techniques.</p>
+          
+          
+          <div class="publication-links">
+            
+              
+              <a href="https://ieeexplore.ieee.org/document/10612750" class="pub-link">Paper</a>
+              
+            
+              
+            
+            
+            <button class="pub-link bibtex-btn" onclick="showBibtex('jin2024graph')">BibTeX</button>
+            
+          </div>
+          
+          
+          
+          <div class="bibtex-container" id="bibtex-jin2024graph" style="display: none;">
+            <h4>BibTeX Citation:</h4>
+            <pre class="bibtex-code"><code>@inproceedings{jin2024graph,
+  title={\href{https://inria.hal.science/hal-04587941/}{Graph Neural Network-Based Real-Time 3D Tracking for Micro-Agent Control}},
+  author={Jin, Yuxin and Basualdo, Franco Pi{\~n}an and Marino, Antonio and Mei, Yongfeng and Robuffo Giordano, Paolo and Pacchierotti, Claudio and Misra, Sarthak},
+  booktitle={International Conference on Manipulation, Automation and Robotics at Small Scales (MARSS)},
+  year={2024}
+}
+</code></pre>
+            <button class="copy-bibtex" onclick="copyBibtex('jin2024graph')">Copy to Clipboard</button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-tags="distributed-control,multi-agent,graph-neural-networks">
+        <div class="publication-header" onclick="togglePublication('marino2024input')">
+          <h3>Input State Stability of Gated Graph Neural Networks</h3>
+          <div class="publication-meta">
+            <span class="venue venue-journal">
+              
+              📄 IEEE Transactions on Control of Network Systems
+            </span>
+            <span class="year">2024</span>
+            <span class="expand-icon">+</span>
+          </div>
+        </div>
+        <div class="publication-tags">
+          
+          <span class="pub-tag">
+            
+            Distributed Control
+          </span>
+          
+          <span class="pub-tag">
+            
+            Multi-Agent Systems
+          </span>
+          
+          <span class="pub-tag">
+            
+            Graph Neural Networks
+          </span>
+          
+        </div>
+        <div class="publication-content" id="marino2024input" style="display: none;">
+          <p><strong>Authors:</strong> Antonio Marino, Claudio Pacchierotti, Paolo Robuffo Giordano</p>
+          <p><strong>Abstract:</strong> In this article, we aim to find the conditions for the input-to-state stability (ISS) and incremental ISS of gated graph neural networks (GGNNs). We show that this recurrent version of graph neural networks can be expressed as a dynamical distributed system and, as a consequence, can be analyzed using model-based techniques to assess its stability and robustness properties. Then, the stability criteria found can be exploited as constraints during the training process to enforce the internal stability of the neural network. Two distributed control examples, i.e., flocking and multirobot motion control, show that using these conditions increases the performance and robustness of the GGNNs.</p>
+          
+          
+          <div class="publication-links">
+            
+              
+              <a href="https://ieeexplore.ieee.org/document/10458338" class="pub-link">Paper</a>
+              
+            
+              
+            
+            
+            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2024input')">BibTeX</button>
+            
+          </div>
+          
+          
+          
+          <div class="bibtex-container" id="bibtex-marino2024input" style="display: none;">
+            <h4>BibTeX Citation:</h4>
+            <pre class="bibtex-code"><code>@article{marino2024input,
+    title={\href{https://ieeexplore.ieee.org/document/10458338}{Input State Stability of Gated Graph Neural Networks}},
+    author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
+    journal={IEEE Transactions on Control of Network Systems},
+    year={2024},
+    volume={11},
+    number={4},
+    pages={2052-2063},
+  }
+</code></pre>
+            <button class="copy-bibtex" onclick="copyBibtex('marino2024input')">Copy to Clipboard</button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-tags="distributed-control,multi-agent,graph-neural-networks">
+        <div class="publication-header" onclick="togglePublication('marino2024liquid')">
+          <h3>Liquid-Graph Time-Constant Network for Multi-Agent Systems Control</h3>
+          <div class="publication-meta">
+            <span class="venue venue-conference">
+              
+              🏆 CDC 2024
+            </span>
+            <span class="year">2024</span>
+            <span class="expand-icon">+</span>
+          </div>
+        </div>
+        <div class="publication-tags">
+          
+          <span class="pub-tag">
+            
+            Distributed Control
+          </span>
+          
+          <span class="pub-tag">
+            
+            Multi-Agent Systems
+          </span>
+          
+          <span class="pub-tag">
+            
+            Graph Neural Networks
+          </span>
+          
+        </div>
+        <div class="publication-content" id="marino2024liquid" style="display: none;">
+          <p><strong>Authors:</strong> Antonio Marino, Claudio Pacchierotti, Paolo Robuffo Giordano</p>
+          <p><strong>Abstract:</strong> In this paper, we propose the Liquid-Graph Time-constant (LGTC) network, a continuous graph neural network (GNN) model for control of multi-agent systems based on the recent Liquid Time Constant (LTC) network. We analyse its stability leveraging contraction analysis and propose a closed-form model that preserves the model contraction rate and does not require solving an ODE at each iteration. Compared to discrete models like Graph Gated Neural Networks (GGNNs), the higher expressivity of the proposed model guarantees remarkable performance while reducing the large amount of communicated variables normally required by GNNs. We evaluate our model on a distributed multi-agent control case study (flocking) taking into account variable communication range and scalability under non-instantaneous communication.</p>
+          
+          
+          <div class="publication-links">
+            
+              
+              <a href="https://ieeexplore.ieee.org/document/10886394" class="pub-link">Paper</a>
+              
+            
+              
+            
+            
+            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2024liquid')">BibTeX</button>
+            
+          </div>
+          
+          
+          
+          <div class="bibtex-container" id="bibtex-marino2024liquid" style="display: none;">
+            <h4>BibTeX Citation:</h4>
+            <pre class="bibtex-code"><code>@inproceedings{marino2024liquid,
+title={\href{https://arxiv.org/abs/2404.13982}{Liquid-Graph Time-Constant Network for Multi-Agent Systems Control}},
+author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
+booktitle={2024 IEEE 63rd Conference on Decision and Control (CDC)}, 
+year={2024},
+volume={},
+number={},
+pages={793-800},
+organization={IEEE}
+}
+</code></pre>
+            <button class="copy-bibtex" onclick="copyBibtex('marino2024liquid')">Copy to Clipboard</button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-tags="robotics">
+        <div class="publication-header" onclick="togglePublication('bongiovanni2022gestural')">
+          <h3>Gestural and touchscreen interaction for human-robot collaboration: A comparative study</h3>
+          <div class="publication-meta">
+            <span class="venue venue-conference">
+              
+              🏆 IAS 2022
+            </span>
+            <span class="year">2022</span>
+            <span class="expand-icon">+</span>
+          </div>
+        </div>
+        <div class="publication-tags">
+          
+          <span class="pub-tag">
+            
+            Robotics
+          </span>
+          
+        </div>
+        <div class="publication-content" id="bongiovanni2022gestural" style="display: none;">
+          <p><strong>Authors:</strong> Antonio Marino, Antonino Bongiovanni, Alessio De Luca, Luna Gava, Lucrezia Grassi, Marta Lagomarsino, Marco Lapolla, Patrick Roncagliolo, Simone Macciò, Alessandro Carfì, Fulvio Mastrogiovanni</p>
+          <p><strong>Abstract:</strong> Close human-robot interaction (HRI), especially in industrial scenarios, has been vastly investigated for the advantages of combining human and robot skills. For an effective HRI, the validity of currently available human-machine communication media or tools should be questioned, and new communication modalities should be explored. This article proposes a modular architecture allowing human operators to interact with robots through different modalities. In particular, we implemented the architecture to handle gestural and touchscreen input, respectively, using a smartwatch and a tablet. Finally, we performed a comparative user experience study between these two modalities.</p>
+          
+          
+          <div class="publication-links">
+            
+              
+              <a href="https://link.springer.com/chapter/10.1007/978-3-031-22216-0_9" class="pub-link">Paper</a>
+              
+            
+              
+            
+            
+            <button class="pub-link bibtex-btn" onclick="showBibtex('bongiovanni2022gestural')">BibTeX</button>
+            
+          </div>
+          
+          
+          
+          <div class="bibtex-container" id="bibtex-bongiovanni2022gestural" style="display: none;">
+            <h4>BibTeX Citation:</h4>
+            <pre class="bibtex-code"><code>@inproceedings{bongiovanni2022gestural,
+title={\href{https://link.springer.com/chapter/10.1007/978-3-031-22216-0_9}{Gestural and touchscreen interaction for human-robot collaboration: A comparative study}},
+author={ Marino, Antonio and Bongiovanni, Antonino and De Luca, Alessio and Gava, Luna and Grassi, Lucrezia and Lagomarsino, Marta and Lapolla, Marco and Roncagliolo, Patrick and Macci{\`o}, Simone and Carf{\`\i}, Alessandro and others},
+booktitle={International Conference on Intelligent Autonomous Systems},
+pages={122--138},
+year={2022},
+organization={Springer}
+}
+</code></pre>
+            <button class="copy-bibtex" onclick="copyBibtex('bongiovanni2022gestural')">Copy to Clipboard</button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-tags="robotics">
+        <div class="publication-header" onclick="togglePublication('marino2019pid')">
+          <h3>PID tuning with neural networks</h3>
+          <div class="publication-meta">
+            <span class="venue venue-conference">
+              
+              🏆 ACIIDS 2019
+            </span>
+            <span class="year">2019</span>
+            <span class="expand-icon">+</span>
+          </div>
+        </div>
+        <div class="publication-tags">
+          
+          <span class="pub-tag">
+            
+            Robotics
+          </span>
+          
+        </div>
+        <div class="publication-content" id="marino2019pid" style="display: none;">
+          <p><strong>Authors:</strong> Antonio Marino, Filippo Neri</p>
+          <p><strong>Abstract:</strong> In this work we will report our initial investigation of how a neural network architecture could become an efficient tool to model Proportional-Integral-Derivative controller (PID controller). It is well known that neural networks are excellent function approximators, we will then be investigating if a recursive neural networks could be suitable to model and tune PID controllers thus could assist in determining the controller’s proportional, integral, and the derivative gains. A preliminary evaluation is reported.</p>
+          
+          
+          <div class="publication-links">
+            
+              
+              <a href="https://link.springer.com/chapter/10.1007/978-3-030-14799-0_41" class="pub-link">Paper</a>
+              
+            
+              
+            
+            
+            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2019pid')">BibTeX</button>
+            
+          </div>
+          
+          
+          
+          <div class="bibtex-container" id="bibtex-marino2019pid" style="display: none;">
+            <h4>BibTeX Citation:</h4>
+            <pre class="bibtex-code"><code>@inproceedings{marino2019pid,
+  title={\href{https://link.springer.com/chapter/10.1007/978-3-030-14799-0_41}{PID tuning with neural networks}},
+  author={Marino, Antonio and Neri, Filippo},
+  booktitle={Intelligent Information and Database Systems: 11th Asian Conference, ACIIDS 2019, Yogyakarta, Indonesia, April 8--11, 2019, Proceedings, Part I 11},
+  pages={476--487},
+  year={2019},
+  organization={Springer}
+}
+</code></pre>
+            <button class="copy-bibtex" onclick="copyBibtex('marino2019pid')">Copy to Clipboard</button>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+</div>
+
+    </div>
+  </div>
+  
+  <!-- JavaScript -->
+  <script src="/assets/js/publications.js"></script>
+  <script src="/assets/js/theme-switcher.js"></script>
+</body>
+</html>

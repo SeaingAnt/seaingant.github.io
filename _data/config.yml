@@ -23,9 +23,9 @@ tags:
     description: "Publications related to robotics applications"
     color: "#f39c12"
     
-  - id: "simulation"
-    name: "Simulation"
-    description: "Publications on simulation tools and environments"
+  - id: "drones"
+    name: "Drones"
+    description: "Publications on drone technology and applications"
     color: "#27ae60"
     
   - id: "optimization"
@@ -33,10 +33,15 @@ tags:
     description: "Publications on optimization algorithms"
     color: "#e67e22"
     
-  - id: "large-language-models"
-    name: "Large Language Models"
-    description: "Publications on LLM applications"
+  - id: "distributed-control"
+    name: "Distributed Control"
+    description: "Publications on distributed control systems"
     color: "#1abc9c"
+  
+  - id: "motion-planning"
+    name: "Motion Planning"
+    description: "Publications on motion planning algorithms and techniques"
+    color: "#2F1296"
 
 venue_types:
   conference:
