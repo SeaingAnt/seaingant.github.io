@@ -89,7 +89,7 @@ cv: "/assets/cv.pdf"
   <ul>
     <li> 🎸 Playing guitar and exploring music production.</li>
     <li>📚 Reading about emerging technologies.</li>
-    <li>❤️ Spend time with my beatiful wife.</li>
+    <li>❤️ Spend time with my beautiful wife.</li>
   </ul>
   
 </div>
