@@ -71,7 +71,7 @@ cv: "/assets/cv.pdf"
 
 <ul>
   <li>
-    <strong>Functional Heterogeneity & Dynamic Coalitions:</strong> Formalizing a "holistic diversity metric" to guide the coordination of teams with diverse morphologies and roles[cite: 403, 404]. [cite_start]I am developing frameworks where agents dynamically self-cluster into strategic coalitions to address conflicting multi-objective trade-offs, quantifying the advantage of diversity through a "Price of Homogeneity" analysis.
+    <strong>Functional Heterogeneity & Dynamic Coalitions:</strong> Formalizing a "holistic diversity metric" to guide the coordination of teams with diverse morphologies and roles. I am developing frameworks where agents dynamically self-cluster into strategic coalitions to address conflicting multi-objective trade-offs, quantifying the advantage of diversity through a "Price of Homogeneity" analysis.
   </li>
   <li>
     <strong>Dynamic Environment Co-Design:</strong> Developing frameworks where robots act as a reconfigurable medium, capable of assembling and disassembling to reshape their surroundings for optimal task execution.
