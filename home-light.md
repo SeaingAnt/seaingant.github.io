@@ -6,10 +6,10 @@ header_name: "Antonio Marino"
 profile_title: "Research Associate"
 profile_university: "University of Cambridge"
 email: "antonio.marino@cl.cam.ac.uk"
-github: "https://github.com/antonio"
+github: "https://https://github.com/SeaingAnt"
 linkedin: "https://www.linkedin.com/in/antonio-marino-841386192"
 youtube: "https://youtube.com/@antonio"
-cv: "/assets/cv/antonio_cv.pdf"
+cv: "/assets/cv/cv.pdf"
 ---
 <div class="content-section">
   
