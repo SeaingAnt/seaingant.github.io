@@ -5,7 +5,8 @@ section: "experience"
 header_name: "Antonio Marino"
 ---
 
-<div class="content-section">
+<div class="horizontal-scroll-wrapper">
+<div class="content-section horizontal-scroll-container">
 <h1 style="text-align: center; margin-bottom: 3rem;">Key Research Contributions</h1>
 
 <div class="project-card">
@@ -109,4 +110,5 @@ header_name: "Antonio Marino"
 
 </div>
 
+</div>
 </div>

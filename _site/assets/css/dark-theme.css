@@ -1,9 +1,9 @@
 :root {
   /* BACKGROUND: Deep Gunmetal Grey (Not pure black) */
-  --background-gradient: #181a1d;
-  --sidebar-background: #181a1d;
-  --content-background: #181a1d;
-  --header-background: rgba(24, 26, 29, 0.9);
+  --background-gradient: #212224;
+  --sidebar-background: #212224;
+  --content-background: #212224;
+  --header-background: #212224da;
 
   /* TEXT PRIMARY: Electric Cerulean */
   --text-primary: #30849e; 
@@ -37,7 +37,7 @@
   --tag-btn-shadow: rgba(0, 0, 0, 0);
 
   /* CARDS */
-  --pub-card-background: #181a1d;
+  --pub-card-background: #212224;
   --pub-card-border: rgba(0, 0, 0, 0);
   --pub-card-shadow: rgba(0, 0, 0, 0);
   --pub-card-shadow-hover: rgba(76, 201, 240, 0.2);
