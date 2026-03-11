@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Antonio Marino - Home | Antonio Marino</title>
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Antonio Marino | Antonio Marino personal webpage.</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Antonio Marino - Home" />
+<meta property="og:title" content="Antonio Marino" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Antonio Marino personal webpage." />
 <meta property="og:description" content="Antonio Marino personal webpage." />
@@ -17,18 +17,24 @@
 <meta property="og:site_name" content="Antonio Marino" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Antonio Marino - Home" />
+<meta property="twitter:title" content="Antonio Marino" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Antonio Marino personal webpage.","headline":"Antonio Marino - Home","name":"Antonio Marino","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/assets/img/Antonio-Marino-700-x-700.jpg"}},"url":"http://0.0.0.0:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Antonio Marino personal webpage.","headline":"Antonio Marino","name":"Antonio Marino","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/assets/img/Antonio-Marino-700-x-700.jpg"}},"url":"http://0.0.0.0:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="/assets/css/base-style.css">
-    <link rel="stylesheet" href="/assets/css/dark-theme.css" id="theme-style">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/minimal.css">
+
+  <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup Google Analytics -->
 
@@ -39,90 +45,45 @@
 
 <!-- end custom head snippets -->
 
-  </head>
-  <body>
-    <header class="header-nav">
-      <h1>Antonio Marino</h1>
-      <nav class="header-nav-links">
+</head>
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Antonio Marino</a>
+      <div class="nav-links" id="nav-links">
         <a href="/home.html" class="active">Home</a>
-        <a href="/projects.html" >Projects</a>
+        <a href="/research.html" >Research</a>
         <a href="/publications.html" >Publications</a>
-        <button id="theme-switcher"></button>
-      </nav>
-    </header>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-    <div class="main-container">
-      <aside class="profile-sidebar">
-        
-          <img src="/assets/img/Antonio-Marino-700-x-700.jpg" alt="Profile Photo" class="profile-photo" />
-        
-        <h2 class="profile-name">Antonio Marino</h2>
-        <p class="profile-title">Research Associate</p>
-        <p class="profile-university">University of Cambridge</p>
-        
-        <div class="social-icons">
-          <a href="mailto:antonio.marino@cl.cam.ac.uk" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://github.com/antonio-marino" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/antonio-marino-841386192" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="/assets/cv.pdf" class="social-icon" title="CV"><i class="fas fa-file-pdf"></i></a>
-        </div>
-      </aside>
-
-      <main class="main-content raised-content">
-        <div class="content-section">
-  <h1 class="greeting">Welcome! 👋</h1>
-  
-  <p class="intro">
-    I'm Antonio Marino, a passionate AI researcher working at the intersection of 
-    multi-agent systems and reinforcement learning.
-  </p>
-  
-  <div class="description">
-    <p>
-      Currently pursuing my PhD at the <strong>University of Cambridge</strong> and working as an AI Researcher at <strong>Meta AI</strong>. 
-      My research focuses on developing novel algorithms for heterogeneous multi-agent systems, 
-      with applications in robotics and autonomous systems.
-    </p>
-    
-    <p>
-      I'm particularly interested in:
-    </p>
-    
-    <ul>
-      <li>🤖 <strong>Multi-Agent Reinforcement Learning</strong> - Developing coordination strategies for diverse agent teams</li>
-      <li>🧠 <strong>Graph Neural Networks</strong> - Leveraging graph structures for agent communication and learning</li>
-      <li>🔬 <strong>Simulation Environments</strong> - Building high-performance tools for multi-agent research</li>
-      <li>🚀 <strong>Real-world Applications</strong> - Bridging the gap between research and practical robotics</li>
-    </ul>
-    
-    <p>
-      My work has been published in top-tier venues including ICML, IROS, and NeurIPS workshops. 
-      I'm also a core contributor to several open-source projects in the PyTorch ecosystem, 
-      including <a href="https://github.com/proroklab/VectorizedMultiAgentSimulator">VMAS</a> 
-      and <a href="https://github.com/pytorch/rl">BenchMARL</a>.
-    </p>
-    
-    <p>
-      When I'm not coding or researching, you can find me exploring new technologies, 
-      contributing to the open-source community, or sharing knowledge through talks and tutorials.
-    </p>
-    
-    <p style="margin-top: 2rem;">
-      <strong>🎯 Currently:</strong> Working on LLM agents for long-horizon tasks and 
-      heterogeneous multi-robot coordination systems.
-    </p>
-  </div>
-</div>
-
-<script>
+  <!-- Page Content -->
+  <main>
+    <script>
   window.location.href = '/home.html';
 </script>
 
 
-      </main>
-    </div>
+  </main>
 
-    <script src="/assets/js/scale.fix.js"></script>
-    <script src="/assets/js/theme-switcher.js"></script>
-  </body>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Antonio Marino &middot; University of Cambridge</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/assets/js/minimal.js"></script>
+  <script src="/assets/js/publications.js"></script>
+
+</body>
 </html>

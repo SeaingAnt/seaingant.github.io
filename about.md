@@ -1,89 +1,87 @@
 ---
-layout: modern-profile
+layout: minimal
 title: "Antonio Marino - About"
 section: "about"
-header_name: "Antonio Marino"
-profile_title: "Research Associate"
-profile_university: "University of Cambridge"
-email: "antonio@example.com"
-github: "https://github.com/antonio-marino"
-twitter: "https://twitter.com/antonio_marino"
-linkedin: "https://linkedin.com/in/antonio-marino"
-youtube: "#"
-cv: "/assets/cv.pdf"
+permalink: /about.html
 ---
 
-<div class="content-section">
-  <h1>About Me</h1>
-  
-  <h2>Background</h2>
-  <p>
-    I am a PhD student in Computer Science at the University of Cambridge, working under the supervision of 
-    <a href="#">Prof. Amanda Prorok</a> in the Prorok Lab. My research is at the forefront of multi-agent systems, 
-    with a particular focus on developing intelligent coordination strategies for heterogeneous robot teams.
-  </p>
-  
-  <p>
-    Prior to my PhD, I completed my Master's degree in Engineering with a specialization in optimization 
-    and network design. This background in mathematical optimization has strongly influenced my approach 
-    to multi-agent problems, leading me to develop principled solutions that balance theoretical rigor 
-    with practical applicability.
-  </p>
+<section class="section" style="padding-top: calc(var(--nav-height) + 3rem);">
+  <div class="container">
+    <div class="about-layout">
 
-  <h2>Research Interests</h2>
-  <p>
-    My research sits at the intersection of several exciting areas in AI and robotics:
-  </p>
-  
-  <ul>
-    <li><strong>Heterogeneous Multi-Agent Systems:</strong> Developing algorithms that enable diverse agents with different capabilities to work together effectively</li>
-    <li><strong>Graph Neural Networks:</strong> Leveraging the power of graph-based representations for multi-agent communication and coordination</li>
-    <li><strong>Reinforcement Learning:</strong> Creating novel RL algorithms tailored for multi-agent scenarios</li>
-    <li><strong>Robotics Applications:</strong> Applying theoretical advances to real-world robotic systems</li>
-    <li><strong>Simulation and Benchmarking:</strong> Building tools that accelerate research in multi-agent systems</li>
-  </ul>
+      <!-- Photo Column -->
+      <div class="about-photo-col reveal">
+        <img src="/assets/img/Antonio-Marino-700-x-700.jpg" alt="Antonio Marino" class="about-photo" />
+        <div class="about-social">
+          <a href="mailto:antonio.marino@cl.cam.ac.uk" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/" class="social-btn" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+          <a href="https://github.com/SeaingAnt" class="social-btn" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/antonio-marino-841386192" class="social-btn" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="text-center mt-4">
+          <a href="/assets/cv/cv.pdf" class="btn btn-primary cv-download" target="_blank">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
 
-  <h2>Philosophy</h2>
-  <p>
-    I believe that the future of AI lies in systems that can collaborate, adapt, and learn from each other. 
-    My work is driven by the vision of creating intelligent agent teams that can tackle complex real-world 
-    challenges, from autonomous vehicle coordination to swarm robotics and beyond.
-  </p>
-  
-  <p>
-    I'm passionate about open science and reproducible research. This is why I actively contribute to 
-    open-source projects and strive to make my research accessible through well-documented code, 
-    comprehensive datasets, and clear publications.
-  </p>
+      <!-- Text Column -->
+      <div class="about-text reveal">
+        <h2>About Me</h2>
+        <p>
+          I am Antonio Marino, a Postdoctoral Researcher in Computer Science at the
+          <strong>University of Cambridge</strong>, working in the Prorok Lab. My research merges
+          multi-robot systems with learning-based control to create intelligent, safe, and
+          collaborative autonomous teams.
+        </p>
 
-  <h2>Current Focus</h2>
-  <p>
-    At Meta AI, I'm working on cutting-edge projects involving Large Language Model (LLM) agents for 
-    long-horizon tasks. This role allows me to bridge academic research with industrial applications, 
-    exploring how advanced AI systems can be deployed at scale.
-  </p>
-  
-  <p>
-    My PhD research continues to focus on the fundamental challenges of multi-agent coordination, 
-    with recent work exploring how Graph Neural Networks can enable more effective communication 
-    and learning in heterogeneous agent teams.
-  </p>
+        <h2>Background &amp; Vision</h2>
+        <p>
+          Building on my doctoral research in hybrid learning-control approaches, my work aims to
+          shift multi-robot systems from passive observation to active physical intervention.
+          Because deploying "black box" models on physical systems introduces risk, I advocate for
+          a <strong>hybrid approach</strong>: conditioning learned policies with provable control
+          structures. By embedding first-order principles into the design, we can achieve rigorous
+          safety, stability, and sim-to-real transferability.
+        </p>
 
-  <h2>Beyond Research</h2>
-  <p>
-    When I'm not immersed in research, I enjoy:
-  </p>
-  
-  <ul>
-    <li>🎸 Playing guitar and exploring music production</li>
-    <li>📚 Reading about emerging technologies and their societal implications</li>
-    <li>🌱 Contributing to environmental sustainability initiatives</li>
-    <li>🏃‍♂️ Running and outdoor activities</li>
-    <li>👥 Mentoring junior researchers and students</li>
-  </ul>
-  
-  <p>
-    I'm always excited to discuss research ideas, potential collaborations, or just chat about 
-    the latest developments in AI and robotics. Feel free to reach out!
-  </p>
-</div>
+        <h2>Research Interests</h2>
+        <ul>
+          <li><strong>Hybrid Learning &amp; Control:</strong> Reconciling classical control techniques (Lyapunov, Contraction Theory) with deep learning to guarantee safety in neural policies.</li>
+          <li><strong>Functional Heterogeneity:</strong> Dynamic coalition frameworks to understand how diverse agents can optimize complex tasks better than homogeneous swarms.</li>
+          <li><strong>Graph Neural Networks:</strong> Analyzing GNNs as distributed dynamical systems to ensure Input-to-State Stability in multi-agent communication.</li>
+          <li><strong>Environment Co-Design:</strong> Enabling robot teams to actively reshape their surroundings and collaboratively manipulate complex objects in unstructured environments.</li>
+        </ul>
+
+        <h2>Beyond Research</h2>
+        <p>When I am not immersed in research, I enjoy:</p>
+        <ul>
+          <li>Playing guitar and exploring music production</li>
+          <li>Reading about emerging technologies</li>
+          <li>Spending time with my beautiful wife</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>
+          I am always open to discussing research ideas, potential collaborations, or recent
+          developments in AI and robotics. Feel free to reach out.
+        </p>
+        <div class="contact-row">
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <p><a href="mailto:antonio.marino@cl.cam.ac.uk">antonio.marino@cl.cam.ac.uk</a></p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Cambridge, United Kingdom</p>
+          </div>
+          <div class="contact-card">
+            <i class="fab fa-linkedin-in"></i>
+            <p><a href="https://www.linkedin.com/in/antonio-marino-841386192" target="_blank">LinkedIn</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

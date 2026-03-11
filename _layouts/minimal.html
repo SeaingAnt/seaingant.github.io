@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% seo %}
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/minimal.css' | relative_url }}">
+
+  {% include head-custom.html %}
+</head>
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="{{ '/' | relative_url }}" class="nav-logo">Antonio Marino</a>
+      <div class="nav-links" id="nav-links">
+        <a href="{{ '/home.html' | relative_url }}" {% if page.section == 'home' %}class="active"{% endif %}>Home</a>
+        <a href="{{ '/research.html' | relative_url }}" {% if page.section == 'research' %}class="active"{% endif %}>Research</a>
+        <a href="{{ '/publications.html' | relative_url }}" {% if page.section == 'publications' %}class="active"{% endif %}>Publications</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <main>
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ 'now' | date: '%Y' }} Antonio Marino &middot; University of Cambridge</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="{{ '/assets/js/minimal.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/publications.js' | relative_url }}"></script>
+
+</body>
+</html>

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Antonio Marino - Home | Antonio Marino</title>
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Antonio Marino — Researcher | Antonio Marino</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Antonio Marino - Home" />
+<meta property="og:title" content="Antonio Marino — Researcher" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Antonio Marino personal webpage." />
 <meta property="og:description" content="Antonio Marino personal webpage." />
@@ -17,18 +17,24 @@
 <meta property="og:site_name" content="Antonio Marino" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Antonio Marino - Home" />
+<meta property="twitter:title" content="Antonio Marino — Researcher" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Antonio Marino personal webpage.","headline":"Antonio Marino - Home","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/assets/img/Antonio-Marino-700-x-700.jpg"}},"url":"http://0.0.0.0:4000/home.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Antonio Marino personal webpage.","headline":"Antonio Marino — Researcher","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/assets/img/Antonio-Marino-700-x-700.jpg"}},"url":"http://0.0.0.0:4000/home.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="/assets/css/base-style.css">
-    <link rel="stylesheet" href="/assets/css/dark-theme.css" id="theme-style">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/minimal.css">
+
+  <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup Google Analytics -->
 
@@ -39,94 +45,119 @@
 
 <!-- end custom head snippets -->
 
-  </head>
-  <body>
-    <header class="header-nav">
-      <h1>Antonio Marino</h1>
-      <nav class="header-nav-links">
+</head>
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Antonio Marino</a>
+      <div class="nav-links" id="nav-links">
         <a href="/home.html" class="active">Home</a>
-        <a href="/projects.html" >Projects</a>
+        <a href="/research.html" >Research</a>
         <a href="/publications.html" >Publications</a>
-        <button id="theme-switcher"></button>
-      </nav>
-    </header>
-
-    
-
-    <div class="main-container">
-      <aside class="profile-sidebar">
-        
-          <img src="/assets/img/Antonio-Marino-700-x-700.jpg" alt="Profile Photo" class="profile-photo" />
-        
-        <h2 class="profile-name">Antonio Marino</h2>
-        <p class="profile-title">Research Associate</p>
-        <p class="profile-university">University of Cambridge</p>
-        
-        <div class="social-icons">
-          <a href="mailto:antonio.marino@cl.cam.ac.uk" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://https://github.com/SeaingAnt" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/antonio-marino-841386192" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="/assets/cv.pdf" class="social-icon" title="CV"><i class="fas fa-file-pdf"></i></a>
-        </div>
-      </aside>
-
-      <main class="main-content raised-content">
-        <div class="content-section">
-  
-  <h2> A Bit About Me </h2>
- <p class="intro">
-    I am Antonio Marino, a Postdoctoral Researcher in Computer Science at the University of Cambridge (Prorok Lab). My research merges multi-robot systems with learning-based control to create intelligent, safe, and collaborative autonomous teams.
-  </p>
-  <p class="intro">
-    I'm always open to discussing research ideas, potential collaborations, or recent developments in AI and robotics. Feel free to connect!
-  </p>
-</div>
-
-
-      </main>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </nav>
 
-    
-    <div class="fullwidth-container">
-      <div class="fullwidth-content">
-        
+  <!-- Page Content -->
+  <main>
+    <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text reveal">
+      <p class="hero-tagline">Research Associate · University of Cambridge</p>
+      <h1 class="hero-heading">Advancing autonomous systems through learning-based multi-robot control.</h1>
+      <p class="hero-subheading">
+        I develop hybrid approaches that merge deep learning with provable control structures,
+        enabling robot teams to coordinate safely in complex, unstructured environments.
+      </p>
+      <div class="hero-cta">
+        <a href="/research.html" class="btn btn-primary">
+          <i class="fas fa-microscope"></i> View Research
+        </a>
+        <a href="/publications.html" class="btn btn-outline">
+          <i class="fas fa-file-alt"></i> Publications
+        </a>
+      </div>
 
-<div class="content-section">
-  <h2>Background &amp; Vision</h2>
-  <p>
-    Building on my doctoral research in hybrid learning-control approaches, my work aims to shift multi-robot systems from passive observation to active physical intervention. Because deploying "black box" models on physical systems introduces risk, I advocate for a <strong>hybrid approach</strong>: conditioning learned policies with provable control structures. By embedding first-order principles inherently into the design, we can achieve rigorous safety, stability, and sim-to-real transferability.
-  </p>
-
-  <h2>Core Research Focus</h2>
-  <p>
-    My current work bridges theoretical guarantees and real-world application through the following thrusts:
-  </p>
-  <ul>
-    <li><strong>Hybrid Learning &amp; Control:</strong> Reconciling classical control techniques (e.g., Lyapunov, Contraction Theory) with deep learning to guarantee safety in neural policies.</li>
-    <li><strong>Functional Heterogeneity:</strong> Formulating metrics and dynamic coalition frameworks to understand how diverse agents can optimize complex tasks better than homogeneous swarms.</li>
-    <li><strong>Graph Neural Networks (GNNs):</strong> Analyzing GNNs as distributed dynamical systems to ensure Input-to-State Stability (ISS) in multi-agent communication.</li>
-    <li><strong>Environment Co-Design &amp; Manipulation:</strong> Enabling robot teams to actively reshape their surroundings and collaboratively manipulate complex, deformable objects in unstructured environments.</li>
-  </ul>
-  
-  <h2>Beyond Research</h2>
-  <p>
-    When I'm not immersed in research, I enjoy:
-  </p>
-  
-  <ul>
-    <li> 🎸 Playing guitar and exploring music production.</li>
-    <li>📚 Reading about emerging technologies.</li>
-    <li>❤️ Spend time with my beautiful wife.</li>
-  </ul>
-  
-</div>
-
+      <div class="focus-chips">
+        <span class="focus-chip">Multi-Robot Systems</span>
+        <span class="focus-chip">Graph Neural Networks</span>
+        <span class="focus-chip">Hybrid Learning &amp; Control</span>
+        <span class="focus-chip">Reinforcement Learning</span>
       </div>
     </div>
-    
 
-    <script src="/assets/js/scale.fix.js"></script>
-    <script src="/assets/js/theme-switcher.js"></script>
-    <script src="/assets/js/publications.js"></script>
-  </body>
+    <div class="hero-photo-wrapper reveal">
+      
+        <img src="/assets/img/Antonio-Marino-700-x-700.jpg" alt="Antonio Marino" class="hero-photo" />
+      
+      <div class="hero-social">
+        <a href="mailto:antonio.marino@cl.cam.ac.uk" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://scholar.google.com/" class="social-btn" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://github.com/SeaingAnt" class="social-btn" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/antonio-marino-841386192" class="social-btn" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <!-- News -->
+      <div class="hero-news">
+        <h3 class="hero-news-title"><i class="fas fa-bullhorn"></i> News</h3>
+        <ul class="news-list">
+          <li class="news-item"><span class="news-date">Dec 2025</span> — PhD dissertation Inria centre at Rennes University.</li>
+          <li class="news-item"><span class="news-date">Oct 2025</span> — Joined the University of Cambridge as a Research Associate.</li>
+          <li class="news-item"><span class="news-date">Jul 2025</span> — Paper on distributed active-sensing accepted at IEEE RA-L.</li>
+          <li class="news-item"><span class="news-date">Jun 2025</span> — Paper on dynamic cluster agreements published in IEEE RA-L.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Brief Bio + Featured Paper -->
+<section class="section section--gray">
+  <div class="container--narrow">
+    <div class="reveal">
+      <p style="font-size: 1.05rem; line-height: 1.85; color: var(--text-secondary); text-align: center; font-weight: 300;">
+        I am a Postdoctoral Researcher in Computer Science at the
+        <strong style="color: var(--text-primary);">University of Cambridge</strong> (Prorok Lab).
+        My research merges multi-robot systems with learning-based control to create intelligent,
+        safe, and collaborative autonomous teams.
+      </p>
+    </div>
+
+    <!-- Featured Publication -->
+    
+    
+    <a href="https://ieeexplore.ieee.org/document/11150751" class="featured-pub reveal" style="display: block; text-decoration: none;">
+      <p class="featured-pub-label"><i class="fas fa-star"></i> Latest Publication</p>
+      <p class="featured-pub-title">Distributed Multi-Robot Active-Sensing of a Diffusive Source</p>
+      <p class="featured-pub-meta">
+        Francesca Pagano, Nicola De Carli, Esteban Restrepo, Antonio Marino, Claudio Pacchierotti, Paolo Robuffo Giordano &middot;
+        <em>IEEE Robotics and Automation Letters</em>, 2025
+      </p>
+    </a>
+    
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Antonio Marino &middot; University of Cambridge</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/assets/js/minimal.js"></script>
+  <script src="/assets/js/publications.js"></script>
+
+</body>
 </html>
