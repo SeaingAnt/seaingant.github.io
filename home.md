@@ -38,7 +38,7 @@ permalink: /home.html
       {% endif %}
       <div class="hero-social">
         <a href="mailto:antonio.marino@cl.cam.ac.uk" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://scholar.google.com/" class="social-btn" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://scholar.google.co.uk/citations?user=bKy_YlkAAAAJ&hl=en&oi=sra" class="social-btn" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
         <a href="https://github.com/SeaingAnt" class="social-btn" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/antonio-marino-841386192" class="social-btn" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
       </div>
