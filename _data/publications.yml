@@ -195,7 +195,7 @@ publications:
     abstract: "A reinforcement learning based control of a magnetic actuated endoscope for robotic assisted colonoscopy was presented. Our main aim was to prove that, without the knowledge of the system and the environment, the reinforcement adaptability allows to perform good navigation of the colon beside obstacles and deformations while keeping contact between the endoscope and the colon wall. In fact, this is specifically required in different applications like colonoscopy ultrasound scanning."
     tags: ["robotics"]
     links:
-      paper: "https://ieeexplore.ieee.org/document/10612750"
+      paper: "https://hal.science/hal-04162017/document"
       bibtex: |
         @inproceedings{marino2021reinforcement,
           title={Reinforcement learning based control for a magnetic flexible endoscope},
@@ -204,6 +204,19 @@ publications:
           pages={1},
           year={2021}
         }
+    featured: true
+  
+  - id: "marino2024workshop"
+    title: "workshop on Real-World Challenges in Multi-Robot Cooperation"
+    authors: ["Antonio Marino", "Bruno Scaglioni", "Pietro Valdastri"]
+    venue: "IROS"
+    year: 2024
+    venue_type: "workshop"
+    abstract: "Recent advances in methods, algorithms, computational power, and energetic efficiency have made the deployment of multi-robot systems (MRS) a possibility. Moreover, with the rise of new control methods, learning and perception algorithms, the research community has shown increasing interest in such systems, albeit for relatively simple tasks such as surveillance, monitoring, and warehouse management. For successfully introducing MRS-based in real-world fields, e.g. manufacturing, agriculture and healthcare, there is a need to address more complex and intelligent cooperative tasks. Furthermore, even for simple tasks, there is a big gap between theoretical/lab results and the actual implementation of multi-robot solutions. In light of this, in this workshop, we aim to address questions such as: how do we move from simple tasks to cooperative intelligent missions? What are the new frontiers for MRS? What are the practical and theoretical challenges preventing an increased implementation of MRS-based applications? The objective is to collectively explore novel applications in which MRS could be developed and to identify and tackle the challenges hindering their broader integration in real-world applications. This workshop can hold great value for both the research community and industry, providing a platform to discuss, analyze, and shape the future trajectory of multi-robot systems. We anticipate that the insights gained from this collaborative effort will contribute significantly to advancing the field and addressing the complexities associated with achieving high levels of cooperative behaviours in MRS."
+    tags: ["robotics"]
+    links:
+      website: "https://sites.google.com/view/workshop-rwmra-iros2024/home"
+      bibtex: |
     featured: true
 
   - id: "marino2019pid"
