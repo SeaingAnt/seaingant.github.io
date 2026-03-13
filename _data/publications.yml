@@ -186,6 +186,26 @@ publications:
         }
     featured: true
 
+  - id: "marino2021reinforcement"
+    title: "Reinforcement learning based control for a magnetic flexible endoscope"
+    authors: ["Antonio Marino", "Bruno Scaglioni", "Pietro Valdastri"]
+    venue: "Hamlyn Symposium on Medical Robotics,  2021"
+    year: 2021
+    venue_type: "workshop"
+    abstract: "A reinforcement learning based control of a magnetic actuated endoscope for robotic assisted colonoscopy was presented. Our main aim was to prove that, without the knowledge of the system and the environment, the reinforcement adaptability allows to perform good navigation of the colon beside obstacles and deformations while keeping contact between the endoscope and the colon wall. In fact, this is specifically required in different applications like colonoscopy ultrasound scanning."
+    tags: ["robotics"]
+    links:
+      paper: "https://ieeexplore.ieee.org/document/10612750"
+      bibtex: |
+        @inproceedings{marino2021reinforcement,
+          title={Reinforcement learning based control for a magnetic flexible endoscope},
+          author={Marino, Antonio and Scaglioni, Bruno and Valdastri, Pietro},
+          booktitle={Proc. Hamlyn Symp. Med. Robot},
+          pages={1},
+          year={2021}
+        }
+    featured: true
+
   - id: "marino2019pid"
     title: "PID tuning with neural networks"
     authors: ["Antonio Marino", "Filippo Neri"]
