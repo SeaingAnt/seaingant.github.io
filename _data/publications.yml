@@ -207,7 +207,7 @@ publications:
     featured: true
   
   - id: "marino2024workshop"
-    title: "workshop on Real-World Challenges in Multi-Robot Cooperation"
+    title: "Workshop on Real-World Challenges in Multi-Robot Cooperation"
     authors: ["Antonio Marino", "Bruno Scaglioni", "Pietro Valdastri"]
     venue: "IROS 2024"
     year: 2024

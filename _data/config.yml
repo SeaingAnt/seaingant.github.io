@@ -48,7 +48,7 @@ venue_types:
     color: "#27ae60"
     icon: "🏆"
   workshop:
-    color: "#db343c"
+    color: "#9b59b6"
     icon: "👥"
   journal:
     color: "#9b59b6"

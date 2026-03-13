@@ -971,8 +971,8 @@ a:hover { color: var(--accent-hover); }
 }
 
 .venue-badge--workshop {
-  background: rgba(59, 130, 246, 0.1);
-  color: #2563eb;
+  background: rgba(246, 128, 59, 0.1);
+  color: #eb5325;
 }
 
 .venue-badge--preprint {

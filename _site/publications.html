@@ -142,6 +142,7 @@
             <a href="https://youtu.be/6zDVlYBqFcE" class="pub-link" target="_blank"><i class="fas fa-video"></i> Video</a>
             
             
+            
             <button class="pub-link" onclick="event.stopPropagation(); showBibtex('paganiActive')"><i class="fas fa-quote-right"></i> BibTeX</button>
             
           </div>
@@ -183,6 +184,7 @@
           <div class="pub-links">
             
             <a href="https://dl.acm.org/doi/abs/10.1145/3725857" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+            
             
             
             
@@ -236,6 +238,7 @@
             <a href="https://www.youtube.com/watch?v=lc-TGA1kMiE" class="pub-link" target="_blank"><i class="fas fa-video"></i> Video</a>
             
             
+            
             <button class="pub-link" onclick="event.stopPropagation(); showBibtex('marinocluster')"><i class="fas fa-quote-right"></i> BibTeX</button>
             
           </div>
@@ -273,90 +276,6 @@
       <ul class="pub-list">
         
         
-        <li class="pub-item" data-tags="multi-agent,drones,distributed-control,graph-neural-networks,motion-planning">
-          <p class="pub-title" onclick="toggleAbstract('abs-marinomulti')">Multi-UAVs End-to-End Distributed Trajectory Generation Over Point Cloud Data</p>
-          <p class="pub-authors">
-            <span class="author-highlight">Antonio Marino</span>, Claudio Pacchierotti, Paolo Robuffo Giordano
-          </p>
-          <p class="pub-venue">
-            IEEE Robotics and Automation Letters
-            <span class="venue-badge venue-badge--journal">journal</span>
-          </p>
-          <div class="pub-links">
-            
-            <a href="https://ieeexplore.ieee.org/document/10592306" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
-            
-            
-            <a href="https://www.youtube.com/watch?v=LSk8gjyuSKA&amp;ab_channel=Rainbow_Inria_Irisa" class="pub-link" target="_blank"><i class="fas fa-video"></i> Video</a>
-            
-            
-            <button class="pub-link" onclick="event.stopPropagation(); showBibtex('marinomulti')"><i class="fas fa-quote-right"></i> BibTeX</button>
-            
-          </div>
-
-          <!-- Abstract (hidden by default) -->
-          <div class="pub-abstract" id="abs-marinomulti">
-            This letter introduces an end-to-end trajectory planning algorithm tailored for multi-UAV systems that generates collision-free trajectories in environments populated with both static and dynamic obstacles, leveraging point cloud data. Our approach consists of a 2-branch neural network fed with sensing and localization data, able to communicate intermediate learned features among the agents. One network branch crafts an initial collision-free trajectory estimate, while the other devises a neural collision constraint for subsequent optimization, ensuring trajectory continuity and adherence to physical actuation limits. Extensive simulations in challenging cluttered environments, involving up to 25 robots and 25% obstacle density, show a collision avoidance success rate in the range of 100−85%. Finally, we introduce a saliency map computation method acting on the point cloud data, offering qualitative insights into our methodology.
-          </div>
-
-          <!-- BibTeX (hidden by default) -->
-          
-          <div class="bibtex-container" id="bibtex-marinomulti">
-            <button class="copy-bibtex" onclick="copyBibtex('marinomulti')">Copy</button>
-            <pre class="bibtex-code"><code>@article{marinomulti,
-  author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
-  journal={IEEE Robotics and Automation Letters}, 
-  title={\href{https://ieeexplore.ieee.org/document/10592306}{Multi-UAVs End-to-End Distributed Trajectory Generation Over Point Cloud Data}}, 
-  year={2024},
-  volume={9},
-  number={9},
-note ={\textbf{\href{https://www.youtube.com/watch?v=LSk8gjyuSKA&amp;ab_channel=Rainbow_Inria_Irisa}{video}}},
-  pages={7629-7636}, keywords={Trajectory;Drones;Safety;Planning;Sensors;Optimization;Heuristic algorithms;Distributed control;graph neural network;trajectory generation},
-}
-</code></pre>
-          </div>
-          
-        </li>
-        
-        <li class="pub-item" data-tags="robotics,multi-agent,graph-neural-networks">
-          <p class="pub-title" onclick="toggleAbstract('abs-jin2024graph')">Graph Neural Network-Based Real-Time 3D Tracking for Micro-Agent Control</p>
-          <p class="pub-authors">
-            Yxuin Jin, Franco Pinan Basualdo, <span class="author-highlight">Antonio Marino</span>, Yongfeng Mei, Paolo Robuffo Giordano, Claudio Pacchierotti, Sarthak Misra
-          </p>
-          <p class="pub-venue">
-            MARSS 2024
-            <span class="venue-badge venue-badge--conference">conference</span>
-          </p>
-          <div class="pub-links">
-            
-            <a href="https://ieeexplore.ieee.org/document/10612750" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
-            
-            
-            
-            <button class="pub-link" onclick="event.stopPropagation(); showBibtex('jin2024graph')"><i class="fas fa-quote-right"></i> BibTeX</button>
-            
-          </div>
-
-          <!-- Abstract (hidden by default) -->
-          <div class="pub-abstract" id="abs-jin2024graph">
-            Micro-surgical robotic systems are gaining prominence in minimally invasive surgery within the medical field. However, accurately tracking the position of the moving agents at the micro-scale remains a significant challenge, particularly for multi-agent systems operating in cluttered and unknown environments. Traditional image analysis methods can falter when confronted with issues such as mutual and obstacle occlusion, especially in dynamic and unstructured scenarios. In order to address this issue, this study introduces a graph-based multi-agent 3D tracking algorithm for a micro-agent control system. This algorithm integrates image information with the control inputs used to navigate the micro agents. We combine the power of Convolutional Neural Networks and Graph Neural Networks to effectively extract features from image sources, and combine them with historical data and control inputs. The primary novelty of this algorithm is its ability to make predictions when the target is occluded in the 2D detection results. The proposed system achieved a tracking error of 0.15 mm, outperforming standard model-based tracking techniques.
-          </div>
-
-          <!-- BibTeX (hidden by default) -->
-          
-          <div class="bibtex-container" id="bibtex-jin2024graph">
-            <button class="copy-bibtex" onclick="copyBibtex('jin2024graph')">Copy</button>
-            <pre class="bibtex-code"><code>@inproceedings{jin2024graph,
-  title={\href{https://inria.hal.science/hal-04587941/}{Graph Neural Network-Based Real-Time 3D Tracking for Micro-Agent Control}},
-  author={Jin, Yuxin and Basualdo, Franco Pi{\~n}an and Marino, Antonio and Mei, Yongfeng and Robuffo Giordano, Paolo and Pacchierotti, Claudio and Misra, Sarthak},
-  booktitle={International Conference on Manipulation, Automation and Robotics at Small Scales (MARSS)},
-  year={2024}
-}
-</code></pre>
-          </div>
-          
-        </li>
-        
         <li class="pub-item" data-tags="distributed-control,multi-agent,graph-neural-networks">
           <p class="pub-title" onclick="toggleAbstract('abs-marino2024input')">Input State Stability of Gated Graph Neural Networks</p>
           <p class="pub-authors">
@@ -369,6 +288,7 @@ note ={\textbf{\href{https://www.youtube.com/watch?v=LSk8gjyuSKA&amp;ab_channel=
           <div class="pub-links">
             
             <a href="https://ieeexplore.ieee.org/document/10458338" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+            
             
             
             
@@ -399,6 +319,46 @@ note ={\textbf{\href{https://www.youtube.com/watch?v=LSk8gjyuSKA&amp;ab_channel=
           
         </li>
         
+        <li class="pub-item" data-tags="robotics,multi-agent,graph-neural-networks">
+          <p class="pub-title" onclick="toggleAbstract('abs-jin2024graph')">Graph Neural Network-Based Real-Time 3D Tracking for Micro-Agent Control</p>
+          <p class="pub-authors">
+            Yxuin Jin, Franco Pinan Basualdo, <span class="author-highlight">Antonio Marino</span>, Yongfeng Mei, Paolo Robuffo Giordano, Claudio Pacchierotti, Sarthak Misra
+          </p>
+          <p class="pub-venue">
+            MARSS 2024
+            <span class="venue-badge venue-badge--conference">conference</span>
+          </p>
+          <div class="pub-links">
+            
+            <a href="https://ieeexplore.ieee.org/document/10612750" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+            
+            
+            
+            
+            <button class="pub-link" onclick="event.stopPropagation(); showBibtex('jin2024graph')"><i class="fas fa-quote-right"></i> BibTeX</button>
+            
+          </div>
+
+          <!-- Abstract (hidden by default) -->
+          <div class="pub-abstract" id="abs-jin2024graph">
+            Micro-surgical robotic systems are gaining prominence in minimally invasive surgery within the medical field. However, accurately tracking the position of the moving agents at the micro-scale remains a significant challenge, particularly for multi-agent systems operating in cluttered and unknown environments. Traditional image analysis methods can falter when confronted with issues such as mutual and obstacle occlusion, especially in dynamic and unstructured scenarios. In order to address this issue, this study introduces a graph-based multi-agent 3D tracking algorithm for a micro-agent control system. This algorithm integrates image information with the control inputs used to navigate the micro agents. We combine the power of Convolutional Neural Networks and Graph Neural Networks to effectively extract features from image sources, and combine them with historical data and control inputs. The primary novelty of this algorithm is its ability to make predictions when the target is occluded in the 2D detection results. The proposed system achieved a tracking error of 0.15 mm, outperforming standard model-based tracking techniques.
+          </div>
+
+          <!-- BibTeX (hidden by default) -->
+          
+          <div class="bibtex-container" id="bibtex-jin2024graph">
+            <button class="copy-bibtex" onclick="copyBibtex('jin2024graph')">Copy</button>
+            <pre class="bibtex-code"><code>@inproceedings{jin2024graph,
+  title={\href{https://inria.hal.science/hal-04587941/}{Graph Neural Network-Based Real-Time 3D Tracking for Micro-Agent Control}},
+  author={Jin, Yuxin and Basualdo, Franco Pi{\~n}an and Marino, Antonio and Mei, Yongfeng and Robuffo Giordano, Paolo and Pacchierotti, Claudio and Misra, Sarthak},
+  booktitle={International Conference on Manipulation, Automation and Robotics at Small Scales (MARSS)},
+  year={2024}
+}
+</code></pre>
+          </div>
+          
+        </li>
+        
         <li class="pub-item" data-tags="distributed-control,multi-agent,graph-neural-networks">
           <p class="pub-title" onclick="toggleAbstract('abs-marino2024liquid')">Liquid-Graph Time-Constant Network for Multi-Agent Systems Control</p>
           <p class="pub-authors">
@@ -411,6 +371,7 @@ note ={\textbf{\href{https://www.youtube.com/watch?v=LSk8gjyuSKA&amp;ab_channel=
           <div class="pub-links">
             
             <a href="https://ieeexplore.ieee.org/document/10886394" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+            
             
             
             
@@ -442,6 +403,86 @@ organization={IEEE}
           
         </li>
         
+        <li class="pub-item" data-tags="multi-agent,drones,distributed-control,graph-neural-networks,motion-planning">
+          <p class="pub-title" onclick="toggleAbstract('abs-marinomulti')">Multi-UAVs End-to-End Distributed Trajectory Generation Over Point Cloud Data</p>
+          <p class="pub-authors">
+            <span class="author-highlight">Antonio Marino</span>, Claudio Pacchierotti, Paolo Robuffo Giordano
+          </p>
+          <p class="pub-venue">
+            IEEE Robotics and Automation Letters
+            <span class="venue-badge venue-badge--journal">journal</span>
+          </p>
+          <div class="pub-links">
+            
+            <a href="https://ieeexplore.ieee.org/document/10592306" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+            
+            
+            <a href="https://www.youtube.com/watch?v=LSk8gjyuSKA&amp;ab_channel=Rainbow_Inria_Irisa" class="pub-link" target="_blank"><i class="fas fa-video"></i> Video</a>
+            
+            
+            
+            <button class="pub-link" onclick="event.stopPropagation(); showBibtex('marinomulti')"><i class="fas fa-quote-right"></i> BibTeX</button>
+            
+          </div>
+
+          <!-- Abstract (hidden by default) -->
+          <div class="pub-abstract" id="abs-marinomulti">
+            This letter introduces an end-to-end trajectory planning algorithm tailored for multi-UAV systems that generates collision-free trajectories in environments populated with both static and dynamic obstacles, leveraging point cloud data. Our approach consists of a 2-branch neural network fed with sensing and localization data, able to communicate intermediate learned features among the agents. One network branch crafts an initial collision-free trajectory estimate, while the other devises a neural collision constraint for subsequent optimization, ensuring trajectory continuity and adherence to physical actuation limits. Extensive simulations in challenging cluttered environments, involving up to 25 robots and 25% obstacle density, show a collision avoidance success rate in the range of 100−85%. Finally, we introduce a saliency map computation method acting on the point cloud data, offering qualitative insights into our methodology.
+          </div>
+
+          <!-- BibTeX (hidden by default) -->
+          
+          <div class="bibtex-container" id="bibtex-marinomulti">
+            <button class="copy-bibtex" onclick="copyBibtex('marinomulti')">Copy</button>
+            <pre class="bibtex-code"><code>@article{marinomulti,
+  author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={\href{https://ieeexplore.ieee.org/document/10592306}{Multi-UAVs End-to-End Distributed Trajectory Generation Over Point Cloud Data}}, 
+  year={2024},
+  volume={9},
+  number={9},
+note ={\textbf{\href{https://www.youtube.com/watch?v=LSk8gjyuSKA&amp;ab_channel=Rainbow_Inria_Irisa}{video}}},
+  pages={7629-7636}, keywords={Trajectory;Drones;Safety;Planning;Sensors;Optimization;Heuristic algorithms;Distributed control;graph neural network;trajectory generation},
+}
+</code></pre>
+          </div>
+          
+        </li>
+        
+        <li class="pub-item" data-tags="robotics">
+          <p class="pub-title" onclick="toggleAbstract('abs-marino2024workshop')">Workshop on Real-World Challenges in Multi-Robot Cooperation</p>
+          <p class="pub-authors">
+            <span class="author-highlight">Antonio Marino</span>, Bruno Scaglioni, Pietro Valdastri
+          </p>
+          <p class="pub-venue">
+            IROS 2024
+            <span class="venue-badge venue-badge--workshop">workshop</span>
+          </p>
+          <div class="pub-links">
+            
+            
+            
+            <a href="https://sites.google.com/view/workshop-rwmra-iros2024/home" class="pub-link" target="_blank"><i class="fa fa-laptop"></i> Website</a>
+            
+            
+            <button class="pub-link" onclick="event.stopPropagation(); showBibtex('marino2024workshop')"><i class="fas fa-quote-right"></i> BibTeX</button>
+            
+          </div>
+
+          <!-- Abstract (hidden by default) -->
+          <div class="pub-abstract" id="abs-marino2024workshop">
+            Recent advances in methods, algorithms, computational power, and energetic efficiency have made the deployment of multi-robot systems (MRS) a possibility. Moreover, with the rise of new control methods, learning and perception algorithms, the research community has shown increasing interest in such systems, albeit for relatively simple tasks such as surveillance, monitoring, and warehouse management. For successfully introducing MRS-based in real-world fields, e.g. manufacturing, agriculture and healthcare, there is a need to address more complex and intelligent cooperative tasks. Furthermore, even for simple tasks, there is a big gap between theoretical/lab results and the actual implementation of multi-robot solutions. In light of this, in this workshop, we aim to address questions such as: how do we move from simple tasks to cooperative intelligent missions? What are the new frontiers for MRS? What are the practical and theoretical challenges preventing an increased implementation of MRS-based applications? The objective is to collectively explore novel applications in which MRS could be developed and to identify and tackle the challenges hindering their broader integration in real-world applications. This workshop can hold great value for both the research community and industry, providing a platform to discuss, analyze, and shape the future trajectory of multi-robot systems. We anticipate that the insights gained from this collaborative effort will contribute significantly to advancing the field and addressing the complexities associated with achieving high levels of cooperative behaviours in MRS.
+          </div>
+
+          <!-- BibTeX (hidden by default) -->
+          
+          <div class="bibtex-container" id="bibtex-marino2024workshop">
+            <button class="copy-bibtex" onclick="copyBibtex('marino2024workshop')">Copy</button>
+            <pre class="bibtex-code"><code></code></pre>
+          </div>
+          
+        </li>
+        
       </ul>
     </div>
     
@@ -462,6 +503,7 @@ organization={IEEE}
           <div class="pub-links">
             
             <a href="https://link.springer.com/chapter/10.1007/978-3-031-22216-0_9" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+            
             
             
             
@@ -495,6 +537,55 @@ organization={Springer}
     </div>
     
     <div class="pub-year-group reveal">
+      <h2 class="pub-year-heading">2021</h2>
+      <ul class="pub-list">
+        
+        
+        <li class="pub-item" data-tags="robotics">
+          <p class="pub-title" onclick="toggleAbstract('abs-marino2021reinforcement')">Reinforcement learning based control for a magnetic flexible endoscope</p>
+          <p class="pub-authors">
+            <span class="author-highlight">Antonio Marino</span>, Bruno Scaglioni, Pietro Valdastri
+          </p>
+          <p class="pub-venue">
+            Hamlyn Symposium on Medical Robotics,  2021
+            <span class="venue-badge venue-badge--workshop">workshop</span>
+          </p>
+          <div class="pub-links">
+            
+            <a href="https://hal.science/hal-04162017/document" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+            
+            
+            
+            
+            <button class="pub-link" onclick="event.stopPropagation(); showBibtex('marino2021reinforcement')"><i class="fas fa-quote-right"></i> BibTeX</button>
+            
+          </div>
+
+          <!-- Abstract (hidden by default) -->
+          <div class="pub-abstract" id="abs-marino2021reinforcement">
+            A reinforcement learning based control of a magnetic actuated endoscope for robotic assisted colonoscopy was presented. Our main aim was to prove that, without the knowledge of the system and the environment, the reinforcement adaptability allows to perform good navigation of the colon beside obstacles and deformations while keeping contact between the endoscope and the colon wall. In fact, this is specifically required in different applications like colonoscopy ultrasound scanning.
+          </div>
+
+          <!-- BibTeX (hidden by default) -->
+          
+          <div class="bibtex-container" id="bibtex-marino2021reinforcement">
+            <button class="copy-bibtex" onclick="copyBibtex('marino2021reinforcement')">Copy</button>
+            <pre class="bibtex-code"><code>@inproceedings{marino2021reinforcement,
+  title={Reinforcement learning based control for a magnetic flexible endoscope},
+  author={Marino, Antonio and Scaglioni, Bruno and Valdastri, Pietro},
+  booktitle={Proc. Hamlyn Symp. Med. Robot},
+  pages={1},
+  year={2021}
+}
+</code></pre>
+          </div>
+          
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="pub-year-group reveal">
       <h2 class="pub-year-heading">2019</h2>
       <ul class="pub-list">
         
@@ -511,6 +602,7 @@ organization={Springer}
           <div class="pub-links">
             
             <a href="https://link.springer.com/chapter/10.1007/978-3-030-14799-0_41" class="pub-link" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+            
             
             
             

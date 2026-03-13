@@ -47,6 +47,9 @@ permalink: /publications.html
             {% if pub.links.video %}
             <a href="{{ pub.links.video }}" class="pub-link" target="_blank"><i class="fas fa-video"></i> Video</a>
             {% endif %}
+            {% if pub.links.website %}
+            <a href="{{ pub.links.website }}" class="pub-link" target="_blank"><i class="fa fa-laptop"></i> Website</a>
+            {% endif %}
             {% if pub.links.bibtex %}
             <button class="pub-link" onclick="event.stopPropagation(); showBibtex('{{ pub.id }}')"><i class="fas fa-quote-right"></i> BibTeX</button>
             {% endif %}
