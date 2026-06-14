@@ -22,12 +22,12 @@ permalink: /research.html
           <img src="/assets/img/GNN.gif" alt="GNN Stability Analysis" />
         </div>
         <div class="research-card-body">
-          <h2 class="research-card-title">Dynamics of Learning in Multi-Agent Systems</h2>
+          <h2 class="research-card-title">Stable Learning-Based Control for Multi-Agent Systems</h2>
           <p class="research-card-summary">
             Reinterpreting Graph Neural Networks as distributed dynamical systems and deriving stability guarantees through nonlinear control theory.
           </p>
           <div class="research-card-tags">
-            <span class="tag">Control Theory</span>
+            <span class="tag">Non-linear Systems</span>
             <span class="tag">GNNs</span>
             <span class="tag">Neural ODEs</span>
             <span class="tag">Stability</span>
@@ -92,7 +92,7 @@ permalink: /research.html
           <div class="research-card-tags">
             <span class="tag">Reinforcement Learning</span>
             <span class="tag">Multi-Objective</span>
-            <span class="tag">Swarm Intelligence</span>
+            <span class="tag">Opinion Dynamics</span>
           </div>
         </div>
         <div class="research-detail" id="rd3">

@@ -10,7 +10,7 @@ permalink: /home.html
   <div class="hero-inner">
     <div class="hero-text reveal">
       <p class="hero-tagline">Research Associate · University of Cambridge</p>
-      <h1 class="hero-heading">Advancing autonomous systems through learning-based multi-robot control.</h1>
+      <h1 class="hero-heading">Advancing Autonomous Systems through Learning-based Control.</h1>
       <p class="hero-subheading">
         I develop hybrid approaches that merge deep learning with provable control structures,
         enabling robot teams to coordinate safely in complex, unstructured environments.
@@ -47,10 +47,9 @@ permalink: /home.html
       <div class="hero-news">
         <h3 class="hero-news-title"><i class="fas fa-bullhorn"></i> News</h3>
         <ul class="news-list">
+          <li class="news-item"><span class="news-date">Jun 2026</span> — 2 IEEE RA-L papers presented at IEEE ICRA 2026.</li>
           <li class="news-item"><span class="news-date">Dec 2025</span> — PhD dissertation Inria centre at Rennes University.</li>
           <li class="news-item"><span class="news-date">Oct 2025</span> — Joined the University of Cambridge as a Research Associate.</li>
-          <li class="news-item"><span class="news-date">Jul 2025</span> — Paper on distributed active-sensing accepted at IEEE RA-L.</li>
-          <li class="news-item"><span class="news-date">Jun 2025</span> — Paper on dynamic cluster agreements published in IEEE RA-L.</li>
         </ul>
       </div>
     </div>

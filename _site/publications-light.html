@@ -76,154 +76,6 @@
     <div class="publications-list">
       
       
-      <div class="publication-card" data-tags="multi-agent,distributed-control,robotics">
-        <div class="publication-header" onclick="togglePublication('paganiActive')">
-          <h3>Distributed Multi-Robot Active-Sensing of a Diffusive Source</h3>
-          <div class="publication-meta">
-            <span class="venue venue-journal">
-              
-              📄 IEEE Robotics and Automation Letters
-            </span>
-            <span class="year">2025</span>
-            <span class="expand-icon">+</span>
-          </div>
-        </div>
-        <div class="publication-tags">
-          
-          <span class="pub-tag">
-            
-            Multi-Agent Systems
-          </span>
-          
-          <span class="pub-tag">
-            
-            Distributed Control
-          </span>
-          
-          <span class="pub-tag">
-            
-            Robotics
-          </span>
-          
-        </div>
-        <div class="publication-content" id="paganiActive" style="display: none;">
-          <p><strong>Authors:</strong> Francesca Pagano, Nicola De Carli, Esteban Restrepo, Antonio Marino, Claudio Pacchierotti, Paolo Robuffo Giordano</p>
-          <p><strong>Abstract:</strong> This letter considers the problem of coordinating a group of mobile robots for distributedly estimating the parameters of a diffusion model that generates a time-varying spatial field. We assume that each robot can measure the local concentration of a substance continuously released in the environment and base the proposed distributed estimation strategy on an Extended Information Consensus Filter (E-ICF) with a forgetting factor. We then develop a decentralized online motion strategy aimed at minimizing a Gramian-based information metric that improves the E-ICF convergence. Additional constraints, among which collision avoidance, are integrated as Control Barrier Functions (CBFs) in a Quadratic Program (QP). Finally, we present statistical comparisons against three baselines which show the improved performance of the proposed method in a range of simulated scenarios, and we also report the results of experiments carried out with quadcopters to demonstrate the actual implementability of the approach and its effectiveness in generating online, collision-free, and informative motions.</p>
-          
-          
-          <div class="publication-links">
-            
-              
-              <a href="https://ieeexplore.ieee.org/document/11150751" class="pub-link">Paper</a>
-              
-            
-              
-              <a href="https://youtu.be/6zDVlYBqFcE" class="pub-link">Video</a>
-              
-            
-              
-            
-            
-            <button class="pub-link bibtex-btn" onclick="showBibtex('paganiActive')">BibTeX</button>
-            
-          </div>
-          
-          
-          
-          <div class="bibtex-container" id="bibtex-paganiActive" style="display: none;">
-            <h4>BibTeX Citation:</h4>
-            <pre class="bibtex-code"><code>@article{paganiActive,
-  author={Pagano, Francesca and De Carli, Nicola and Restrepo, Esteban and Marino, Antonio and Giordano, Paolo Robuffo},
-  journal={IEEE Robotics and Automation Letters}, 
-  title={Distributed Multi-Robot Active-Sensing of a Diffusive Source}, 
-  year={2025},
-  volume={10},
-  number={10},
-  pages={10807-10814},
-  keywords={Robots;Robot sensing systems;Estimation;Sensors;Mathematical models;Measurement;Information filters;Observability;Covariance matrices;Convergence;Multi-robot systems;distributed robot systems;active-sensing;gramian},
-  doi={10.1109/LRA.2025.3606376},
-  note ={\textbf{\href{https://youtu.be/6zDVlYBqFcE}{video}}},}
-</code></pre>
-            <button class="copy-bibtex" onclick="copyBibtex('paganiActive')">Copy to Clipboard</button>
-          </div>
-          
-        </div>
-      </div>
-      
-      <div class="publication-card" data-tags="multi-agent,distributed-control,graph-neural-networks">
-        <div class="publication-header" onclick="togglePublication('marino2024average')">
-          <h3>A Gated Graph Neural Network Approach to Fast-Convergent Dynamic Average Estimation</h3>
-          <div class="publication-meta">
-            <span class="venue venue-journal">
-              
-              📄 ACM Transactions on Intelligent Systems and Technology
-            </span>
-            <span class="year">2025</span>
-            <span class="expand-icon">+</span>
-          </div>
-        </div>
-        <div class="publication-tags">
-          
-          <span class="pub-tag">
-            
-            Multi-Agent Systems
-          </span>
-          
-          <span class="pub-tag">
-            
-            Distributed Control
-          </span>
-          
-          <span class="pub-tag">
-            
-            Graph Neural Networks
-          </span>
-          
-        </div>
-        <div class="publication-content" id="marino2024average" style="display: none;">
-          <p><strong>Authors:</strong> Antonio Marino, Claudio Pacchierotti, Paolo Robuffo Giordano</p>
-          <p><strong>Abstract:</strong> Dynamic average estimation is a critical problem in multi-agent systems, enabling agents to collaboratively estimate time-varying signals using only local information exchange. Traditional model-based approaches often face challenges related to convergence speed and sensitivity to network topology changes. This article introduces a novel learning-based solution leveraging Gated Graph Neural Networks (GGNNs) for fast-convergent dynamic average estimation in a fully distributed manner. Taking advantage of the inherent structure of GGNNs, the proposed method models the estimation process as a distributed autoregressor, ensuring rapid convergence while maintaining stability. We incorporate a regularization term during training to enforce convergence guarantees and introduce an encoding–decoding mechanism to reduce communication overhead without sacrificing accuracy compared to standard GGNNs. Extensive numerical experiments demonstrate that our approach significantly outperforms conventional model-based estimators in terms of both convergence speed and precision, making it a promising alternative for multi-agent applications that require dynamic average estimation.</p>
-          
-          
-          <div class="publication-links">
-            
-              
-              <a href="https://dl.acm.org/doi/abs/10.1145/3725857" class="pub-link">Paper</a>
-              
-            
-              
-            
-            
-            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2024average')">BibTeX</button>
-            
-          </div>
-          
-          
-          
-          <div class="bibtex-container" id="bibtex-marino2024average" style="display: none;">
-            <h4>BibTeX Citation:</h4>
-            <pre class="bibtex-code"><code>@article{marino2024average,
-  title={\href{https://dl.acm.org/doi/abs/10.1145/3725857}{A Gated Graph Neural Network Approach to Fast-Convergent Dynamic Average Estimation}},
-  author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
-  journal = {ACM Trans. Intell. Syst. Technol.},
-  month = may,
-  articleno = {68},
-  numpages = {18},
-  year = {2025},
-  publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  year={2025},
-  volume = {16},
-  number = {3},
-  issn = {2157-6904},
-}
-</code></pre>
-            <button class="copy-bibtex" onclick="copyBibtex('marino2024average')">Copy to Clipboard</button>
-          </div>
-          
-        </div>
-      </div>
-      
       <div class="publication-card" data-tags="multi-agent,reinforcement-learning,distributed-control,graph-neural-networks">
         <div class="publication-header" onclick="togglePublication('marinocluster')">
           <h3>Decentralized Reinforcement Learning for Multi-Agent Multi-Resource Allocation via Dynamic Cluster Agreements</h3>
@@ -304,14 +156,14 @@
       </div>
       
       <div class="publication-card" data-tags="distributed-control,multi-agent,graph-neural-networks">
-        <div class="publication-header" onclick="togglePublication('marino2024input')">
-          <h3>Input State Stability of Gated Graph Neural Networks</h3>
+        <div class="publication-header" onclick="togglePublication('marino2025thesis')">
+          <h3>Learning to Communicate and Coordinate: Distributed Learning-based Control for Multi-Robot Systems</h3>
           <div class="publication-meta">
-            <span class="venue venue-journal">
+            <span class="venue venue-thesis">
               
-              📄 IEEE Transactions on Control of Network Systems
+              🎓 University of Rennes, Phd Thesis
             </span>
-            <span class="year">2024</span>
+            <span class="year">2025</span>
             <span class="expand-icon">+</span>
           </div>
         </div>
@@ -333,39 +185,321 @@
           </span>
           
         </div>
-        <div class="publication-content" id="marino2024input" style="display: none;">
-          <p><strong>Authors:</strong> Antonio Marino, Claudio Pacchierotti, Paolo Robuffo Giordano</p>
-          <p><strong>Abstract:</strong> In this article, we aim to find the conditions for the input-to-state stability (ISS) and incremental ISS of gated graph neural networks (GGNNs). We show that this recurrent version of graph neural networks can be expressed as a dynamical distributed system and, as a consequence, can be analyzed using model-based techniques to assess its stability and robustness properties. Then, the stability criteria found can be exploited as constraints during the training process to enforce the internal stability of the neural network. Two distributed control examples, i.e., flocking and multirobot motion control, show that using these conditions increases the performance and robustness of the GGNNs.</p>
+        <div class="publication-content" id="marino2025thesis" style="display: none;">
+          <p><strong>Authors:</strong> Antonio Marino</p>
+          <p><strong>Abstract:</strong> Multi-robot systems represent a key class of multi-agent systems where multiple autonomous agents cooperate to achieve tasks beyond the capabilities of a single robot. Their effectiveness relies on decentralized or distributed control, where collective behaviors emerge from local interactions under limited information and communication. Classical approaches have enabled significant progress in understanding coordination, information flow, and connectivity maintenance. However, these methods often depend on strong modeling assumptions and struggle to scale in dynamic, uncertain environments. Recent advances in machine learning provide promising alternatives by allowing agents to learn coordination strategies from data, enabling robustness and adaptability under partial observability and noisy sensing. Yet, existing learning-based frameworks rarely account for explicit communication, a critical factor in scalable multi-robot coordination that has been central to control-theoretic approaches. This dissertation addresses this gap by developing hybrid methods that integrate learning with communication-aware distributed control. By combining the generalization and flexibility of machine learning with the theoretical guarantees of control theory, this work advances the foundations of collective decision-making and contributes to the deployment of communication-aware, learning-based multi-robot systems in real-world applications.</p>
           
           
           <div class="publication-links">
             
               
-              <a href="https://ieeexplore.ieee.org/document/10458338" class="pub-link">Paper</a>
+              <a href="https://theses.hal.science/tel-05466512/" class="pub-link">Paper</a>
               
             
               
             
             
-            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2024input')">BibTeX</button>
+            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2025thesis')">BibTeX</button>
             
           </div>
           
           
           
-          <div class="bibtex-container" id="bibtex-marino2024input" style="display: none;">
+          <div class="bibtex-container" id="bibtex-marino2025thesis" style="display: none;">
             <h4>BibTeX Citation:</h4>
-            <pre class="bibtex-code"><code>@article{marino2024input,
-    title={\href{https://ieeexplore.ieee.org/document/10458338}{Input State Stability of Gated Graph Neural Networks}},
-    author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
-    journal={IEEE Transactions on Control of Network Systems},
-    year={2024},
-    volume={11},
-    number={4},
-    pages={2052-2063},
-  }
+            <pre class="bibtex-code"><code>@phdthesis{marino2025learning,
+  title={Learning to Communicate and Coordinate: Distributed Learning-based Control for Multi-Robot Systems},
+  author={Marino, Antonio},
+  year={2025},
+  school={Universit{\'e} de Rennes}
+}
 </code></pre>
-            <button class="copy-bibtex" onclick="copyBibtex('marino2024input')">Copy to Clipboard</button>
+            <button class="copy-bibtex" onclick="copyBibtex('marino2025thesis')">Copy to Clipboard</button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-tags="multi-agent,distributed-control,graph-neural-networks">
+        <div class="publication-header" onclick="togglePublication('marino2024average')">
+          <h3>A Gated Graph Neural Network Approach to Fast-Convergent Dynamic Average Estimation</h3>
+          <div class="publication-meta">
+            <span class="venue venue-journal">
+              
+              📄 ACM Transactions on Intelligent Systems and Technology
+            </span>
+            <span class="year">2025</span>
+            <span class="expand-icon">+</span>
+          </div>
+        </div>
+        <div class="publication-tags">
+          
+          <span class="pub-tag">
+            
+            Multi-Agent Systems
+          </span>
+          
+          <span class="pub-tag">
+            
+            Distributed Control
+          </span>
+          
+          <span class="pub-tag">
+            
+            Graph Neural Networks
+          </span>
+          
+        </div>
+        <div class="publication-content" id="marino2024average" style="display: none;">
+          <p><strong>Authors:</strong> Antonio Marino, Claudio Pacchierotti, Paolo Robuffo Giordano</p>
+          <p><strong>Abstract:</strong> Dynamic average estimation is a critical problem in multi-agent systems, enabling agents to collaboratively estimate time-varying signals using only local information exchange. Traditional model-based approaches often face challenges related to convergence speed and sensitivity to network topology changes. This article introduces a novel learning-based solution leveraging Gated Graph Neural Networks (GGNNs) for fast-convergent dynamic average estimation in a fully distributed manner. Taking advantage of the inherent structure of GGNNs, the proposed method models the estimation process as a distributed autoregressor, ensuring rapid convergence while maintaining stability. We incorporate a regularization term during training to enforce convergence guarantees and introduce an encoding–decoding mechanism to reduce communication overhead without sacrificing accuracy compared to standard GGNNs. Extensive numerical experiments demonstrate that our approach significantly outperforms conventional model-based estimators in terms of both convergence speed and precision, making it a promising alternative for multi-agent applications that require dynamic average estimation.</p>
+          
+          
+          <div class="publication-links">
+            
+              
+              <a href="https://dl.acm.org/doi/abs/10.1145/3725857" class="pub-link">Paper</a>
+              
+            
+              
+            
+            
+            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2024average')">BibTeX</button>
+            
+          </div>
+          
+          
+          
+          <div class="bibtex-container" id="bibtex-marino2024average" style="display: none;">
+            <h4>BibTeX Citation:</h4>
+            <pre class="bibtex-code"><code>@article{marino2024average,
+  title={\href{https://dl.acm.org/doi/abs/10.1145/3725857}{A Gated Graph Neural Network Approach to Fast-Convergent Dynamic Average Estimation}},
+  author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
+  journal = {ACM Trans. Intell. Syst. Technol.},
+  month = may,
+  articleno = {68},
+  numpages = {18},
+  year = {2025},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  year={2025},
+  volume = {16},
+  number = {3},
+  issn = {2157-6904},
+}
+</code></pre>
+            <button class="copy-bibtex" onclick="copyBibtex('marino2024average')">Copy to Clipboard</button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-tags="multi-agent,distributed-control,robotics">
+        <div class="publication-header" onclick="togglePublication('paganiActive')">
+          <h3>Distributed Multi-Robot Active-Sensing of a Diffusive Source</h3>
+          <div class="publication-meta">
+            <span class="venue venue-journal">
+              
+              📄 IEEE Robotics and Automation Letters
+            </span>
+            <span class="year">2025</span>
+            <span class="expand-icon">+</span>
+          </div>
+        </div>
+        <div class="publication-tags">
+          
+          <span class="pub-tag">
+            
+            Multi-Agent Systems
+          </span>
+          
+          <span class="pub-tag">
+            
+            Distributed Control
+          </span>
+          
+          <span class="pub-tag">
+            
+            Robotics
+          </span>
+          
+        </div>
+        <div class="publication-content" id="paganiActive" style="display: none;">
+          <p><strong>Authors:</strong> Francesca Pagano, Nicola De Carli, Esteban Restrepo, Antonio Marino, Claudio Pacchierotti, Paolo Robuffo Giordano</p>
+          <p><strong>Abstract:</strong> This letter considers the problem of coordinating a group of mobile robots for distributedly estimating the parameters of a diffusion model that generates a time-varying spatial field. We assume that each robot can measure the local concentration of a substance continuously released in the environment and base the proposed distributed estimation strategy on an Extended Information Consensus Filter (E-ICF) with a forgetting factor. We then develop a decentralized online motion strategy aimed at minimizing a Gramian-based information metric that improves the E-ICF convergence. Additional constraints, among which collision avoidance, are integrated as Control Barrier Functions (CBFs) in a Quadratic Program (QP). Finally, we present statistical comparisons against three baselines which show the improved performance of the proposed method in a range of simulated scenarios, and we also report the results of experiments carried out with quadcopters to demonstrate the actual implementability of the approach and its effectiveness in generating online, collision-free, and informative motions.</p>
+          
+          
+          <div class="publication-links">
+            
+              
+              <a href="https://ieeexplore.ieee.org/document/11150751" class="pub-link">Paper</a>
+              
+            
+              
+              <a href="https://youtu.be/6zDVlYBqFcE" class="pub-link">Video</a>
+              
+            
+              
+            
+            
+            <button class="pub-link bibtex-btn" onclick="showBibtex('paganiActive')">BibTeX</button>
+            
+          </div>
+          
+          
+          
+          <div class="bibtex-container" id="bibtex-paganiActive" style="display: none;">
+            <h4>BibTeX Citation:</h4>
+            <pre class="bibtex-code"><code>@article{paganiActive,
+  author={Pagano, Francesca and De Carli, Nicola and Restrepo, Esteban and Marino, Antonio and Giordano, Paolo Robuffo},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Distributed Multi-Robot Active-Sensing of a Diffusive Source}, 
+  year={2025},
+  volume={10},
+  number={10},
+  pages={10807-10814},
+  keywords={Robots;Robot sensing systems;Estimation;Sensors;Mathematical models;Measurement;Information filters;Observability;Covariance matrices;Convergence;Multi-robot systems;distributed robot systems;active-sensing;gramian},
+  doi={10.1109/LRA.2025.3606376},
+  note ={\textbf{\href{https://youtu.be/6zDVlYBqFcE}{video}}},}
+</code></pre>
+            <button class="copy-bibtex" onclick="copyBibtex('paganiActive')">Copy to Clipboard</button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-tags="robotics">
+        <div class="publication-header" onclick="togglePublication('marino2024workshop')">
+          <h3>Workshop on Real-World Challenges in Multi-Robot Cooperation</h3>
+          <div class="publication-meta">
+            <span class="venue venue-workshop">
+              
+              👥 IROS 2024
+            </span>
+            <span class="year">2024</span>
+            <span class="expand-icon">+</span>
+          </div>
+        </div>
+        <div class="publication-tags">
+          
+          <span class="pub-tag">
+            
+            Robotics
+          </span>
+          
+        </div>
+        <div class="publication-content" id="marino2024workshop" style="display: none;">
+          <p><strong>Authors:</strong> Antonio Marino, Bruno Scaglioni, Pietro Valdastri</p>
+          <p><strong>Abstract:</strong> Recent advances in methods, algorithms, computational power, and energetic efficiency have made the deployment of multi-robot systems (MRS) a possibility. Moreover, with the rise of new control methods, learning and perception algorithms, the research community has shown increasing interest in such systems, albeit for relatively simple tasks such as surveillance, monitoring, and warehouse management. For successfully introducing MRS-based in real-world fields, e.g. manufacturing, agriculture and healthcare, there is a need to address more complex and intelligent cooperative tasks. Furthermore, even for simple tasks, there is a big gap between theoretical/lab results and the actual implementation of multi-robot solutions. In light of this, in this workshop, we aim to address questions such as: how do we move from simple tasks to cooperative intelligent missions? What are the new frontiers for MRS? What are the practical and theoretical challenges preventing an increased implementation of MRS-based applications? The objective is to collectively explore novel applications in which MRS could be developed and to identify and tackle the challenges hindering their broader integration in real-world applications. This workshop can hold great value for both the research community and industry, providing a platform to discuss, analyze, and shape the future trajectory of multi-robot systems. We anticipate that the insights gained from this collaborative effort will contribute significantly to advancing the field and addressing the complexities associated with achieving high levels of cooperative behaviours in MRS.</p>
+          
+          
+          <div class="publication-links">
+            
+              
+              <a href="https://sites.google.com/view/workshop-rwmra-iros2024/home" class="pub-link">Website</a>
+              
+            
+              
+            
+            
+            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2024workshop')">BibTeX</button>
+            
+          </div>
+          
+          
+          
+          <div class="bibtex-container" id="bibtex-marino2024workshop" style="display: none;">
+            <h4>BibTeX Citation:</h4>
+            <pre class="bibtex-code"><code></code></pre>
+            <button class="copy-bibtex" onclick="copyBibtex('marino2024workshop')">Copy to Clipboard</button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="publication-card" data-tags="multi-agent,drones,distributed-control,graph-neural-networks,motion-planning,optimization">
+        <div class="publication-header" onclick="togglePublication('marinomulti')">
+          <h3>Multi-UAVs End-to-End Distributed Trajectory Generation Over Point Cloud Data</h3>
+          <div class="publication-meta">
+            <span class="venue venue-journal">
+              
+              📄 IEEE Robotics and Automation Letters
+            </span>
+            <span class="year">2024</span>
+            <span class="expand-icon">+</span>
+          </div>
+        </div>
+        <div class="publication-tags">
+          
+          <span class="pub-tag">
+            
+            Multi-Agent Systems
+          </span>
+          
+          <span class="pub-tag">
+            
+            Drones
+          </span>
+          
+          <span class="pub-tag">
+            
+            Distributed Control
+          </span>
+          
+          <span class="pub-tag">
+            
+            Graph Neural Networks
+          </span>
+          
+          <span class="pub-tag">
+            
+            Motion Planning
+          </span>
+          
+          <span class="pub-tag">
+            
+            Optimization
+          </span>
+          
+        </div>
+        <div class="publication-content" id="marinomulti" style="display: none;">
+          <p><strong>Authors:</strong> Antonio Marino, Claudio Pacchierotti, Paolo Robuffo Giordano</p>
+          <p><strong>Abstract:</strong> This letter introduces an end-to-end trajectory planning algorithm tailored for multi-UAV systems that generates collision-free trajectories in environments populated with both static and dynamic obstacles, leveraging point cloud data. Our approach consists of a 2-branch neural network fed with sensing and localization data, able to communicate intermediate learned features among the agents. One network branch crafts an initial collision-free trajectory estimate, while the other devises a neural collision constraint for subsequent optimization, ensuring trajectory continuity and adherence to physical actuation limits. Extensive simulations in challenging cluttered environments, involving up to 25 robots and 25% obstacle density, show a collision avoidance success rate in the range of 100−85%. Finally, we introduce a saliency map computation method acting on the point cloud data, offering qualitative insights into our methodology.</p>
+          
+          
+          <div class="publication-links">
+            
+              
+              <a href="https://ieeexplore.ieee.org/document/10592306" class="pub-link">Paper</a>
+              
+            
+              
+              <a href="https://www.youtube.com/watch?v=LSk8gjyuSKA&amp;ab_channel=Rainbow_Inria_Irisa" class="pub-link">Video</a>
+              
+            
+              
+            
+            
+            <button class="pub-link bibtex-btn" onclick="showBibtex('marinomulti')">BibTeX</button>
+            
+          </div>
+          
+          
+          
+          <div class="bibtex-container" id="bibtex-marinomulti" style="display: none;">
+            <h4>BibTeX Citation:</h4>
+            <pre class="bibtex-code"><code>@article{marinomulti,
+  author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={\href{https://ieeexplore.ieee.org/document/10592306}{Multi-UAVs End-to-End Distributed Trajectory Generation Over Point Cloud Data}}, 
+  year={2024},
+  volume={9},
+  number={9},
+note ={\textbf{\href{https://www.youtube.com/watch?v=LSk8gjyuSKA&amp;ab_channel=Rainbow_Inria_Irisa}{video}}},
+  pages={7629-7636}, keywords={Trajectory;Drones;Safety;Planning;Sensors;Optimization;Heuristic algorithms;Distributed control;graph neural network;trajectory generation},
+}
+</code></pre>
+            <button class="copy-bibtex" onclick="copyBibtex('marinomulti')">Copy to Clipboard</button>
           </div>
           
         </div>
@@ -505,29 +639,19 @@ organization={IEEE}
         </div>
       </div>
       
-      <div class="publication-card" data-tags="multi-agent,drones,distributed-control,graph-neural-networks,motion-planning">
-        <div class="publication-header" onclick="togglePublication('marinomulti')">
-          <h3>Multi-UAVs End-to-End Distributed Trajectory Generation Over Point Cloud Data</h3>
+      <div class="publication-card" data-tags="distributed-control,multi-agent,graph-neural-networks">
+        <div class="publication-header" onclick="togglePublication('marino2024input')">
+          <h3>Input State Stability of Gated Graph Neural Networks</h3>
           <div class="publication-meta">
             <span class="venue venue-journal">
               
-              📄 IEEE Robotics and Automation Letters
+              📄 IEEE Transactions on Control of Network Systems
             </span>
             <span class="year">2024</span>
             <span class="expand-icon">+</span>
           </div>
         </div>
         <div class="publication-tags">
-          
-          <span class="pub-tag">
-            
-            Multi-Agent Systems
-          </span>
-          
-          <span class="pub-tag">
-            
-            Drones
-          </span>
           
           <span class="pub-tag">
             
@@ -536,102 +660,48 @@ organization={IEEE}
           
           <span class="pub-tag">
             
+            Multi-Agent Systems
+          </span>
+          
+          <span class="pub-tag">
+            
             Graph Neural Networks
           </span>
           
-          <span class="pub-tag">
-            
-            Motion Planning
-          </span>
-          
         </div>
-        <div class="publication-content" id="marinomulti" style="display: none;">
+        <div class="publication-content" id="marino2024input" style="display: none;">
           <p><strong>Authors:</strong> Antonio Marino, Claudio Pacchierotti, Paolo Robuffo Giordano</p>
-          <p><strong>Abstract:</strong> This letter introduces an end-to-end trajectory planning algorithm tailored for multi-UAV systems that generates collision-free trajectories in environments populated with both static and dynamic obstacles, leveraging point cloud data. Our approach consists of a 2-branch neural network fed with sensing and localization data, able to communicate intermediate learned features among the agents. One network branch crafts an initial collision-free trajectory estimate, while the other devises a neural collision constraint for subsequent optimization, ensuring trajectory continuity and adherence to physical actuation limits. Extensive simulations in challenging cluttered environments, involving up to 25 robots and 25% obstacle density, show a collision avoidance success rate in the range of 100−85%. Finally, we introduce a saliency map computation method acting on the point cloud data, offering qualitative insights into our methodology.</p>
+          <p><strong>Abstract:</strong> In this article, we aim to find the conditions for the input-to-state stability (ISS) and incremental ISS of gated graph neural networks (GGNNs). We show that this recurrent version of graph neural networks can be expressed as a dynamical distributed system and, as a consequence, can be analyzed using model-based techniques to assess its stability and robustness properties. Then, the stability criteria found can be exploited as constraints during the training process to enforce the internal stability of the neural network. Two distributed control examples, i.e., flocking and multirobot motion control, show that using these conditions increases the performance and robustness of the GGNNs.</p>
           
           
           <div class="publication-links">
             
               
-              <a href="https://ieeexplore.ieee.org/document/10592306" class="pub-link">Paper</a>
-              
-            
-              
-              <a href="https://www.youtube.com/watch?v=LSk8gjyuSKA&amp;ab_channel=Rainbow_Inria_Irisa" class="pub-link">Video</a>
+              <a href="https://ieeexplore.ieee.org/document/10458338" class="pub-link">Paper</a>
               
             
               
             
             
-            <button class="pub-link bibtex-btn" onclick="showBibtex('marinomulti')">BibTeX</button>
+            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2024input')">BibTeX</button>
             
           </div>
           
           
           
-          <div class="bibtex-container" id="bibtex-marinomulti" style="display: none;">
+          <div class="bibtex-container" id="bibtex-marino2024input" style="display: none;">
             <h4>BibTeX Citation:</h4>
-            <pre class="bibtex-code"><code>@article{marinomulti,
-  author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
-  journal={IEEE Robotics and Automation Letters}, 
-  title={\href{https://ieeexplore.ieee.org/document/10592306}{Multi-UAVs End-to-End Distributed Trajectory Generation Over Point Cloud Data}}, 
-  year={2024},
-  volume={9},
-  number={9},
-note ={\textbf{\href{https://www.youtube.com/watch?v=LSk8gjyuSKA&amp;ab_channel=Rainbow_Inria_Irisa}{video}}},
-  pages={7629-7636}, keywords={Trajectory;Drones;Safety;Planning;Sensors;Optimization;Heuristic algorithms;Distributed control;graph neural network;trajectory generation},
-}
+            <pre class="bibtex-code"><code>@article{marino2024input,
+    title={\href{https://ieeexplore.ieee.org/document/10458338}{Input State Stability of Gated Graph Neural Networks}},
+    author={Marino, Antonio and Pacchierotti, Claudio and Robuffo Giordano, Paolo},
+    journal={IEEE Transactions on Control of Network Systems},
+    year={2024},
+    volume={11},
+    number={4},
+    pages={2052-2063},
+  }
 </code></pre>
-            <button class="copy-bibtex" onclick="copyBibtex('marinomulti')">Copy to Clipboard</button>
-          </div>
-          
-        </div>
-      </div>
-      
-      <div class="publication-card" data-tags="robotics">
-        <div class="publication-header" onclick="togglePublication('marino2024workshop')">
-          <h3>Workshop on Real-World Challenges in Multi-Robot Cooperation</h3>
-          <div class="publication-meta">
-            <span class="venue venue-workshop">
-              
-              👥 IROS 2024
-            </span>
-            <span class="year">2024</span>
-            <span class="expand-icon">+</span>
-          </div>
-        </div>
-        <div class="publication-tags">
-          
-          <span class="pub-tag">
-            
-            Robotics
-          </span>
-          
-        </div>
-        <div class="publication-content" id="marino2024workshop" style="display: none;">
-          <p><strong>Authors:</strong> Antonio Marino, Bruno Scaglioni, Pietro Valdastri</p>
-          <p><strong>Abstract:</strong> Recent advances in methods, algorithms, computational power, and energetic efficiency have made the deployment of multi-robot systems (MRS) a possibility. Moreover, with the rise of new control methods, learning and perception algorithms, the research community has shown increasing interest in such systems, albeit for relatively simple tasks such as surveillance, monitoring, and warehouse management. For successfully introducing MRS-based in real-world fields, e.g. manufacturing, agriculture and healthcare, there is a need to address more complex and intelligent cooperative tasks. Furthermore, even for simple tasks, there is a big gap between theoretical/lab results and the actual implementation of multi-robot solutions. In light of this, in this workshop, we aim to address questions such as: how do we move from simple tasks to cooperative intelligent missions? What are the new frontiers for MRS? What are the practical and theoretical challenges preventing an increased implementation of MRS-based applications? The objective is to collectively explore novel applications in which MRS could be developed and to identify and tackle the challenges hindering their broader integration in real-world applications. This workshop can hold great value for both the research community and industry, providing a platform to discuss, analyze, and shape the future trajectory of multi-robot systems. We anticipate that the insights gained from this collaborative effort will contribute significantly to advancing the field and addressing the complexities associated with achieving high levels of cooperative behaviours in MRS.</p>
-          
-          
-          <div class="publication-links">
-            
-              
-              <a href="https://sites.google.com/view/workshop-rwmra-iros2024/home" class="pub-link">Website</a>
-              
-            
-              
-            
-            
-            <button class="pub-link bibtex-btn" onclick="showBibtex('marino2024workshop')">BibTeX</button>
-            
-          </div>
-          
-          
-          
-          <div class="bibtex-container" id="bibtex-marino2024workshop" style="display: none;">
-            <h4>BibTeX Citation:</h4>
-            <pre class="bibtex-code"><code></code></pre>
-            <button class="copy-bibtex" onclick="copyBibtex('marino2024workshop')">Copy to Clipboard</button>
+            <button class="copy-bibtex" onclick="copyBibtex('marino2024input')">Copy to Clipboard</button>
           </div>
           
         </div>
