@@ -1,14 +1,25 @@
 publications:
-  #- id: "marino2026stable"
-  #  title: "Stable Transformer-Actor-Critic Model Predictive Control : A Contraction Analysis Approach"
-  #  authors: ["Antonio Marino", "Valerio Modugno", "Marco Cognetti"]
-  #  venue: "IEEE Control Systems Letters"
-  #  year: 2026
-  #  venue_type: "preprint"
-  #  abstract: "Actor-Critic Model Predictive Control (MPC) effectively addresses complex, non-convex control problems, but guaranteeing the closed-loop stability of sequence-based learning models within these pipelines remains challenging. This paper introduces a novel Transformer-Actor-Critic MPC architecture with formal robustness guarantees. First, we prove that Transformer networks can satisfy global incremental Input-to-State Stability. We then leverage Riemannian contraction theory to analyze the interconnected dynamics between the physical plant and the predictive neural network. Finally, we integrate these theoretical bounds as a training regularizer to yield a certifiably robust policy. The framework is validated on a nonlinear 3D drone model executing target-reaching and obstacle-avoidance maneuvers." 
-  #  tags: ["robotics", "optimization", "reinforcement-learning"]
-  #  links:
-  #  featured: true 
+  - id: "marino2026stable"
+    title: "Stable Transformer-Actor-Critic Model Predictive Control : A Contraction Analysis Approach"
+    authors: ["Antonio Marino", "Valerio Modugno", "Marco Cognetti"]
+    venue: "IEEE Control Systems Letters"
+    year: 2026
+    venue_type: "preprint"
+    abstract: "Actor-Critic Model Predictive Control (MPC) effectively addresses complex, non-convex control problems, but guaranteeing the closed-loop stability of sequence-based learning models within these pipelines remains challenging. This paper introduces a novel Transformer-Actor-Critic MPC architecture with formal robustness guarantees. First, we prove that Transformer networks can satisfy global incremental Input-to-State Stability. We then leverage Riemannian contraction theory to analyze the interconnected dynamics between the physical plant and the predictive neural network. Finally, we integrate these theoretical bounds as a training regularizer to yield a certifiably robust policy. The framework is validated on a nonlinear 3D drone model executing target-reaching and obstacle-avoidance maneuvers." 
+    tags: ["robotics", "optimization", "reinforcement-learning"]
+    links:
+    featured: true
+
+  - id: "marino2026sample"
+    title: "Sampling-Based Coordination-Informed Multi-Objective Multi-Robot Reinforcement Learning"
+    authors: ["Antonio Marino", "Esteban Restrepo", "Soon-Jo Chung", "Paolo Robuffo Giordano", "Claudio Pacchierotti"]
+    venue: "IEEE Transactions on Robotics"
+    year: 2026
+    venue_type: "preprint"
+    abstract: "Multi-robot systems must simultaneously optimize competing objectives while maintaining coordinated behavior. Existing multi-agent reinforcement learning approaches often rely on fixed or centralized coordination, which limits adaptability and violates distributed constraints. This work introduces the Coordination-Informed Multi-Objective Reinforcement Learning (CIMORL) framework, integrating a distributed weight prediction mechanism, a privileged expert training strategy, and theoretical guarantees for Pareto-optimal solutions. We present the base CIMORL method alongside two sampling-based variants, CIMORL-TS (Tree Search) and CIMORL-MPPI (MPPI), which leverage privileged global information during training to enable fully decentralized deployment. Experimental validation in cooperative and adversarial scenarios demonstrates a 21% hypervolume improvement and superior policy stability compared to state-of-the-art baselines. Real-world experiments with Crazyflie drones further validate the framework's robustness in resource allocation and multi-attacker multi-defend scenarios under partial observability."
+    tags: ["robotics", "multi-agent", "reinforcement-learning"]
+    links:
+    featured: true 
 
   - id: "marino2025thesis"
     title: "Learning to Communicate and Coordinate: Distributed Learning-based Control for Multi-Robot Systems"
