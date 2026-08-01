@@ -1,84 +1,112 @@
 ---
-layout: minimal
+layout: home
 title: "Antonio Marino — Researcher"
 section: "home"
 permalink: /home.html
+hero:
+  tagline: "Research Associate · University of Cambridge"
+  heading: "Advancing Autonomous Systems through Learning-based Control"
+  subheading: >
+    I develop hybrid approaches that merge deep learning with provable control structures,
+    enabling robot teams to coordinate safely in complex, unstructured environments.
+  primary_button:
+    url: "/research.html"
+    text: "View Research"
+    icon: "fas fa-microscope"
+  secondary_button:
+    url: "/publications.html"
+    text: "Publications"
+    icon: "fas fa-file-alt"
+  focus_chips:
+    - "Multi-Robot Systems"
+    - "Graph Neural Networks"
+    - "Hybrid Learning & Control"
+    - "Reinforcement Learning"
+  social:
+    email: "antonio.marino@cl.cam.ac.uk"
+    google_scholar: "https://scholar.google.co.uk/citations?user=bKy_YlkAAAAJ&hl=en&oi=sra"
+    github: "https://github.com/SeaingAnt"
+    linkedin: "https://www.linkedin.com/in/antonio-marino-841386192"
+news:
+  - date: "Jun 2026"
+    text: "2 IEEE RA-L papers presented at IEEE ICRA 2026."
+  - date: "Dec 2025"
+    text: "PhD dissertation Inria centre at Rennes University."
+  - date: "Oct 2025"
+    text: "Joined the University of Cambridge as a Research Associate."
+positions:
+  - title: "Associate Researcher"
+    date: "2025 – Present"
+    subtitle: "University of Cambridge"
+  - title: "Visiting Researcher"
+    date: "Jan - May 2025"
+    subtitle: "California Institute of Technology"
+education:
+  - degree: "Ph.D. in Robotics / Engineering"
+    date: "2022 – 2025"
+    university: "University of Rennes"
+    details:
+      - "Thesis: Learning for autonomous multi-robot systems"
+      - "Advisor: Claudio Pacchierotti and Paolo Robuffo Giordano"
+  - degree: "M.Sc. in Robotics Engineering"
+    date: "2018 – 2020"
+    university: "University of Genoa"
+    details:
+      - "Grade: 110/110 cum laude "
+      - "Thesis: Deep learning for robot control"
+talks:
+  - title: "Analysis of dynamic properties of learning models in multi-agent systems"
+    date: "May 2024"
+    event: "Journée TS5 : Hybridation entre les approches basées modèles et basées données"
+  - title: "Liquid Time-Constant Graph Neural Networks: A Control-Based Perspective"
+    date: "Jan 2025"
+    event: "Caltech ACL lab Seminar"
+  - title: "Multi-Agent Learning-Based Control: Across Stability and Opinion Dynamics"
+    date: "May 2025"
+    event: "University of Cambridge Prorok Lab Seminar"
+  - title: "Multi-Agent Learning-Based Control: Across Stability and Opinion Dynamics"
+    date: "Jun 2025"
+    event: "KTH seminar"
+  - title: "Coordination-Informed Multi-Objective Multi-Robot Reinforcement Learning"
+    date: "Sept 2025"
+    event: "Multi-Robot Days - Inria, University of Rennes"
+  - title: "Multi-Agent Learning-based Control: Intelligent Coordination through Control-Theoretic Insights"
+    date: "Jan 2026"
+    event: "Acentauri and Chroma Inria team seminar"
+students:
+  - name: "Lorenzo Magnino"
+    date: "2025 – Present"
+    project: "Learning Multi-Robot Reaction-Stable Behaviours"
+  - name: "Alessia Fusco"
+    date: "2025 – Present"
+    project: "Predicting Human-Robot Interaction for Collaboration Manipulation"
+  - name: "Zhan Ghao"
+    date: "2025 – 2026"
+    project: "Risk-Aware Environment Shaping for Safe Multi-Robot Control under Execution Uncertainty"
+  - name: "Mario Gomez"
+    date: "2025 – 2026"
+    project: "Environmental Co-design for Sensitive Sequential Multi-Task Robotic Team"
+  - name: "Yuxin Jin"
+    date: "2024 – Present"
+    project: "Micro Magnetically-Driven Multi-Robot Control via Multi-Modal Sensing Sources"
+  - name: "Thomas Zamprogno"
+    date: "2025 – 2026"
+    project: "Decentralized Multi-Robot Clustering via Generalized Connectivity Maintenance"
+  - name: "Francesco Levantino"
+    date: "2025"
+    project: "Experimental Validation of Passivity-Based Decentralized Bi-Connectivity Maintenance for Open Multi-Agent Systems"
+  - name: "Istok Petrovic"
+    date: "2025 – 2026"
+    project: "Experience Clustering for Coordination in Heterogeneous Multi-Agent Systems"
+languages:
+  - name: "Italian"
+    level: "Native"
+  - name: "English"
+    level: "Fluent / Professional Working Proficiency"
+  - name: "French"
+    level: "Fluent"
 ---
-
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-text reveal">
-      <p class="hero-tagline">Research Associate · University of Cambridge</p>
-      <h1 class="hero-heading">Advancing Autonomous Systems through Learning-based Control.</h1>
-      <p class="hero-subheading">
-        I develop hybrid approaches that merge deep learning with provable control structures,
-        enabling robot teams to coordinate safely in complex, unstructured environments.
-      </p>
-      <div class="hero-cta">
-        <a href="/research.html" class="btn btn-primary">
-          <i class="fas fa-microscope"></i> View Research
-        </a>
-        <a href="/publications.html" class="btn btn-outline">
-          <i class="fas fa-file-alt"></i> Publications
-        </a>
-      </div>
-
-      <div class="focus-chips">
-        <span class="focus-chip">Multi-Robot Systems</span>
-        <span class="focus-chip">Graph Neural Networks</span>
-        <span class="focus-chip">Hybrid Learning &amp; Control</span>
-        <span class="focus-chip">Reinforcement Learning</span>
-      </div>
-    </div>
-
-    <div class="hero-photo-wrapper reveal">
-      {% if site.logo %}
-        <img src="{{ site.logo | relative_url }}" alt="Antonio Marino" class="hero-photo" />
-      {% endif %}
-      <div class="hero-social">
-        <a href="mailto:antonio.marino@cl.cam.ac.uk" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://scholar.google.co.uk/citations?user=bKy_YlkAAAAJ&hl=en&oi=sra" class="social-btn" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-        <a href="https://github.com/SeaingAnt" class="social-btn" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/antonio-marino-841386192" class="social-btn" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-
-      <!-- News -->
-      <div class="hero-news">
-        <h3 class="hero-news-title"><i class="fas fa-bullhorn"></i> News</h3>
-        <ul class="news-list">
-          <li class="news-item"><span class="news-date">Jun 2026</span> — 2 IEEE RA-L papers presented at IEEE ICRA 2026.</li>
-          <li class="news-item"><span class="news-date">Dec 2025</span> — PhD dissertation Inria centre at Rennes University.</li>
-          <li class="news-item"><span class="news-date">Oct 2025</span> — Joined the University of Cambridge as a Research Associate.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Brief Bio + Featured Paper -->
-<section class="section section--gray">
-  <div class="container--narrow">
-    <div class="reveal">
-      <p style="font-size: 1.05rem; line-height: 1.85; color: var(--text-secondary); text-align: center; font-weight: 300;">
-        I am a Postdoctoral Researcher in Computer Science at the
-        <strong style="color: var(--text-primary);">University of Cambridge</strong> (Prorok Lab).
-        My research merges multi-robot systems with learning-based control to create intelligent,
-        safe, and collaborative autonomous teams.
-      </p>
-    </div>
-
-    <!-- Featured Publication -->
-    {% assign featured = site.data.publications.publications | where: "featured", true | sort: "year" | reverse | first %}
-    {% if featured %}
-    <a href="{{ featured.links.paper }}" class="featured-pub reveal" style="display: block; text-decoration: none;">
-      <p class="featured-pub-label"><i class="fas fa-star"></i> Latest Publication</p>
-      <p class="featured-pub-title">{{ featured.title }}</p>
-      <p class="featured-pub-meta">
-        {{ featured.authors | join: ', ' }} &middot;
-        <em>{{ featured.venue }}</em>, {{ featured.year }}
-      </p>
-    </a>
-    {% endif %}
-  </div>
-</section>
+I am a Postdoctoral Researcher in Computer Science at the
+**University of Cambridge** (Prorok Lab).
+My research merges multi-robot systems with learning-based control to create intelligent,
+safe, and collaborative autonomous teams.
