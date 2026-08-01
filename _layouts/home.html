@@ -8,27 +8,16 @@ layout: minimal
     <div class="hero-text reveal">
       <p class="hero-tagline">{{ page.hero.tagline }}</p>
       <h1 class="hero-name"
-        style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; margin-bottom: 0.5rem; color: var(--text-heading); letter-spacing: -0.04em;">
+        style="font-size: clamp(2.0rem, 5vw, 4rem); font-weight: 700; margin-bottom: 0.1rem; color: var(--text-heading); letter-spacing: -0.04em;">
         {{ site.title }}</h1>
       <h2 class="hero-heading"
-        style="font-size: clamp(1.2rem, 2vw, 1.8rem); font-weight: 600; margin-bottom: 1.5rem; color: var(--text-heading); opacity: 0.9;">
+        style="font-size: clamp(1.0rem, 2vw, 1.8rem); font-weight: 600; margin-bottom: 1.0rem; color: var(--text-heading); opacity: 0.9;">
         {{ page.hero.heading }}</h2>
       <div class="hero-subheading">
         {{ content | markdownify }}
         <p style="margin-top: 1rem;">{{ page.hero.subheading }}</p>
       </div>
-      <div class="hero-cta">
-        {% if page.hero.primary_button %}
-        <a href="{{ page.hero.primary_button.url }}" class="btn btn-primary">
-          <i class="{{ page.hero.primary_button.icon }}"></i> {{ page.hero.primary_button.text }}
-        </a>
-        {% endif %}
-        {% if page.hero.secondary_button %}
-        <a href="{{ page.hero.secondary_button.url }}" class="btn btn-outline">
-          <i class="{{ page.hero.secondary_button.icon }}"></i> {{ page.hero.secondary_button.text }}
-        </a>
-        {% endif %}
-      </div>
+
 
       {% if page.hero.focus_chips %}
       <div class="focus-chips">
@@ -74,132 +63,21 @@ layout: minimal
         </ul>
       </div>
       {% endif %}
-    </div>
-  </div>
-</section>
-
-<!-- Brief Bio + Featured Paper -->
-<section class="section section--gray">
-  <div class="container--narrow">
-    <!-- Content merged into hero -->
 
 
-    <!-- Research Positions -->
-    {% if page.positions %}
-    <div class="cv-section reveal-stagger">
-      <h2 class="cv-section-title">Professional Experiences</h2>
-
-      {% for pos in page.positions %}
-      <div class="cv-item reveal">
-        <div class="cv-header">
-          <h3 class="cv-title">{{ pos.title }}</h3>
-          <span class="cv-date">{{ pos.date }}</span>
-        </div>
-        <div class="cv-subtitle">{{ pos.subtitle }}</div>
-        <div class="cv-details">
-          <ul>
-            {% for detail in pos.details %}
-            <li>{{ detail }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-    <!-- Education -->
-    {% if page.education %}
-    <div class="cv-section reveal-stagger">
-      <h2 class="cv-section-title">Education</h2>
-
-      {% for edu in page.education %}
-      <div class="cv-item reveal">
-        <div class="cv-header">
-          <h3 class="cv-title">{{ edu.degree }}</h3>
-          <span class="cv-date">{{ edu.date }}</span>
-        </div>
-        <div class="cv-subtitle">{{ edu.university }}</div>
-        <div class="cv-details">
-          <ul>
-            {% for detail in edu.details %}
-            <li>{{ detail }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-
-    <!-- Invited Talks -->
-    {% if page.talks %}
-    <div class="cv-section reveal-stagger">
-      <h2 class="cv-section-title">Invited Talks</h2>
-
-      {% for talk in page.talks %}
-      <div class="cv-item reveal">
-        <div class="cv-header">
-          <h3 class="cv-title">{{ talk.title }}</h3>
-          <span class="cv-date">{{ talk.date }}</span>
-        </div>
-        <div class="cv-subtitle">{{ talk.event }}</div>
-      </div>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-    <!-- Student Supervision -->
-    {% if page.students %}
-    <div class="cv-section reveal-stagger">
-      <h2 class="cv-section-title">Supervised Students</h2>
-
-      {% for student in page.students %}
-      <div class="cv-item reveal">
-        <div class="cv-header">
-          <h3 class="cv-title">{{ student.name }}</h3>
-          <span class="cv-date">{{ student.date }}</span>
-        </div>
-        <div class="cv-details">
-          Project: {{ student.project }}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-    <!-- Languages -->
-    {% if page.languages %}
-    <div class="cv-section reveal-stagger">
-      <h2 class="cv-section-title">Languages</h2>
-
-      <div class="cv-item reveal">
-        <div class="cv-details">
-          <ul>
-            {% for lang in page.languages %}
-            <li><strong>{{ lang.name }}:</strong> {{ lang.level }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+      <div class="hero-cta"
+        style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; width: 100%; flex-wrap: wrap;">
+        {% if page.hero.primary_button %}
+        <a href="{{ page.hero.primary_button.url }}" class="btn btn-primary">
+          <i class="{{ page.hero.primary_button.icon }}"></i> {{ page.hero.primary_button.text }}
+        </a>
+        {% endif %}
+        {% if page.hero.secondary_button %}
+        <a href="{{ page.hero.secondary_button.url }}" class="btn btn-outline">
+          <i class="{{ page.hero.secondary_button.icon }}"></i> {{ page.hero.secondary_button.text }}
+        </a>
+        {% endif %}
       </div>
     </div>
-    {% endif %}
-
-
-
-    <!-- Featured Publication -->
-    {% assign featured = site.data.publications.publications | where: "featured", true | sort: "year" | reverse | first
-    %}
-    {% if featured %}
-    <a href="{{ featured.links.paper }}" class="featured-pub reveal" style="display: block; text-decoration: none;">
-      <p class="featured-pub-label"><i class="fas fa-star"></i> Latest Publication</p>
-      <p class="featured-pub-title">{{ featured.title }}</p>
-      <p class="featured-pub-meta">
-        {{ featured.authors | join: ', ' }} &middot;
-        <em>{{ featured.venue }}</em>, {{ featured.year }}
-      </p>
-    </a>
-    {% endif %}
   </div>
 </section>

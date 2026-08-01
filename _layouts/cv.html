@@ -1,0 +1,125 @@
+---
+layout: minimal
+---
+
+<section class="section section--gray">
+  <div class="container--narrow">
+    <h1 class="page-title" style="margin-bottom: 3rem; text-align: center;">Curriculum Vitae</h1>
+
+    <!-- Research Positions -->
+    {% if page.positions %}
+    <div class="cv-section reveal-stagger">
+      <h2 class="cv-section-title">Professional Experiences</h2>
+
+      {% for pos in page.positions %}
+      <div class="cv-item reveal">
+        <div class="cv-header">
+          <h3 class="cv-title">{{ pos.title }}</h3>
+          <span class="cv-date">{{ pos.date }}</span>
+        </div>
+        <div class="cv-subtitle">{{ pos.subtitle }}</div>
+        <div class="cv-details">
+          <ul>
+            {% for detail in pos.details %}
+            <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Education -->
+    {% if page.education %}
+    <div class="cv-section reveal-stagger">
+      <h2 class="cv-section-title">Education</h2>
+
+      {% for edu in page.education %}
+      <div class="cv-item reveal">
+        <div class="cv-header">
+          <h3 class="cv-title">{{ edu.degree }}</h3>
+          <span class="cv-date">{{ edu.date }}</span>
+        </div>
+        <div class="cv-subtitle">{{ edu.university }}</div>
+        <div class="cv-details">
+          <ul>
+            {% for detail in edu.details %}
+            <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+
+    <!-- Invited Talks -->
+    {% if page.talks %}
+    <div class="cv-section reveal-stagger">
+      <h2 class="cv-section-title">Invited Talks</h2>
+
+      {% for talk in page.talks reversed %}
+      <div class="cv-item reveal">
+        <div class="cv-header">
+          <h3 class="cv-title">{{ talk.title }}</h3>
+          <span class="cv-date">{{ talk.date }}</span>
+        </div>
+        <div class="cv-subtitle">{{ talk.event }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Student Supervision -->
+    {% if page.students %}
+    <div class="cv-section reveal-stagger">
+      <h2 class="cv-section-title">Supervised Students</h2>
+
+      {% for student in page.students %}
+      <div class="cv-item reveal">
+        <div class="cv-header">
+          <h3 class="cv-title">{{ student.name }}</h3>
+          <span class="cv-date">{{ student.date }}</span>
+        </div>
+        <div class="cv-details">
+          Project: {{ student.project }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Languages -->
+    {% if page.languages %}
+    <div class="cv-section reveal-stagger">
+      <h2 class="cv-section-title">Languages</h2>
+
+      <div class="cv-item reveal">
+        <div class="cv-details">
+          <ul>
+            {% for lang in page.languages %}
+            <li><strong>{{ lang.name }}:</strong> {{ lang.level }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- Featured Publication -->
+    {% assign featured = site.data.publications.publications | where: "featured", true | sort: "year" | reverse | first %}
+    {% if featured %}
+    <a href="{{ featured.links.paper }}" class="featured-pub reveal" style="display: block; text-decoration: none;">
+      <p class="featured-pub-label"><i class="fas fa-star"></i> Latest Publication</p>
+      <p class="featured-pub-title">{{ featured.title }}</p>
+      <p class="featured-pub-meta">
+        {{ featured.authors | join: ', ' }} &middot;
+        <em>{{ featured.venue }}</em>, {{ featured.year }}
+      </p>
+    </a>
+    {% endif %}
+
+  </div>
+</section>
