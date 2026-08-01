@@ -92,6 +92,16 @@ function initializeTagFiltering() {
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
   initializeTagFiltering();
+  
+  // Check URL for filter parameter
+  const urlParams = new URLSearchParams(window.location.search);
+  const filterTag = urlParams.get('filter');
+  if (filterTag) {
+    const targetBtn = document.querySelector(`.tag-btn[data-tag="${filterTag}"]`);
+    if (targetBtn) {
+      targetBtn.click();
+    }
+  }
 });
 
 // Smooth scroll for internal links

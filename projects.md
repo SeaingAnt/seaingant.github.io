@@ -27,10 +27,10 @@ permalink: /research.html
             Developing neural distributed controllers intrisically robust and stable through nonlinear control theory.
           </p>-->
           <div class="research-card-tags">
-            <span class="tag">Non-linear Systems</span>
-            <span class="tag">GNNs</span>
-            <span class="tag">Neural ODEs</span>
-            <span class="tag">Stability</span>
+            <a href="/publications.html?filter=all" class="tag" style="text-decoration: none;" onclick="event.stopPropagation();">Non-linear Systems</a>
+            <a href="/publications.html?filter=graph-neural-networks" class="tag" style="text-decoration: none;" onclick="event.stopPropagation();">GNNs</a>
+            <a href="/publications.html?filter=all" class="tag" style="text-decoration: none;" onclick="event.stopPropagation();">Neural ODEs</a>
+            <a href="/publications.html?filter=all" class="tag" style="text-decoration: none;" onclick="event.stopPropagation();">Stability</a>
           </div>
         </div>
         <div class="research-detail" id="rd1">
@@ -59,9 +59,9 @@ permalink: /research.html
             Structured learning with GNNs for distributed perception, planning, and tracking across aerial swarms and micro-robotics.
           </p>-->
           <div class="research-card-tags">
-            <span class="tag">Aerial Robotics</span>
-            <span class="tag">Micro-Robotics</span>
-            <span class="tag">Distributed Perception</span>
+            <a href="/publications.html?filter=drones" class="tag" style="text-decoration: none;" onclick="event.stopPropagation();">Aerial Robotics</a>
+            <a href="/publications.html?filter=robotics" class="tag" style="text-decoration: none;" onclick="event.stopPropagation();">Micro-Robotics</a>
+            <a href="/publications.html?filter=distributed-control" class="tag" style="text-decoration: none;" onclick="event.stopPropagation();">Distributed Perception</a>
           </div>
         </div>
         <div class="research-detail" id="rd2">
@@ -90,9 +90,9 @@ permalink: /research.html
             A MARL framework using distributed dynamic clustering for fluid role allocation and multi-objective optimization across robot teams.
           </p>-->
           <div class="research-card-tags">
-            <span class="tag">Reinforcement Learning</span>
-            <span class="tag">Multi-Objective</span>
-            <span class="tag">Opinion Dynamics</span>
+            <a href="/publications.html?filter=reinforcement-learning" class="tag" style="text-decoration: none;" onclick="event.stopPropagation();">Reinforcement Learning</a>
+            <a href="/publications.html?filter=optimization" class="tag" style="text-decoration: none;" onclick="event.stopPropagation();">Multi-Objective</a>
+            <a href="/publications.html?filter=multi-agent" class="tag" style="text-decoration: none;" onclick="event.stopPropagation();">Opinion Dynamics</a>
           </div>
         </div>
         <div class="research-detail" id="rd3">

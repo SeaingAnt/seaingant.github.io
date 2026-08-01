@@ -18,10 +18,12 @@ hero:
     text: "Publications"
     icon: "fas fa-file-alt"
   focus_chips:
-    - "Multi-Robot Systems"
-    - "Graph Neural Networks"
-    - "Hybrid Learning & Control"
-    - "Reinforcement Learning"
+    - name: "Multi-Agent Systems"
+      id: "multi-agent"
+    - name: "Graph Neural Networks"
+      id: "graph-neural-networks"
+    - name: "Reinforcement Learning"
+      id: "reinforcement-learning"
   social:
     email: "antonio.marino@cl.cam.ac.uk"
     google_scholar: "https://scholar.google.co.uk/citations?user=bKy_YlkAAAAJ&hl=en&oi=sra"

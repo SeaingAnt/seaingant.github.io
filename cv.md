@@ -42,6 +42,11 @@ talks:
   - title: "Multi-Agent Learning-based Control: Intelligent Coordination through Control-Theoretic Insights"
     date: "Jan 2026"
     event: "Acentauri and Chroma Inria team seminar"
+events:
+  - title: "2nd Workshop on Real-World Challenges in Multi-Robot Cooperation: The Power of Heterogeneity and Diversity"
+    event: "IEEE/RSJ International Conference on Intelligent Robots and Systems 2026"
+  - title: "Workshop on Real-World Challenges in Multi-Robot Cooperation"
+    event: "IEEE/RSJ International Conference on Intelligent Robots and Systems 2024"
 students:
   - name: "Lorenzo Magnino"
     date: "2025 – Present"

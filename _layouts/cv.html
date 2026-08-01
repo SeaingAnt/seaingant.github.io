@@ -72,6 +72,22 @@ layout: minimal
     </div>
     {% endif %}
 
+    <!-- Invited Talks -->
+    {% if page.events %}
+    <div class="cv-section reveal-stagger">
+      <h2 class="cv-section-title">Organized Events</h2>
+
+      {% for event in page.events %}
+      <div class="cv-item reveal">
+        <div class="cv-header">
+          <h3 class="cv-title">{{ event.title }}</h3>
+        </div>
+        <div class="cv-subtitle">{{ event.event }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
     <!-- Student Supervision -->
     {% if page.students %}
     <div class="cv-section reveal-stagger">
@@ -109,7 +125,8 @@ layout: minimal
     {% endif %}
 
     <!-- Featured Publication -->
-    {% assign featured = site.data.publications.publications | where: "featured", true | sort: "year" | reverse | first %}
+    {% assign featured = site.data.publications.publications | where: "featured", true | sort: "year" | reverse | first
+    %}
     {% if featured %}
     <a href="{{ featured.links.paper }}" class="featured-pub reveal" style="display: block; text-decoration: none;">
       <p class="featured-pub-label"><i class="fas fa-star"></i> Latest Publication</p>

@@ -22,7 +22,7 @@ layout: minimal
       {% if page.hero.focus_chips %}
       <div class="focus-chips">
         {% for chip in page.hero.focus_chips %}
-        <span class="focus-chip">{{ chip }}</span>
+        <a href="{{ '/publications.html' | relative_url }}?filter={{ chip.id }}" class="focus-chip" style="text-decoration: none; cursor: pointer;">{{ chip.name }}</a>
         {% endfor %}
       </div>
       {% endif %}
