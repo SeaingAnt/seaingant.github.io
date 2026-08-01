@@ -107,6 +107,7 @@ languages:
     level: "Fluent"
 ---
 I am a Postdoctoral Researcher in Computer Science at the
-**University of Cambridge** (Prorok Lab).
+**University of Cambridge** ([Prorok Lab](https://www.proroklab.org/)).
+
 My research merges multi-robot systems with learning-based control to create intelligent,
 safe, and collaborative autonomous teams.

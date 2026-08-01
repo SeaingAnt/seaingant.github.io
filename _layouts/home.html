@@ -7,10 +7,16 @@ layout: minimal
   <div class="hero-inner">
     <div class="hero-text reveal">
       <p class="hero-tagline">{{ page.hero.tagline }}</p>
-      <h1 class="hero-heading">{{ page.hero.heading }}</h1>
-      <p class="hero-subheading">
-        {{ page.hero.subheading }}
-      </p>
+      <h1 class="hero-name"
+        style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; margin-bottom: 0.5rem; color: var(--text-heading); letter-spacing: -0.04em;">
+        {{ site.title }}</h1>
+      <h2 class="hero-heading"
+        style="font-size: clamp(1.2rem, 2vw, 1.8rem); font-weight: 600; margin-bottom: 1.5rem; color: var(--text-heading); opacity: 0.9;">
+        {{ page.hero.heading }}</h2>
+      <div class="hero-subheading">
+        {{ content | markdownify }}
+        <p style="margin-top: 1rem;">{{ page.hero.subheading }}</p>
+      </div>
       <div class="hero-cta">
         {% if page.hero.primary_button %}
         <a href="{{ page.hero.primary_button.url }}" class="btn btn-primary">
@@ -75,23 +81,13 @@ layout: minimal
 <!-- Brief Bio + Featured Paper -->
 <section class="section section--gray">
   <div class="container--narrow">
-    <div class="reveal">
-      <div
-        style="font-size: 1.05rem; line-height: 1.85; color: var(--text-secondary); text-align: center; font-weight: 300;">
-        {{ content | markdownify }}
-      </div>
-    </div>
-
-    <div class="reveal">
-      <hr
-        style="width: 40px; margin: 3rem auto; border: none; border-top: 2px solid var(--accent); opacity: 0.3; border-radius: 2px;">
-    </div>
+    <!-- Content merged into hero -->
 
 
     <!-- Research Positions -->
     {% if page.positions %}
     <div class="cv-section reveal-stagger">
-      <h2 class="cv-section-title">Research Positions</h2>
+      <h2 class="cv-section-title">Professional Experiences</h2>
 
       {% for pos in page.positions %}
       <div class="cv-item reveal">
