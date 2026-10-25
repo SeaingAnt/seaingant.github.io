@@ -30,12 +30,12 @@ hero:
     github: "https://github.com/SeaingAnt"
     linkedin: "https://www.linkedin.com/in/antonio-marino-841386192"
 news:
+  - date: "Sept 2026"
+    text: "CoRL and RA-L ppaer accepted."
+  - date: "May 2026"
+    text: "T-RO paper on Multi-Objective Multi-Robot coordination accepted."
   - date: "Jun 2026"
     text: "2 IEEE RA-L papers presented at IEEE ICRA 2026."
-  - date: "Dec 2025"
-    text: "PhD dissertation Inria centre at Rennes University."
-  - date: "Oct 2025"
-    text: "Joined the University of Cambridge as a Research Associate."
 ---
 I am a Postdoctoral Researcher in Computer Science at the
 **University of Cambridge** ([Prorok Lab](https://www.proroklab.org/)).

@@ -1,4 +1,52 @@
 publications:
+  - id: "Andreu2026Leave"
+    title: "Leave It Better Than Found: Value-Guided Cooperation in Sequential Tasks"
+    authors: ["Mario Gomez Andreu", "Michael Amir", "Antonio Marino", "Tianxu An", "Marco Hutter", "Amanda Prorok"]
+    venue: "Conference on Robot Learning (CoRL)"
+    year: 2026
+    venue_type: "conference"
+    abstract: "We consider the problem of sequential task continuation, where one robot acts in a workspace that has been affected by a previous robot. Current approaches in multi-robot cooperation rely heavily on co-training or co-optimization, assuming that the robots have access to collective interaction data during the policy training or planning process. However, as increasingly varied robotic embodiments and policies are deployed and operate in the same real-world environment, learning policies for cooperation becomes infeasible due to the combinatorial explosion of possible robot combinations that need to be accounted for. To address this challenge, this paper considers the problem of ad hoc sequential cooperation between robots that have never before operated together in a shared environment, and proposes PAVE (Policy Adaptation via Value Exchange) as a solution. We demonstrate that robots can explicitly communicate their environmental preferences through sharing their value functions, enabling coordination without the need for prior joint training. To ground this exchange and prevent overconfidence in out-of-distribution states, we further introduce a k-nearest neighbors (KNN)-based uncertainty filter. Our method yields an increase of up to 47.7% in task success rates across simulated and real-world experiments compared with purely selfish agents, demonstrating that value function transmission between agents is useful as a basis for ad hoc coordination."
+    tags: ["robotics","multi-agent", "reinforcement-learning", "cooperation"]
+    links: 
+    featured: true
+
+  - id: "gao2026risk"
+    title: "Risk-Aware Co-Optimization for Multi-Robot Control under Execution Uncertainty"
+    authors: ["Zhan Gao","Antonio Marino","Amanda Prorok"]
+    venue: "IEEE Robotics and Automation Letters"
+    year: 2026
+    venue_type: "journal"
+    abstract: "While multi-robot motion control often treats the environment as a static constraint and assumes near-perfect execution, real-world uncertainty poses significant challenges. In poorly structured or densely populated spaces, these unpredictable variables frequently lead to collision risks and degraded performance. We address this issue by proposing a risk-aware framework that co-optimizes robot actions and environment configurations to mitigate execution uncertainty. To handle the complex relationships among the environment, robots, and uncertainty impact, we develop a bi-level approach using neural surrogate optimization, effectively bridging nonlinear programming with model-free learning for joint optimization. Supported by theoretical robustness guarantees, numerical simulations, and physical experiments, our co-optimization strategy creates ``multi-robot-friendly'' environments that mitigate the impact of execution uncertainty and facilitate superior multi-robot coordination." 
+    tags: ["robotics","multi-agent", "optimization"]
+    links: 
+    featured: true
+
+  - id: "heedo2026weakly"
+    title: "Weakly Supervised Discovery of Motion Styles for Compositional Robot Control"
+    authors: ["Heedo Peter Woo", "Antonio Marino", "Eduardo Sebastián", "Amanda Prorok"]
+    venue: "IEEE International Conference on Robotics and Automation (ICRA)"
+    year: 2026
+    venue_type: "preprint"
+    abstract: "When a robot possesses more degrees of freedom than a task requires, multiple trajectories can achieve the same objective using distinct motion styles. Compositional robot control aims to preserve a selected style while simultaneously executing an independent task command, effectively balancing these potentially competing objectives. In this paper, we present CODES, a framework for compositional robot control that discovers a coherent style repertoire from diverse recordings and composes it with independent commands. First, motion retargeting maps the recordings to motions executable by the target robot; next, weakly supervised consensus encoding and density-based clustering identify styles within and across recordings without a prescribed count; finally, reinforcement learning trains a policy to compose the discovered styles with independent commands. We evaluate CODES on a Unitree Go2 quadruped across two simulators and physical hardware. Compared to baselines, CODES significantly improves kinematic coherence. Furthermore, our controller successfully tracks velocity commands that generalize beyond the support of the recorded data, exhibiting robust and distinguishable style characteristics during both cross-simulator and real-world hardware deployments." 
+    tags: ["robotics", "reinforcement-learning"]
+    links: |
+      paper: https://arxiv.org/abs/2610.24008
+      website: https://seaingant.github.io/stac-mpc/
+    featured: true
+
+  - id: "magnino2026learning"
+    title: "Learning Robot Metareasoning: Adaptive Computation Budgets for Real-Time Control"
+    authors: ["Lorenzo Magnino", "Antonio Marino", "Michael Amir", "Daigo Shishika", "Amanda Prorok"]
+    venue: "IEEE International Conference on Robotics and Automation (ICRA)"
+    year: 2026
+    venue_type: "preprint"
+    abstract: "Planning while moving faces an historical trade-off between deliberation and reactivity. A planner running concurrently with execution needs time to compute, so the robot must commit to an open-loop action chunk for that duration: a longer commitment buys a better plan at the cost of feedback frequency. Existing controllers fix this action commitment, and consequently the computation budget, before deployment. However, the optimal computation time is highly state-dependent (due to factors such as unmodeled dynamics, safety constraints, and marginal optimisation gains), i.e. dynamic, therefore offline static tuning risks leaving systems blind during critical maneuvers or unable to find global effective solutions. We cast the identification of the optimal computation budget as a semi-Markov decision process (SMDP) in which a single decision defines both the robot action commitments and the time allocated to the solver. To solve this, we train a reinforcement-learning policy conditioned on the current state, the executing plan, and inexpensive planner statistics. Across ground-robot navigation, agile quadrotor flight, and contact-rich manipulation, the learned policy changes its budget with the demands of the scenario, discovering efficient reasoning patterns that outperform fixed-budget baselines." 
+    tags: ["robotics", "reinforcement-learning"]
+    links: |
+      paper: https://arxiv.org/abs/2610.23662
+      website: https://lorenzomagnino.github.io/learning-robot-metareasoning-review/
+    featured: true
+
   - id: "marino2026stable"
     title: "Stable Transformer-Actor-Critic Model Predictive Control : A Contraction Analysis Approach"
     authors: ["Antonio Marino", "Valerio Modugno", "Marco Cognetti"]
@@ -7,7 +55,9 @@ publications:
     venue_type: "preprint"
     abstract: "Actor-Critic Model Predictive Control (MPC) effectively addresses complex, non-convex control problems, but guaranteeing the closed-loop stability of sequence-based learning models within these pipelines remains challenging. This paper introduces a novel Transformer-Actor-Critic MPC architecture with formal robustness guarantees. First, we prove that Transformer networks can satisfy global incremental Input-to-State Stability. We then leverage Riemannian contraction theory to analyze the interconnected dynamics between the physical plant and the predictive neural network. Finally, we integrate these theoretical bounds as a training regularizer to yield a certifiably robust policy. The framework is validated on a nonlinear 3D drone model executing target-reaching and obstacle-avoidance maneuvers." 
     tags: ["robotics", "optimization", "reinforcement-learning"]
-    links:
+    links: |
+      paper: https://arxiv.org/abs/2606.20197
+      website: https://seaingant.github.io/stac-mpc/
     featured: true
 
   - id: "marino2026sample"
@@ -15,10 +65,24 @@ publications:
     authors: ["Antonio Marino", "Esteban Restrepo", "Soon-Jo Chung", "Paolo Robuffo Giordano", "Claudio Pacchierotti"]
     venue: "IEEE Transactions on Robotics"
     year: 2026
-    venue_type: "preprint"
+    venue_type: "journal"
     abstract: "Multi-robot systems must simultaneously optimize competing objectives while maintaining coordinated behavior. Existing multi-agent reinforcement learning approaches often rely on fixed or centralized coordination, which limits adaptability and violates distributed constraints. This work introduces the Coordination-Informed Multi-Objective Reinforcement Learning (CIMORL) framework, integrating a distributed weight prediction mechanism, a privileged expert training strategy, and theoretical guarantees for Pareto-optimal solutions. We present the base CIMORL method alongside two sampling-based variants, CIMORL-TS (Tree Search) and CIMORL-MPPI (MPPI), which leverage privileged global information during training to enable fully decentralized deployment. Experimental validation in cooperative and adversarial scenarios demonstrates a 21% hypervolume improvement and superior policy stability compared to state-of-the-art baselines. Real-world experiments with Crazyflie drones further validate the framework's robustness in resource allocation and multi-attacker multi-defend scenarios under partial observability."
     tags: ["robotics", "multi-agent", "reinforcement-learning"]
-    links:
+    links: |
+      website: "https://seaingant.github.io/cimorl-website/"
+      paper: "https://ieeexplore.ieee.org/abstract/document/11655547?casa_token=pHft_LOHmA0AAAAA:rZup71AdLMBhj9zGivvq0ZX4WrVrSr__gMjvcwOGlEV6MIW7j8WzKBaGYefEkInf-KKMb0Qj"
+      video: "https://www.youtube.com/watch?v=ztH15NJj1p4&t=2s"
+      bibtex: |
+        @article{marino2026sample,
+          author={Marino, Antonio and Restrepo, Esteban and Chung, Soon-Jo and Giordano, Paolo Robuffo and Pacchierotti, Claudio},
+          journal={IEEE Transactions on Robotics}, 
+          title={Sampling-Based Coordination-Informed Multiobjective Multirobot Reinforcement Learning}, 
+          year={2026},
+          volume={42},
+          number={},
+          pages={3570-3589},
+          keywords={Training;Dynamics;Trajectory;Modeling;Optimization;Vectors;Synchronization;Reinforcement learning;Learning (artificial intelligence);Matrices;Distributed control;graph neural network;multiobjective optimization;reinforcement learning},
+          doi={10.1109/TRO.2026.3723950}}
     featured: true 
 
   - id: "marino2025thesis"
