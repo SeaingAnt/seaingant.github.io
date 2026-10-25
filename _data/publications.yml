@@ -29,7 +29,7 @@ publications:
     venue_type: "preprint"
     abstract: "When a robot possesses more degrees of freedom than a task requires, multiple trajectories can achieve the same objective using distinct motion styles. Compositional robot control aims to preserve a selected style while simultaneously executing an independent task command, effectively balancing these potentially competing objectives. In this paper, we present CODES, a framework for compositional robot control that discovers a coherent style repertoire from diverse recordings and composes it with independent commands. First, motion retargeting maps the recordings to motions executable by the target robot; next, weakly supervised consensus encoding and density-based clustering identify styles within and across recordings without a prescribed count; finally, reinforcement learning trains a policy to compose the discovered styles with independent commands. We evaluate CODES on a Unitree Go2 quadruped across two simulators and physical hardware. Compared to baselines, CODES significantly improves kinematic coherence. Furthermore, our controller successfully tracks velocity commands that generalize beyond the support of the recorded data, exhibiting robust and distinguishable style characteristics during both cross-simulator and real-world hardware deployments." 
     tags: ["robotics", "reinforcement-learning"]
-    links: |
+    links:
       paper: https://arxiv.org/abs/2610.24008
       website: https://seaingant.github.io/stac-mpc/
     featured: true
@@ -42,7 +42,7 @@ publications:
     venue_type: "preprint"
     abstract: "Planning while moving faces an historical trade-off between deliberation and reactivity. A planner running concurrently with execution needs time to compute, so the robot must commit to an open-loop action chunk for that duration: a longer commitment buys a better plan at the cost of feedback frequency. Existing controllers fix this action commitment, and consequently the computation budget, before deployment. However, the optimal computation time is highly state-dependent (due to factors such as unmodeled dynamics, safety constraints, and marginal optimisation gains), i.e. dynamic, therefore offline static tuning risks leaving systems blind during critical maneuvers or unable to find global effective solutions. We cast the identification of the optimal computation budget as a semi-Markov decision process (SMDP) in which a single decision defines both the robot action commitments and the time allocated to the solver. To solve this, we train a reinforcement-learning policy conditioned on the current state, the executing plan, and inexpensive planner statistics. Across ground-robot navigation, agile quadrotor flight, and contact-rich manipulation, the learned policy changes its budget with the demands of the scenario, discovering efficient reasoning patterns that outperform fixed-budget baselines." 
     tags: ["robotics", "reinforcement-learning"]
-    links: |
+    links:
       paper: https://arxiv.org/abs/2610.23662
       website: https://lorenzomagnino.github.io/learning-robot-metareasoning-review/
     featured: true
@@ -55,7 +55,7 @@ publications:
     venue_type: "preprint"
     abstract: "Actor-Critic Model Predictive Control (MPC) effectively addresses complex, non-convex control problems, but guaranteeing the closed-loop stability of sequence-based learning models within these pipelines remains challenging. This paper introduces a novel Transformer-Actor-Critic MPC architecture with formal robustness guarantees. First, we prove that Transformer networks can satisfy global incremental Input-to-State Stability. We then leverage Riemannian contraction theory to analyze the interconnected dynamics between the physical plant and the predictive neural network. Finally, we integrate these theoretical bounds as a training regularizer to yield a certifiably robust policy. The framework is validated on a nonlinear 3D drone model executing target-reaching and obstacle-avoidance maneuvers." 
     tags: ["robotics", "optimization", "reinforcement-learning"]
-    links: |
+    links:
       paper: https://arxiv.org/abs/2606.20197
       website: https://seaingant.github.io/stac-mpc/
     featured: true
@@ -68,7 +68,7 @@ publications:
     venue_type: "journal"
     abstract: "Multi-robot systems must simultaneously optimize competing objectives while maintaining coordinated behavior. Existing multi-agent reinforcement learning approaches often rely on fixed or centralized coordination, which limits adaptability and violates distributed constraints. This work introduces the Coordination-Informed Multi-Objective Reinforcement Learning (CIMORL) framework, integrating a distributed weight prediction mechanism, a privileged expert training strategy, and theoretical guarantees for Pareto-optimal solutions. We present the base CIMORL method alongside two sampling-based variants, CIMORL-TS (Tree Search) and CIMORL-MPPI (MPPI), which leverage privileged global information during training to enable fully decentralized deployment. Experimental validation in cooperative and adversarial scenarios demonstrates a 21% hypervolume improvement and superior policy stability compared to state-of-the-art baselines. Real-world experiments with Crazyflie drones further validate the framework's robustness in resource allocation and multi-attacker multi-defend scenarios under partial observability."
     tags: ["robotics", "multi-agent", "reinforcement-learning"]
-    links: |
+    links:
       website: "https://seaingant.github.io/cimorl-website/"
       paper: "https://ieeexplore.ieee.org/abstract/document/11655547?casa_token=pHft_LOHmA0AAAAA:rZup71AdLMBhj9zGivvq0ZX4WrVrSr__gMjvcwOGlEV6MIW7j8WzKBaGYefEkInf-KKMb0Qj"
       video: "https://www.youtube.com/watch?v=ztH15NJj1p4&t=2s"
