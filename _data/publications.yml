@@ -8,6 +8,7 @@ publications:
     abstract: "We consider the problem of sequential task continuation, where one robot acts in a workspace that has been affected by a previous robot. Current approaches in multi-robot cooperation rely heavily on co-training or co-optimization, assuming that the robots have access to collective interaction data during the policy training or planning process. However, as increasingly varied robotic embodiments and policies are deployed and operate in the same real-world environment, learning policies for cooperation becomes infeasible due to the combinatorial explosion of possible robot combinations that need to be accounted for. To address this challenge, this paper considers the problem of ad hoc sequential cooperation between robots that have never before operated together in a shared environment, and proposes PAVE (Policy Adaptation via Value Exchange) as a solution. We demonstrate that robots can explicitly communicate their environmental preferences through sharing their value functions, enabling coordination without the need for prior joint training. To ground this exchange and prevent overconfidence in out-of-distribution states, we further introduce a k-nearest neighbors (KNN)-based uncertainty filter. Our method yields an increase of up to 47.7% in task success rates across simulated and real-world experiments compared with purely selfish agents, demonstrating that value function transmission between agents is useful as a basis for ad hoc coordination."
     tags: ["robotics","multi-agent", "reinforcement-learning", "cooperation"]
     links: 
+      paper: https://openreview.net/pdf?id=N77om40jWL
       website: https://proroklab.github.io/PAVE/website/
     featured: true
 
@@ -19,7 +20,19 @@ publications:
     venue_type: "journal"
     abstract: "While multi-robot motion control often treats the environment as a static constraint and assumes near-perfect execution, real-world uncertainty poses significant challenges. In poorly structured or densely populated spaces, these unpredictable variables frequently lead to collision risks and degraded performance. We address this issue by proposing a risk-aware framework that co-optimizes robot actions and environment configurations to mitigate execution uncertainty. To handle the complex relationships among the environment, robots, and uncertainty impact, we develop a bi-level approach using neural surrogate optimization, effectively bridging nonlinear programming with model-free learning for joint optimization. Supported by theoretical robustness guarantees, numerical simulations, and physical experiments, our co-optimization strategy creates ``multi-robot-friendly'' environments that mitigate the impact of execution uncertainty and facilitate superior multi-robot coordination." 
     tags: ["robotics","multi-agent", "optimization"]
-    links: 
+    links:
+      paper: https://ieeexplore.ieee.org/abstract/document/11753914
+      bibtex: |
+        @article{gao2026risk,
+          author={Gao, Zhan and Marino, Antonio and Prorok, Amanda},
+          journal={IEEE Robotics and Automation Letters}, 
+          title={Risk-Aware Co-Optimization for Multi-Robot Control Under Execution Uncertainty}, 
+          year={2026},
+          volume={},
+          number={},
+          pages={1-8},
+          keywords={Optimization;Robots;Uncertainty;Modeling;Design methodology;Training;Learning (artificial intelligence);Quadrotors;Trajectory;Layout;Multi-robot systems;constrained motion planning;deep learning methods},
+          doi={10.1109/LRA.2026.3747574}}
     featured: true
 
   - id: "heedo2026weakly"
@@ -32,7 +45,7 @@ publications:
     tags: ["robotics", "reinforcement-learning"]
     links:
       paper: https://arxiv.org/abs/2610.24008
-      website: https://seaingant.github.io/stac-mpc/
+      website: https://www.proroklab.org/compositional-motion-styles/
     featured: true
 
   - id: "magnino2026learning"
